@@ -1,17 +1,10 @@
 # ninja log v6
-88	433	7648502973786960	SmartRecord_autogen/timestamp	9888eb78095c3c14
-1443	6807	7647572403895654	CMakeFiles/SmartRecord.dir/main.cpp.obj	e61142c6deeb1a96
-88	433	7648502973786960	SmartRecord_autogen/mocs_compilation.cpp	9888eb78095c3c14
-1438	6748	7647572403844484	CMakeFiles/SmartRecord.dir/SmartRecord_autogen/mocs_compilation.cpp.obj	ea43b9774a804724
-88	433	7648502973786960	C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/SmartRecord_autogen/timestamp	9888eb78095c3c14
-436	4477	7648502977259150	CMakeFiles/SmartRecord.dir/smartrecordlbtc.cpp.obj	767fd89899b4a889
-88	433	7648502973786960	C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/SmartRecord_autogen/mocs_compilation.cpp	9888eb78095c3c14
-4478	4872	7648503017686160	SmartRecord.exe	a2789745c79e5e54
 76	1432	7648773580014259	SmartRecord_autogen/timestamp	9888eb78095c3c14
+1443	6807	7647572403895654	CMakeFiles/SmartRecord.dir/main.cpp.obj	e61142c6deeb1a96
 76	1432	7648773580014259	SmartRecord_autogen/mocs_compilation.cpp	9888eb78095c3c14
-76	1432	7648773580014259	C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/SmartRecord_autogen/timestamp	9888eb78095c3c14
-76	1432	7648773580014259	C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/SmartRecord_autogen/mocs_compilation.cpp	9888eb78095c3c14
-1453	7123	7648773581537003	CMakeFiles/SmartRecord.dir/useraccounts.cpp.obj	9d015c65f8c6655b
-1447	7132	7648773581537003	CMakeFiles/SmartRecord.dir/smartrecordlbtc.cpp.obj	767fd89899b4a889
 1441	7136	7648773581537003	CMakeFiles/SmartRecord.dir/SmartRecord_autogen/mocs_compilation.cpp.obj	ea43b9774a804724
+76	1432	7648773580014259	C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/SmartRecord_autogen/timestamp	9888eb78095c3c14
+1447	7132	7648773581537003	CMakeFiles/SmartRecord.dir/smartrecordlbtc.cpp.obj	767fd89899b4a889
+76	1432	7648773580014259	C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/SmartRecord_autogen/mocs_compilation.cpp	9888eb78095c3c14
 7136	8008	7648773638508559	SmartRecord.exe	9424a20c10786672
+1453	7123	7648773581537003	CMakeFiles/SmartRecord.dir/useraccounts.cpp.obj	9d015c65f8c6655b

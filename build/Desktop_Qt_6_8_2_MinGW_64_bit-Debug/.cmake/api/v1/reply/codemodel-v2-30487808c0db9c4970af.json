@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-ca30ae7fdf80ddd48bfa.json",
+					"jsonFile" : "directory-.-Debug-72e17ffd31633aa8d7d7.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "SmartRecord::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-SmartRecord-Debug-31ff50003b73d1a26b6d.json",
+					"jsonFile" : "target-SmartRecord-Debug-380de932feb188d2fd20.json",
 					"name" : "SmartRecord",
 					"projectIndex" : 0
 				},

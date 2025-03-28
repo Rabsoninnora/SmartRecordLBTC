@@ -306,6 +306,12 @@
 			null
 		],
 		[
+			"C:/Project@cosmas/SmartRecord/studentregistration.h",
+			"MU",
+			"EWIEGA46WW/moc_studentregistration.cpp",
+			null
+		],
+		[
 			"C:/Project@cosmas/SmartRecord/useraccounts.h",
 			"MU",
 			"EWIEGA46WW/moc_useraccounts.cpp",
@@ -385,6 +391,7 @@
 	[
 		[ "C:/Project@cosmas/SmartRecord/main.cpp", "MU", null ],
 		[ "C:/Project@cosmas/SmartRecord/smartrecordlbtc.cpp", "MU", null ],
+		[ "C:/Project@cosmas/SmartRecord/studentregistration.cpp", "MU", null ],
 		[ "C:/Project@cosmas/SmartRecord/useraccounts.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
