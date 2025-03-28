@@ -25,6 +25,7 @@ public:
     QWidget *centralwidget;
     QPushButton *pushButton;
     QPushButton *pushButton_2;
+    QPushButton *pushButton_3;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -47,6 +48,9 @@ public:
         pushButton_2 = new QPushButton(centralwidget);
         pushButton_2->setObjectName("pushButton_2");
         pushButton_2->setGeometry(QRect(200, 0, 601, 61));
+        pushButton_3 = new QPushButton(centralwidget);
+        pushButton_3->setObjectName("pushButton_3");
+        pushButton_3->setGeometry(QRect(240, 150, 81, 41));
         SmartRecordLBTC->setCentralWidget(centralwidget);
         menubar = new QMenuBar(SmartRecordLBTC);
         menubar->setObjectName("menubar");
@@ -66,6 +70,7 @@ public:
         SmartRecordLBTC->setWindowTitle(QCoreApplication::translate("SmartRecordLBTC", "SmartRecordLBTC", nullptr));
         pushButton->setText(QCoreApplication::translate("SmartRecordLBTC", "PushButton", nullptr));
         pushButton_2->setText(QCoreApplication::translate("SmartRecordLBTC", "PushButton", nullptr));
+        pushButton_3->setText(QCoreApplication::translate("SmartRecordLBTC", "Login", nullptr));
     } // retranslateUi
 
 };
