@@ -1,0 +1,9 @@
+# ninja log v6
+17	1414	7647572402145280	SmartRecord_autogen/timestamp	9888eb78095c3c14
+17	1414	7647572402145280	SmartRecord_autogen/mocs_compilation.cpp	9888eb78095c3c14
+17	1414	7647572402145280	C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/SmartRecord_autogen/timestamp	9888eb78095c3c14
+17	1414	7647572402145280	C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/SmartRecord_autogen/mocs_compilation.cpp	9888eb78095c3c14
+1438	6748	7647572403844484	CMakeFiles/SmartRecord.dir/SmartRecord_autogen/mocs_compilation.cpp.obj	ea43b9774a804724
+1443	6807	7647572403895654	CMakeFiles/SmartRecord.dir/main.cpp.obj	e61142c6deeb1a96
+1449	6865	7647572403954616	CMakeFiles/SmartRecord.dir/smartrecordlbtc.cpp.obj	767fd89899b4a889
+6866	7513	7647572458132136	SmartRecord.exe	a2789745c79e5e54
