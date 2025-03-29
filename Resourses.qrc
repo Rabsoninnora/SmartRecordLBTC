@@ -1,0 +1,9 @@
+<RCC>
+    <qresource lang="English" prefix="/new/prefix1">
+        <file>coverlbtc.jpg</file>
+        <file>student.jpg</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>student.jpg</file>
+    </qresource>
+</RCC>

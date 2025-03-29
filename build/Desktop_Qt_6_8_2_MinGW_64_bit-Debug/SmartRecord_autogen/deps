@@ -1,5 +1,6 @@
 SmartRecord_autogen/timestamp: \
 	C:/Project@cosmas/SmartRecord/CMakeLists.txt \
+	C:/Project@cosmas/SmartRecord/Resourses.qrc \
 	C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake \
 	C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake \
 	C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CMakeRCCompiler.cmake \
@@ -8,6 +9,8 @@ SmartRecord_autogen/timestamp: \
 	C:/Project@cosmas/SmartRecord/main.cpp \
 	C:/Project@cosmas/SmartRecord/smartrecordlbtc.cpp \
 	C:/Project@cosmas/SmartRecord/smartrecordlbtc.h \
+	C:/Project@cosmas/SmartRecord/studentregistration.cpp \
+	C:/Project@cosmas/SmartRecord/studentregistration.h \
 	C:/Project@cosmas/SmartRecord/useraccounts.cpp \
 	C:/Project@cosmas/SmartRecord/useraccounts.h \
 	C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/q20functional.h \
@@ -551,5 +554,6 @@ SmartRecord_autogen/timestamp: \
 	C:/Users/DUBE/QT/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
 	C:/Users/DUBE/QT/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
 	C:/Project@cosmas/SmartRecord/smartrecordlbtc.ui \
+	C:/Project@cosmas/SmartRecord/studentregistration.ui \
 	C:/Project@cosmas/SmartRecord/useraccounts.ui \
 	C:/Users/DUBE/QT/Tools/CMake_64/bin/cmake.exe

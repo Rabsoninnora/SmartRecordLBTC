@@ -17,6 +17,9 @@ public:
     SmartRecordLBTC(QWidget *parent = nullptr);
     ~SmartRecordLBTC();
 
+private slots:
+
+
 private:
     Ui::SmartRecordLBTC *ui;
 };

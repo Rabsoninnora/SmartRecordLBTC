@@ -291,7 +291,8 @@
 		"C:/Users/DUBE/QT/6.8.2/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets-relwithdebinfo.cmake",
 		"C:/Users/DUBE/QT/6.8.2/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginAdditionalTargetInfo.cmake",
 		"C:/Users/DUBE/QT/6.8.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake",
-		"C:/Users/DUBE/QT/Tools/CMake_64/share/cmake-3.30/Modules/GNUInstallDirs.cmake"
+		"C:/Users/DUBE/QT/Tools/CMake_64/share/cmake-3.30/Modules/GNUInstallDirs.cmake",
+		"C:/Project@cosmas/SmartRecord/Resourses.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "C:/Project@cosmas/SmartRecord",
 	"CROSS_CONFIG" : false,

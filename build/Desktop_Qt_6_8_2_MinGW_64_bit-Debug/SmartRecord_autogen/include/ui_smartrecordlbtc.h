@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QComboBox>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
@@ -26,6 +27,8 @@ public:
     QPushButton *pushButton;
     QPushButton *pushButton_2;
     QPushButton *pushButton_3;
+    QComboBox *comboBox;
+    QWidget *widget;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -34,24 +37,46 @@ public:
         if (SmartRecordLBTC->objectName().isEmpty())
             SmartRecordLBTC->setObjectName("SmartRecordLBTC");
         SmartRecordLBTC->resize(800, 412);
+        SmartRecordLBTC->setStyleSheet(QString::fromUtf8("background-color: rgb(67, 117, 255);"));
         centralwidget = new QWidget(SmartRecordLBTC);
         centralwidget->setObjectName("centralwidget");
         pushButton = new QPushButton(centralwidget);
         pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(0, -10, 201, 401));
-        QSizePolicy sizePolicy(QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Fixed);
+        pushButton->setGeometry(QRect(600, 50, 201, 331));
+        QSizePolicy sizePolicy(QSizePolicy::Policy::Preferred, QSizePolicy::Policy::Preferred);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(pushButton->sizePolicy().hasHeightForWidth());
         pushButton->setSizePolicy(sizePolicy);
         pushButton->setMaximumSize(QSize(16777215, 16777215));
+        pushButton->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0);"));
         pushButton_2 = new QPushButton(centralwidget);
         pushButton_2->setObjectName("pushButton_2");
-        pushButton_2->setGeometry(QRect(200, 0, 601, 61));
+        pushButton_2->setGeometry(QRect(-10, 0, 811, 61));
+        sizePolicy.setHeightForWidth(pushButton_2->sizePolicy().hasHeightForWidth());
+        pushButton_2->setSizePolicy(sizePolicy);
+        pushButton_2->setMaximumSize(QSize(16777215, 61));
+        pushButton_2->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0);"));
         pushButton_3 = new QPushButton(centralwidget);
         pushButton_3->setObjectName("pushButton_3");
-        pushButton_3->setGeometry(QRect(240, 150, 81, 41));
+        pushButton_3->setGeometry(QRect(630, 60, 131, 41));
+        comboBox = new QComboBox(centralwidget);
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->setObjectName("comboBox");
+        comboBox->setGeometry(QRect(654, 100, 91, 31));
+        widget = new QWidget(centralwidget);
+        widget->setObjectName("widget");
+        widget->setGeometry(QRect(50, 50, 551, 381));
+        widget->setStyleSheet(QString::fromUtf8(" \n"
+"image: url(:/new/prefix1/student.jpg);\n"
+" "));
         SmartRecordLBTC->setCentralWidget(centralwidget);
+        pushButton->raise();
+        pushButton_3->raise();
+        comboBox->raise();
+        widget->raise();
+        pushButton_2->raise();
         menubar = new QMenuBar(SmartRecordLBTC);
         menubar->setObjectName("menubar");
         menubar->setGeometry(QRect(0, 0, 800, 17));
@@ -68,9 +93,12 @@ public:
     void retranslateUi(QMainWindow *SmartRecordLBTC)
     {
         SmartRecordLBTC->setWindowTitle(QCoreApplication::translate("SmartRecordLBTC", "SmartRecordLBTC", nullptr));
-        pushButton->setText(QCoreApplication::translate("SmartRecordLBTC", "PushButton", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("SmartRecordLBTC", "PushButton", nullptr));
+        pushButton->setText(QString());
+        pushButton_2->setText(QString());
         pushButton_3->setText(QCoreApplication::translate("SmartRecordLBTC", "Login", nullptr));
+        comboBox->setItemText(0, QCoreApplication::translate("SmartRecordLBTC", "Admin ", nullptr));
+        comboBox->setItemText(1, QCoreApplication::translate("SmartRecordLBTC", "Student ", nullptr));
+
     } // retranslateUi
 
 };
