@@ -301,6 +301,18 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Project@cosmas/SmartRecord/adminlogin.h",
+			"MU",
+			"EWIEGA46WW/moc_adminlogin.cpp",
+			null
+		],
+		[
+			"C:/Project@cosmas/SmartRecord/adminpanel.h",
+			"MU",
+			"EWIEGA46WW/moc_adminpanel.cpp",
+			null
+		],
+		[
 			"C:/Project@cosmas/SmartRecord/smartrecordlbtc.h",
 			"MU",
 			"EWIEGA46WW/moc_smartrecordlbtc.cpp",
@@ -390,6 +402,8 @@
 	"SETTINGS_FILE" : "C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/CMakeFiles/SmartRecord_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "C:/Project@cosmas/SmartRecord/adminlogin.cpp", "MU", null ],
+		[ "C:/Project@cosmas/SmartRecord/adminpanel.cpp", "MU", null ],
 		[ "C:/Project@cosmas/SmartRecord/main.cpp", "MU", null ],
 		[ "C:/Project@cosmas/SmartRecord/smartrecordlbtc.cpp", "MU", null ],
 		[ "C:/Project@cosmas/SmartRecord/studentregistration.cpp", "MU", null ],

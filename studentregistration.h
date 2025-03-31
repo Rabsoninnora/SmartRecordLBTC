@@ -1,6 +1,7 @@
 #ifndef STUDENTREGISTRATION_H
 #define STUDENTREGISTRATION_H
 
+
 #include <QDialog>
 
 namespace Ui {
@@ -16,6 +17,8 @@ public:
     ~StudentRegistration();
 
 private:
+
+
     Ui::StudentRegistration *ui;
 };
 

@@ -11,12 +11,21 @@ SmartRecordLBTC::SmartRecordLBTC(QWidget *parent)
 
 
     ui->setupUi(this);
+   // this->showFullScreen();
+    ptrAdminlogin = new Adminlogin();
 }
 
 SmartRecordLBTC::~SmartRecordLBTC()
 {
     delete ui;
+    delete ptrAdminlogin;
 }
 
 
+
+
+void SmartRecordLBTC::on_btn_admin_login_clicked()
+{
+    ptrAdminlogin->show();
+}
 
