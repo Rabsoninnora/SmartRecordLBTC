@@ -17,6 +17,8 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     setWindowTitle("v1.0");
 
+    ptrAdminlogin =new Adminlogin();
+
     //creating a central widget
     QWidget *centralWidget = new QWidget(this);
     setCentralWidget(centralWidget);
@@ -46,6 +48,10 @@ btnAdminLogin->setStyleSheet("font-size: 18px; padding 40px; background-color: r
 //setting cursor for buttons
 btnSettings->setCursor(Qt::PointingHandCursor);
 btnAdminLogin->setCursor(Qt::PointingHandCursor);
+
+//Connect the login button to the slot
+connect(btnAdminLogin, &QPushButton::clicked, this, &MainWindow::on_btn_admin_login_clicked);
+
 
 //Adding buttings to the side navigation layout
 sideNavLayout->addWidget(btnSettings);
@@ -85,3 +91,10 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::on_btn_admin_login_clicked()
+{
+ ptrAdminlogin->show();
+}
+
+
