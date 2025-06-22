@@ -30,6 +30,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         adminpanel.h adminpanel.cpp adminpanel.ui
         mainwindow.h mainwindow.cpp mainwindow.ui
         mydb.h mydb.cpp
+        useraddmin.h useraddmin.cpp useraddmin.ui
+
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET SmartRecord APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

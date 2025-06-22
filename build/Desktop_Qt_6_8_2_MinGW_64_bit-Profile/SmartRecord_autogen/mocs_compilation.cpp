@@ -5,3 +5,4 @@
 #include "EWIEGA46WW/moc_smartrecordlbtc.cpp"
 #include "EWIEGA46WW/moc_studentregistration.cpp"
 #include "EWIEGA46WW/moc_useraccounts.cpp"
+#include "EWIEGA46WW/moc_useraddmin.cpp"

@@ -371,6 +371,12 @@
 			"MU",
 			"EWIEGA46WW/moc_useraccounts.cpp",
 			null
+		],
+		[
+			"C:/Project@cosmas/SmartRecord/useraddmin.h",
+			"MU",
+			"EWIEGA46WW/moc_useraddmin.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -454,7 +460,8 @@
 		[ "C:/Project@cosmas/SmartRecord/mydb.cpp", "MU", null ],
 		[ "C:/Project@cosmas/SmartRecord/smartrecordlbtc.cpp", "MU", null ],
 		[ "C:/Project@cosmas/SmartRecord/studentregistration.cpp", "MU", null ],
-		[ "C:/Project@cosmas/SmartRecord/useraccounts.cpp", "MU", null ]
+		[ "C:/Project@cosmas/SmartRecord/useraccounts.cpp", "MU", null ],
+		[ "C:/Project@cosmas/SmartRecord/useraddmin.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

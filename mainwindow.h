@@ -1,6 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 #include "adminlogin.h"
+#include  "useraddmin.h"
 
 #include <QMainWindow>
 
@@ -22,6 +23,8 @@ private slots:
 private:
     Ui::MainWindow *ui;
     Adminlogin *ptrAdminlogin;
+    UserAddmin *ptrUserAddmin;
+
 };
 
 #endif // MAINWINDOW_H

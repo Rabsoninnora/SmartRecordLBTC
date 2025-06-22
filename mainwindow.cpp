@@ -18,6 +18,7 @@ MainWindow::MainWindow(QWidget *parent)
     setWindowTitle("v1.0");
 
     ptrAdminlogin =new Adminlogin();
+    ptrUserAddmin = new UserAddmin();
 
     //creating a central widget
     QWidget *centralWidget = new QWidget(this);
@@ -94,7 +95,8 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_btn_admin_login_clicked()
 {
- ptrAdminlogin->show();
+ //ptrAdminlogin->show();
+ ptrUserAddmin->show();
 }
 
 
