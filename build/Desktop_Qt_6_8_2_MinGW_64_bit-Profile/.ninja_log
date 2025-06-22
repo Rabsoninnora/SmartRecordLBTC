@@ -41,3 +41,15 @@
 12636	20911	7722927343036083	CMakeFiles/SmartRecord.dir/mainwindow.cpp.obj	a5cef835af63af11
 13489	21293	7722927351566526	CMakeFiles/SmartRecord.dir/useraddmin.cpp.obj	737a9425053c31b7
 21293	22237	7722927429613074	SmartRecord.exe	4f7380786e73a4b7
+88	591	7722932085494128	SmartRecord_autogen/timestamp	6993c2f383e9f747
+88	591	7722932085494128	SmartRecord_autogen/mocs_compilation.cpp	6993c2f383e9f747
+88	591	7722932085494128	C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartRecord_autogen/timestamp	6993c2f383e9f747
+88	591	7722932085494128	C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartRecord_autogen/mocs_compilation.cpp	6993c2f383e9f747
+600	10762	7722932090617324	CMakeFiles/SmartRecord.dir/useraccounts.cpp.obj	88bdd81a7e1a917a
+618	10828	7722932090719647	CMakeFiles/SmartRecord.dir/adminpanel.cpp.obj	e4a57909edfa3aed
+606	10875	7722932090677323	CMakeFiles/SmartRecord.dir/studentregistration.cpp.obj	74342238254b8a27
+612	11463	7722932090719647	CMakeFiles/SmartRecord.dir/adminlogin.cpp.obj	8516b76be9e1ec06
+594	11484	7722932090557294	CMakeFiles/SmartRecord.dir/smartrecordlbtc.cpp.obj	89dd124767c02abc
+625	11992	7722932090719647	CMakeFiles/SmartRecord.dir/mainwindow.cpp.obj	a5cef835af63af11
+10763	17847	7722932192248009	CMakeFiles/SmartRecord.dir/useraddmin.cpp.obj	737a9425053c31b7
+17847	18705	7722932263091300	SmartRecord.exe	4f7380786e73a4b7

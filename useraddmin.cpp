@@ -1,18 +1,22 @@
 #include "useraddmin.h"
 #include <QMessageBox>
+#include "mydb.h"
+#include <QCryptographicHash>
 
 UserAddmin::UserAddmin(QWidget *parent)
     : QDialog(parent)
 {
     setWindowTitle("Login");
-    resize(400, 250);  // Increase dialog size
+    resize(400, 250);  // This to Increase my dialog size
 
-    // Create input widgets
+    setWindowFlag(windowFlags() | Qt::WindowStaysOnTopHint);
+
+    // this to Create  my input widgets
     usernameLineEdit = new QLineEdit(this);
     passwordLineEdit = new QLineEdit(this);
     roleComboBox = new QComboBox(this);
 
-    // Configure widgets
+    // This to Configure my  widgets
     passwordLineEdit->setEchoMode(QLineEdit::Password);
     roleComboBox->addItems({"Admin", "Student"});
 
@@ -58,6 +62,16 @@ void UserAddmin::handleSubmit()
 
     QMessageBox::information(this, "Login Info",
                              "Username: " + username + "\nRole: " + role);
+
+    /////////////////////////////////////////////////////////////////////
+    // Hash the password
+    QByteArray hashedPassword = QCryptographicHash::hash(password.toUtf8(), QCryptographicHash::Sha256).toHex();
+    //Check againist the appropriate table based on the role
+    QSqlQuery GetUser(MyDB::getInstance()->getDBInstance());
+    if (role=="Admin"){
+        GetUser .prepare("SELECT * FROM Admin_login WHERE username = :username AND password = :password");
+
+    }
 }
 
 void UserAddmin::handleReset()
