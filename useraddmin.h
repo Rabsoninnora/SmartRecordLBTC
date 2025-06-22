@@ -8,6 +8,7 @@
 #include <QVBoxLayout>
 #include <QFormLayout>
 #include <QComboBox>
+#include "dashboard.h"
 class UserAddmin : public QDialog
 {
     Q_OBJECT
@@ -20,6 +21,7 @@ private slots:
     void handleReset();
 
 private:
+    Dashboard *ptrDashboard;
     QLineEdit *usernameLineEdit;
     QLineEdit *passwordLineEdit;
     QComboBox *roleComboBox;

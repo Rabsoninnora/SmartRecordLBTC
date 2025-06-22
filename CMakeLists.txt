@@ -31,6 +31,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         mainwindow.h mainwindow.cpp mainwindow.ui
         mydb.h mydb.cpp
         useraddmin.h useraddmin.cpp useraddmin.ui
+        dashboard.h dashboard.cpp dashboard.ui
 
     )
 # Define target properties for Android with Qt 6 as:

@@ -6,10 +6,11 @@
 UserAddmin::UserAddmin(QWidget *parent)
     : QDialog(parent)
 {
+
     setWindowTitle("Login");
     resize(400, 250);  // This to Increase my dialog size
 
-    setWindowFlag(windowFlags() | Qt::WindowStaysOnTopHint);
+    setWindowFlags(windowFlags()| Qt::WindowStaysOnTopHint);
 
     // this to Create  my input widgets
     usernameLineEdit = new QLineEdit(this);
@@ -49,6 +50,12 @@ UserAddmin::UserAddmin(QWidget *parent)
     connect(resetButton, &QPushButton::clicked, this, &UserAddmin::handleReset);
 }
 
+
+
+
+
+
+
 void UserAddmin::handleSubmit()
 {
     QString username = usernameLineEdit->text();
@@ -68,9 +75,36 @@ void UserAddmin::handleSubmit()
     QByteArray hashedPassword = QCryptographicHash::hash(password.toUtf8(), QCryptographicHash::Sha256).toHex();
     //Check againist the appropriate table based on the role
     QSqlQuery GetUser(MyDB::getInstance()->getDBInstance());
+
     if (role=="Admin"){
         GetUser .prepare("SELECT * FROM Admin_login WHERE username = :username AND password = :password");
+    }else if(role=="Student"){
+        GetUser .prepare("SELECT * FROM Userlogin WHERE username = :username AND password = :password");
+    } else{
+        QMessageBox::warning(this, "Warning!", "Please select a valid account type.");
+        return; // Exit if no valid role is selected
+    }
 
+
+    ////////////////////////////////////////////////////////////////////////////////////////////
+    GetUser.bindValue(":username", username);
+    GetUser.bindValue(":password", password);// use hashed password
+
+    if(GetUser.exec()){
+        int UserFindCount = 0;
+        while (GetUser.next()) {
+            UserFindCount++; //Count valid users
+        }
+        if(UserFindCount==1){ //If user and password are correct
+            ptrDashboard = new Dashboard(this);
+            ptrDashboard->show();
+            this->hide();
+        } else {
+            QMessageBox::warning(this,"warning", "Invalid username or password");
+        }
+
+    } else{
+        QMessageBox::critical(this, "Database Error", "Failed to execute query:" + GetUser.lastError().text());
     }
 }
 

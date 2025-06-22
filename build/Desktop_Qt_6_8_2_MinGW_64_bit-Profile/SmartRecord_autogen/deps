@@ -10,6 +10,8 @@ SmartRecord_autogen/timestamp: \
 	C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/CMakeFiles/3.30.5/CMakeRCCompiler.cmake \
 	C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/CMakeFiles/3.30.5/CMakeSystem.cmake \
 	C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartRecord_autogen/moc_predefs.h \
+	C:/Project@cosmas/SmartRecord/dashboard.cpp \
+	C:/Project@cosmas/SmartRecord/dashboard.h \
 	C:/Project@cosmas/SmartRecord/main.cpp \
 	C:/Project@cosmas/SmartRecord/mainwindow.cpp \
 	C:/Project@cosmas/SmartRecord/mainwindow.h \
@@ -628,6 +630,7 @@ SmartRecord_autogen/timestamp: \
 	C:/Users/DUBE/QT/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
 	C:/Project@cosmas/SmartRecord/adminlogin.ui \
 	C:/Project@cosmas/SmartRecord/adminpanel.ui \
+	C:/Project@cosmas/SmartRecord/dashboard.ui \
 	C:/Project@cosmas/SmartRecord/mainwindow.ui \
 	C:/Project@cosmas/SmartRecord/smartrecordlbtc.ui \
 	C:/Project@cosmas/SmartRecord/studentregistration.ui \
