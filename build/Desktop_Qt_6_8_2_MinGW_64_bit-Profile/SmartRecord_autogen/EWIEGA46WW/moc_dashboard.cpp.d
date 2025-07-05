@@ -5,6 +5,7 @@ C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartR
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/q20memory.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/q20type_traits.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/q23utility.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qabstractitemmodel.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qalgorithms.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qanystringview.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qarraydata.h \
@@ -45,12 +46,15 @@ C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartR
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qglobalstatic.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qhash.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qhashfunctions.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qiodevice.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qiodevicebase.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qitemselectionmodel.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qiterable.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qiterator.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qlatin1stringview.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qline.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qlist.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qlocale.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qlogging.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qmalloc.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qmap.h \
@@ -71,6 +75,7 @@ C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartR
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qprocessordetection.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qrect.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qrefcount.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qregularexpression.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qscopedpointer.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qscopeguard.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qset.h \
@@ -114,6 +119,7 @@ C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartR
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qtversionchecks.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qtypeinfo.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qtypes.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qurl.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qutf8stringview.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qvariant.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qvarlengtharray.h \
@@ -133,21 +139,73 @@ C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartR
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qkeysequence.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qpaintdevice.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qpalette.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qpen.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qpicture.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qpixelformat.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qpixmap.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qpolygon.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qregion.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qrgb.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qrgba64.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qtextcursor.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qtextdocument.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qtextformat.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qtextoption.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qtgui-config.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qtguiexports.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qtguiglobal.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qtransform.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qvalidator.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qwindowdefs_win.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/QCheckBox \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/QDialog \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/QFormLayout \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/QHBoxLayout \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/QHeaderView \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/QLabel \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/QLayout \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/QLineEdit \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/QListWidget \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/QMessageBox \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/QPushButton \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/QSpinBox \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/QStackedWidget \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/QTableWidget \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/QVBoxLayout \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qabstractbutton.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qabstractitemview.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qabstractslider.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qabstractspinbox.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qboxlayout.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qcheckbox.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qdialog.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qformlayout.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qframe.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qgridlayout.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qheaderview.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qlabel.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qlayout.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qlayoutitem.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qlineedit.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qlistview.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qlistwidget.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qmessagebox.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qpushbutton.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qrubberband.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qsizepolicy.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qslider.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qspinbox.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qstackedwidget.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qstyle.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qstyleoption.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qtabbar.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qtableview.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qtablewidget.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qtabwidget.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qtwidgets-config.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h \

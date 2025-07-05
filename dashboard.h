@@ -2,6 +2,19 @@
 #define DASHBOARD_H
 
 #include <QDialog>
+#include <QListWidget>
+#include <QStackedWidget>
+#include <QPushButton>
+#include <QVBoxLayout>
+#include <QHBoxLayout>
+#include <QLabel>
+#include <QTableWidget>
+#include <QFormLayout>
+#include <QLineEdit>
+#include <QSpinBox>
+#include <QCheckBox>
+#include <QMessageBox>
+#include <QHeaderView>
 
 namespace Ui {
 class Dashboard;
@@ -15,8 +28,27 @@ public:
     explicit Dashboard(QWidget *parent = nullptr);
     ~Dashboard();
 
+private slots:
+    void switchDepartment();
+    void showStudentManagement();
+    void showCourseManagement();
+    void showReports();
+    void showSettings();
+
 private:
     Ui::Dashboard *ui;
+    QListWidget *departmentList;
+    QStackedWidget *mainContent;
+
+    void setupUI();
+    void setupConnections();
+    QWidget* createStudentManagementWidget();
+    QWidget* createCourseManagementWidget();
+    QWidget* createReportWidget();
+    QWidget* createSettingsWidget();
+    QString loadStylesheet();
+
+    QPushButton* createNavButton(const QString &text, const QString &objectName);
 };
 
 #endif // DASHBOARD_H
