@@ -16,8 +16,8 @@ Dashboard::Dashboard(QWidget *parent)
     setupConnections();
 
     QStringList departments = {
-        "Business Administration",
-        "Hospitality Management",
+        "Business",
+        "Hospitality",
         "Engineering",
         "Computer Science",
         "Arts & Humanities",
@@ -48,12 +48,13 @@ void Dashboard::setupUI()
     leftPanel->setFixedWidth(250);
     QVBoxLayout *leftLayout = new QVBoxLayout(leftPanel);
 
-    QLabel *titleLabel = new QLabel("COLLEGE DASHBOARD", this);
+    QLabel *titleLabel = new QLabel("DASHBOARD", this);
     titleLabel->setAlignment(Qt::AlignCenter);
     titleLabel->setStyleSheet("font-weight: bold; font-size: 18px; margin-bottom: 10px;");
 
     QLabel *deptLabel = new QLabel("Departments", this);
-    deptLabel->setStyleSheet("font-size: 14px; margin-top: 10px;");
+
+    deptLabel->setStyleSheet("font-size: 14px; margin-top: 10px; padding 40px; background-color: rgb(0, 81, 121); color: white; border: 1px; border-radius: 5px;");
 
     // Navigation Buttons
     QPushButton *studentsBtn = createNavButton("Students", "btnStudents");
@@ -170,6 +171,14 @@ QString Dashboard::loadStylesheet() {
         QCheckBox {
             color: #f0f0f0;
         }
+   QStringList{
+        font-size: 14px;
+        padding 40px;
+        background-color: rgb(0, 81, 121);
+        color: white; border: 1px;
+     border-radius: 5px;
+
+        }
     )";
 }
 
@@ -190,7 +199,7 @@ QWidget* Dashboard::createStudentManagementWidget()
 
     studentTable->insertRow(0);
     studentTable->setItem(0, 0, new QTableWidgetItem("1001"));
-    studentTable->setItem(0, 1, new QTableWidgetItem("John Doe"));
+    studentTable->setItem(0, 1, new QTableWidgetItem("Poniso"));
     studentTable->setItem(0, 2, new QTableWidgetItem("Computer Science"));
     studentTable->setItem(0, 3, new QTableWidgetItem("Senior"));
     studentTable->setItem(0, 4, new QTableWidgetItem("3.8"));
@@ -205,20 +214,20 @@ QWidget* Dashboard::createCourseManagementWidget()
     QWidget *widget = new QWidget(this);
     QVBoxLayout *layout = new QVBoxLayout(widget);
 
-    QLabel *title = new QLabel("Course Management", widget);
+    QLabel *title = new QLabel("Lusaka Business & Technical College Current Courses", widget);
     title->setAlignment(Qt::AlignCenter);
     title->setStyleSheet("font-weight: bold; font-size: 24px; margin-bottom: 20px;");
 
     QTableWidget *courseTable = new QTableWidget(0, 4, widget);
-    courseTable->setHorizontalHeaderLabels({"Code", "Name", "Credits", "Instructor"});
+    courseTable->setHorizontalHeaderLabels({"Department", "Code", "CourseName", "Total Subject"});
     courseTable->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
     courseTable->setEditTriggers(QAbstractItemView::NoEditTriggers);
 
     courseTable->insertRow(0);
-    courseTable->setItem(0, 0, new QTableWidgetItem("CS101"));
-    courseTable->setItem(0, 1, new QTableWidgetItem("Introduction to Programming"));
-    courseTable->setItem(0, 2, new QTableWidgetItem("3"));
-    courseTable->setItem(0, 3, new QTableWidgetItem("Dr. Johnson"));
+    courseTable->setItem(0, 0, new QTableWidgetItem("Business"));
+    courseTable->setItem(0, 1, new QTableWidgetItem("DCS"));
+    courseTable->setItem(0, 2, new QTableWidgetItem("Diploma in Computer Studies"));
+    courseTable->setItem(0, 3, new QTableWidgetItem("5"));
 
     layout->addWidget(title);
     layout->addWidget(courseTable);
