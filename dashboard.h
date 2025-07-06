@@ -34,6 +34,14 @@ private slots:
     void showCourseManagement();
     void showReports();
     void showSettings();
+    void viewStudents();          //
+    void registerStudent();       //
+    void manageData();            //
+    void logout();                //
+
+
+
+
 
 private:
     Ui::Dashboard *ui;

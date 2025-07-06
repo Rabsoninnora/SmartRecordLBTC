@@ -61,6 +61,16 @@ void Dashboard::setupUI()
     QPushButton *coursesBtn = createNavButton("Courses", "btnCourses");
     QPushButton *reportsBtn = createNavButton("Reports", "btnReports");
     QPushButton *settingsBtn = createNavButton("Settings", "btnSettings");
+    QPushButton *viewStudentsBtn = createNavButton("View Students", "btnViewStudents");
+    QPushButton *registerStudentBtn = createNavButton("Register Student", "btnRegisterStudent");
+    QPushButton *manageDataBtn = createNavButton("Manage Data", "btnManageData");
+    QPushButton *logoutBtn = createNavButton("Logout", "btnLogout");
+
+    leftLayout->addWidget(viewStudentsBtn);
+    leftLayout->addWidget(registerStudentBtn);
+    leftLayout->addWidget(manageDataBtn);
+    leftLayout->addWidget(logoutBtn);
+
 
     leftLayout->addWidget(titleLabel);
     leftLayout->addWidget(deptLabel);
@@ -81,6 +91,25 @@ void Dashboard::setupUI()
     mainContent->addWidget(createCourseManagementWidget());
     mainContent->addWidget(createReportWidget());
     mainContent->addWidget(createSettingsWidget());
+    QHBoxLayout *topRightButtons = new QHBoxLayout();
+    topRightButtons->addStretch(); // Push buttons to the right
+
+    QPushButton *minimizeBtn = new QPushButton("_", this);
+    QPushButton *closeBtn = new QPushButton("X", this);
+    minimizeBtn->setFixedSize(30, 30);
+    closeBtn->setFixedSize(30, 30);
+
+    minimizeBtn->setStyleSheet("background-color: #2c2f48; color: white; border: none;");
+    closeBtn->setStyleSheet("background-color: #e74c3c; color: white; border: none;");
+
+    topRightButtons->addWidget(minimizeBtn);
+    topRightButtons->addWidget(closeBtn);
+
+    connect(minimizeBtn, &QPushButton::clicked, this, &Dashboard::showMinimized);
+    connect(closeBtn, &QPushButton::clicked, this, &Dashboard::close);
+
+    // Add to main layout
+    mainLayout->addLayout(topRightButtons);
 
     mainLayout->addWidget(leftPanel);
     mainLayout->addWidget(rightPanel, 1);
@@ -96,13 +125,17 @@ void Dashboard::setupConnections()
     connect(findChild<QPushButton*>("btnCourses"), &QPushButton::clicked, this, &Dashboard::showCourseManagement);
     connect(findChild<QPushButton*>("btnReports"), &QPushButton::clicked, this, &Dashboard::showReports);
     connect(findChild<QPushButton*>("btnSettings"), &QPushButton::clicked, this, &Dashboard::showSettings);
+    connect(findChild<QPushButton*>("btnViewStudents"), &QPushButton::clicked, this, &Dashboard::viewStudents);
+    connect(findChild<QPushButton*>("btnRegisterStudent"), &QPushButton::clicked, this, &Dashboard::registerStudent);
+    connect(findChild<QPushButton*>("btnManageData"), &QPushButton::clicked, this, &Dashboard::manageData);
+    connect(findChild<QPushButton*>("btnLogout"), &QPushButton::clicked, this, &Dashboard::logout);
+
 }
 
 void Dashboard::switchDepartment()
 {
-    int currentRow = departmentList->currentRow();
-    QString department = departmentList->item(currentRow)->text();
-    QMessageBox::information(this, "Department Changed", QString("Now viewing: %1").arg(department));
+
+
 }
 
 void Dashboard::showStudentManagement() { mainContent->setCurrentIndex(0); }
@@ -288,4 +321,19 @@ QWidget* Dashboard::createSettingsWidget()
     layout->addStretch();
 
     return widget;
+}
+void Dashboard::viewStudents() {
+    QMessageBox::information(this, "View Students", "Viewing all students...");
+}
+
+void Dashboard::registerStudent() {
+    QMessageBox::information(this, "Register Student", "Register a new student...");
+}
+
+void Dashboard::manageData() {
+    QMessageBox::information(this, "Manage Data", "Manage system data...");
+}
+
+void Dashboard::logout() {
+    QApplication::quit();
 }
