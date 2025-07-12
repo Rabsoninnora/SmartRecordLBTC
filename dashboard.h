@@ -15,6 +15,8 @@
 #include <QCheckBox>
 #include <QMessageBox>
 #include <QHeaderView>
+#include <QApplication>
+#include "adduser.h"
 
 namespace Ui {
 class Dashboard;
@@ -34,19 +36,16 @@ private slots:
     void showCourseManagement();
     void showReports();
     void showSettings();
-    void viewStudents();          //
-    void registerStudent();       //
-    void manageData();            //
-    void logout();                //
-
-
-
-
+    void viewStudents();
+    void registerStudent();
+    void manageData();
+    void logout();
 
 private:
     Ui::Dashboard *ui;
     QListWidget *departmentList;
     QStackedWidget *mainContent;
+    AddUser *ptrAddUser;
 
     void setupUI();
     void setupConnections();
@@ -55,7 +54,6 @@ private:
     QWidget* createReportWidget();
     QWidget* createSettingsWidget();
     QString loadStylesheet();
-
     QPushButton* createNavButton(const QString &text, const QString &objectName);
 };
 

@@ -331,6 +331,12 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Project@cosmas/SmartRecord/adduser.h",
+			"MU",
+			"EWIEGA46WW/moc_adduser.cpp",
+			null
+		],
+		[
 			"C:/Project@cosmas/SmartRecord/adminlogin.h",
 			"MU",
 			"EWIEGA46WW/moc_adminlogin.cpp",
@@ -459,6 +465,7 @@
 	"SETTINGS_FILE" : "C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/CMakeFiles/SmartRecord_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "C:/Project@cosmas/SmartRecord/adduser.cpp", "MU", null ],
 		[ "C:/Project@cosmas/SmartRecord/adminlogin.cpp", "MU", null ],
 		[ "C:/Project@cosmas/SmartRecord/adminpanel.cpp", "MU", null ],
 		[ "C:/Project@cosmas/SmartRecord/dashboard.cpp", "MU", null ],

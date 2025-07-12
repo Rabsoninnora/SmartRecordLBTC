@@ -1,5 +1,6 @@
 C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartRecord_autogen/EWIEGA46WW/moc_dashboard.cpp: C:/Project@cosmas/SmartRecord/dashboard.h \
   C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartRecord_autogen/moc_predefs.h \
+  C:/Project@cosmas/SmartRecord/adduser.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/q20functional.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/q20iterator.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/q20memory.h \
@@ -31,10 +32,16 @@ C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartR
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qcontainerinfo.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qcontainertools_impl.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qcontiguouscache.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qcoreapplication.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qcoreapplication_platform.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qcoreevent.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qdarwinhelpers.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qdatastream.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qdeadlinetimer.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qdebug.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qelapsedtimer.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qendian.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qeventloop.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qexceptionhandling.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qflags.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qfloat16.h \
@@ -64,6 +71,7 @@ C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartR
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qmetatype.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qminmax.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qnamespace.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qnativeinterface.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qnumeric.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qobject.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qobject_impl.h \
@@ -134,8 +142,11 @@ C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartR
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qfont.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qfontinfo.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qfontmetrics.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qguiapplication.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qguiapplication_platform.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qicon.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qimage.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qinputmethod.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qkeysequence.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qpaintdevice.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qpalette.h \
@@ -158,6 +169,7 @@ C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartR
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qvalidator.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qwindowdefs_win.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/QApplication \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/QCheckBox \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/QDialog \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/QFormLayout \
@@ -179,6 +191,7 @@ C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartR
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qabstractslider.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qabstractspinbox.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qapplication.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qboxlayout.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qcheckbox.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qdialog.h \

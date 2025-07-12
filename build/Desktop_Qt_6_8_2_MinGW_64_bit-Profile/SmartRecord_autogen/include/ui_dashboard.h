@@ -23,7 +23,7 @@ public:
     {
         if (Dashboard->objectName().isEmpty())
             Dashboard->setObjectName("Dashboard");
-        Dashboard->resize(400, 300);
+        Dashboard->resize(679, 435);
 
         retranslateUi(Dashboard);
 
