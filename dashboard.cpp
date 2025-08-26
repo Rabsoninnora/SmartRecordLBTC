@@ -73,7 +73,7 @@ void Dashboard::setupUI()
     QPushButton *settingsBtn = createNavButton("Settings", "btnSettings");
     QPushButton *viewStudentsBtn = createNavButton("View Students", "btnViewStudents");
     QPushButton *registerStudentBtn = createNavButton("Register Student", "btnRegisterStudent");
-    QPushButton *manageDataBtn = createNavButton("Manage Data", "btnManageData");
+    QPushButton *manageDataBtn = createNavButton("Add User", "btnManageData");
     QPushButton *logoutBtn = createNavButton("Close App", "btnLogout");
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     leftLayout->addWidget(titleLabel);
@@ -186,7 +186,7 @@ QWidget* Dashboard::createStudentManagementWidget()
     title->setStyleSheet("font-weight: bold; font-size: 24px; margin-bottom: 20px;");
 
     QTableWidget *studentTable = new QTableWidget(0, 5, widget);
-    studentTable->setHorizontalHeaderLabels({"ID", "Name", "Program", "Year", "GPA"});
+    studentTable->setHorizontalHeaderLabels({"ID", "Name", "Program", "Year", "GPA/Score"});
     studentTable->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
     studentTable->setEditTriggers(QAbstractItemView::NoEditTriggers);
 
@@ -261,7 +261,7 @@ QWidget* Dashboard::createSettingsWidget()
     QFormLayout *formLayout = new QFormLayout();
 
     QLineEdit *adminEmail = new QLineEdit(widget);
-    adminEmail->setPlaceholderText("admin@college.edu");
+    adminEmail->setPlaceholderText("admin@lbtc.edu");
     formLayout->addRow("Admin Email:", adminEmail);
 
     QSpinBox *dataRetention = new QSpinBox(widget);

@@ -26,200 +26,159 @@
     <string>Back</string>
    </property>
   </widget>
-  <widget class="QToolBox" name="toolBox">
+  <widget class="QTabWidget" name="tabWidget">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>90</y>
-     <width>1019</width>
-     <height>551</height>
+     <x>90</x>
+     <y>150</y>
+     <width>813</width>
+     <height>461</height>
     </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true"/>
    </property>
    <property name="currentIndex">
     <number>1</number>
    </property>
-   <widget class="QWidget" name="page_3">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>1019</width>
-      <height>503</height>
-     </rect>
-    </property>
-    <attribute name="label">
-     <string>Page 1</string>
+   <widget class="QWidget" name="Admin">
+    <attribute name="title">
+     <string>Adminstrator</string>
     </attribute>
-    <widget class="QTableWidget" name="tableWidget_2">
+    <widget class="QPushButton" name="btn_View_admin">
      <property name="geometry">
       <rect>
-       <x>450</x>
-       <y>140</y>
-       <width>481</width>
-       <height>341</height>
-      </rect>
-     </property>
-     <column>
-      <property name="text">
-       <string>User_ID</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>Password</string>
-      </property>
-     </column>
-     <column>
-      <property name="text">
-       <string>User_name</string>
-      </property>
-     </column>
-    </widget>
-    <widget class="QPushButton" name="pushButton_11">
-     <property name="geometry">
-      <rect>
-       <x>450</x>
-       <y>100</y>
-       <width>481</width>
+       <x>250</x>
+       <y>20</y>
+       <width>111</width>
        <height>31</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> 
+QPushButton{
+                    color: rgb(255, 255, 255);
+                    border:1px solid green;
+                    border-radius: 8px;
+                    padding: 0 8px;
+                    background-color: rgb(255, 267, 245);
+                    font: 500 11pt ;
+                   
+
+}
+
+ </string>
      </property>
      <property name="text">
-      <string>Admin login details</string>
+      <string>View Record</string>
      </property>
-    </widget>
-    <widget class="QPushButton" name="btn_Delete_admin">
-     <property name="geometry">
-      <rect>
-       <x>460</x>
-       <y>20</y>
-       <width>91</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Delete</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_Admin_ID">
-     <property name="geometry">
-      <rect>
-       <x>280</x>
-       <y>20</y>
-       <width>161</width>
-       <height>31</height>
-      </rect>
+     <property name="icon">
+      <iconset theme="QIcon::ThemeIcon::EditSelectAll"/>
      </property>
     </widget>
     <widget class="QPushButton" name="btn_Update_admin">
      <property name="geometry">
       <rect>
-       <x>150</x>
+       <x>430</x>
        <y>20</y>
-       <width>111</width>
+       <width>91</width>
        <height>31</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">  
+QPushButton{
+                    color: rgb(255, 255, 255);
+                    border:1px solid green;
+                    border-radius: 8px;
+                    padding: 0 8px;
+                    background-color: rgb(255, 267, 245);
+                    font: 500 11pt ;
+                   
+
+}
+
+ </string>
      </property>
      <property name="text">
       <string>Update</string>
      </property>
+     <property name="icon">
+      <iconset theme="QIcon::ThemeIcon::DocumentSave"/>
+     </property>
     </widget>
-    <widget class="QPushButton" name="btn_View_admin">
+    <widget class="QLineEdit" name="lineEdit_Admin_ID">
      <property name="geometry">
       <rect>
-       <x>20</x>
+       <x>550</x>
        <y>20</y>
-       <width>111</width>
+       <width>121</width>
        <height>31</height>
       </rect>
      </property>
-     <property name="text">
-      <string>View Record</string>
+     <property name="styleSheet">
+      <string notr="true">  QLineEdit {
+  border:3px solid red;
+  border-radius: 10px;
+  padding: 6px 6px;
+  background: rgb(255, 255, 255);
+  font: 700 12pt ;
+  color: rgb(0, 0, 0);;
+}</string>
+     </property>
+     <property name="placeholderText">
+      <string>Enter ID *</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_12">
+    <widget class="QPushButton" name="btn_Delete_admin">
      <property name="geometry">
       <rect>
-       <x>140</x>
-       <y>160</y>
-       <width>91</width>
-       <height>71</height>
+       <x>680</x>
+       <y>20</y>
+       <width>81</width>
+       <height>31</height>
       </rect>
      </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit__username_admin">
-     <property name="geometry">
-      <rect>
-       <x>70</x>
-       <y>250</y>
-       <width>241</width>
-       <height>41</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_admin_password">
-     <property name="geometry">
-      <rect>
-       <x>70</x>
-       <y>320</y>
-       <width>241</width>
-       <height>41</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="btn_Insert_admin">
-     <property name="geometry">
-      <rect>
-       <x>70</x>
-       <y>380</y>
-       <width>71</width>
-       <height>41</height>
-      </rect>
+     <property name="styleSheet">
+      <string notr="true"> 
+QPushButton{
+                    color: rgb(255, 255, 255);
+                    border:1px solid red;
+                    border-radius: 8px;
+                    padding: 0 8px;
+                    background-color: rgb(255, 267, 245);
+                    font: 500 11pt ;
+                   
+
+}
+
+ 
+ </string>
      </property>
      <property name="text">
-      <string>Insert</string>
+      <string>Delete</string>
+     </property>
+     <property name="icon">
+      <iconset theme="edit-delete"/>
      </property>
     </widget>
-    <widget class="QPushButton" name="btn_Reset_admin">
+    <widget class="QTableWidget" name="tableWidget_2">
      <property name="geometry">
       <rect>
-       <x>230</x>
-       <y>380</y>
-       <width>71</width>
-       <height>41</height>
+       <x>250</x>
+       <y>70</y>
+       <width>511</width>
+       <height>351</height>
       </rect>
      </property>
-     <property name="text">
-      <string>Reset</string>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QWidget" name="page_4">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>1019</width>
-      <height>503</height>
-     </rect>
-    </property>
-    <attribute name="label">
-     <string>Page 2</string>
-    </attribute>
-    <widget class="QTableWidget" name="tableWidget">
-     <property name="geometry">
-      <rect>
-       <x>450</x>
-       <y>140</y>
-       <width>481</width>
-       <height>341</height>
-      </rect>
+     <property name="styleSheet">
+      <string notr="true"> QTableWidget {
+    border: 2px solid rgb(0, 120, 215); /* A sleek blue border */
+    border-radius: 8px;
+    background-color: rgb(230, 240, 255); /* Soft blue background for readability */
+    color: rgb(33, 33, 33); /* Dark gray text for better contrast */
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+    gridline-color: rgb(200, 200, 200); /* Subtle grid lines */
+}
+</string>
      </property>
      <column>
       <property name="text">
@@ -228,137 +187,489 @@
      </column>
      <column>
       <property name="text">
-       <string>Password</string>
+       <string>User_name</string>
       </property>
      </column>
      <column>
       <property name="text">
-       <string>User_name</string>
+       <string>Password</string>
       </property>
      </column>
     </widget>
     <widget class="QPushButton" name="pushButton_7">
      <property name="geometry">
       <rect>
-       <x>450</x>
-       <y>90</y>
-       <width>481</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Student login details</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="btn_Delete_User">
-     <property name="geometry">
-      <rect>
-       <x>460</x>
-       <y>20</y>
-       <width>91</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Delete</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_User_ID">
-     <property name="geometry">
-      <rect>
-       <x>280</x>
-       <y>20</y>
-       <width>161</width>
-       <height>31</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="btn_Update_User">
-     <property name="geometry">
-      <rect>
-       <x>150</x>
-       <y>20</y>
-       <width>111</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Update</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="btn_View_User">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>20</y>
-       <width>111</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>View Record</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="btn_Insert_User">
-     <property name="geometry">
-      <rect>
        <x>70</x>
-       <y>380</y>
-       <width>71</width>
-       <height>41</height>
+       <y>100</y>
+       <width>81</width>
+       <height>61</height>
       </rect>
      </property>
-     <property name="text">
-      <string>Insert</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="btn_Reset_User">
-     <property name="geometry">
-      <rect>
-       <x>230</x>
-       <y>380</y>
-       <width>71</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Reset</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton">
-     <property name="geometry">
-      <rect>
-       <x>140</x>
-       <y>160</y>
-       <width>91</width>
-       <height>71</height>
-      </rect>
+     <property name="styleSheet">
+      <string notr="true">
+QPushButton{
+                    color: rgb(255, 255, 255);
+                    border:0px solid green;
+                    border-radius: 8px;
+                    padding: 0 8px;
+                     background-color: rgb(255, 255, 255); /* Soft blue background for readability */
+                    font: 600 11pt ;
+
+}
+
+
+    </string>
      </property>
      <property name="text">
       <string/>
      </property>
      <property name="icon">
-      <iconset theme="user-available"/>
+      <iconset theme="QIcon::ThemeIcon::AddressBookNew"/>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>45</width>
+       <height>45</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_User_name_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>200</y>
+       <width>221</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">  QLineEdit {
+  border:3px solid gray;
+  border-radius: 10px;
+  padding: 6px 6px;
+  background: rgb(255, 255, 255);
+  font: 700 12pt ;
+  color: rgb(0, 0, 0);;
+}</string>
+     </property>
+     <property name="placeholderText">
+      <string>Username *</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_User_Password_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>270</y>
+       <width>221</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">  QLineEdit {
+  border:3px solid gray;
+  border-radius: 10px;
+  padding: 6px 6px;
+  background: rgb(255, 255, 255);
+  font: 700 12pt ;
+  color: rgb(0, 0, 0);;
+}</string>
+     </property>
+     <property name="placeholderText">
+      <string>Password *</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_Insert_User_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>340</y>
+       <width>81</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">  
+QPushButton{
+                    color: rgb(255, 255, 255);
+                    border:2px solid green;
+                    border-radius: 8px;
+                    padding: 0 8px;
+                    background-color: rgb(255, 267, 245);
+                    font: 500 11pt ;
+                   
+
+}
+
+ </string>
+     </property>
+     <property name="text">
+      <string> Submit</string>
+     </property>
+     <property name="icon">
+      <iconset theme="QIcon::ThemeIcon::DocumentSaveAs"/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_Reset_User_2">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>340</y>
+       <width>91</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">  
+QPushButton{
+                    color: rgb(255, 255, 255);
+                    border:2px solid green;
+                    border-radius: 8px;
+                    padding: 0 8px;
+                    background-color: rgb(255, 267, 245);
+                    font: 500 11pt ;
+                   
+
+}
+
+ </string>
+     </property>
+     <property name="text">
+      <string>Reset</string>
+     </property>
+     <property name="icon">
+      <iconset theme="QIcon::ThemeIcon::DocumentRevert"/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="Students">
+    <attribute name="title">
+     <string>Students</string>
+    </attribute>
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>70</y>
+       <width>541</width>
+       <height>351</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> QTableWidget {
+    border: 2px solid rgb(0, 120, 215); /* A sleek blue border */
+    border-radius: 8px;
+    background-color: rgb(230, 240, 255); /* Soft blue background for readability */
+    color: rgb(33, 33, 33); /* Dark gray text for better contrast */
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+    gridline-color: rgb(200, 200, 200); /* Subtle grid lines */
+}
+</string>
+     </property>
+     <column>
+      <property name="text">
+       <string>User_ID</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>User_name</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Password</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QPushButton" name="btn_View_User">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>10</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">  
+QPushButton{
+                    color: rgb(255, 255, 255);
+                    border:2px solid green;
+                    border-radius: 8px;
+                    padding: 0 8px;
+                    background-color: rgb(255, 267, 245);
+                    font: 500 11pt ;
+                   
+
+}
+
+ </string>
+     </property>
+     <property name="text">
+      <string>View Record</string>
+     </property>
+     <property name="icon">
+      <iconset theme="QIcon::ThemeIcon::EditSelectAll"/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_Update_User">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>10</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">  
+QPushButton{
+                    color: rgb(255, 255, 255);
+                    border:2px solid green;
+                    border-radius: 8px;
+                    padding: 0 8px;
+                    background-color: rgb(255, 267, 245);
+                    font: 500 11pt ;
+                   
+
+}
+
+ </string>
+     </property>
+     <property name="text">
+      <string>Update</string>
+     </property>
+     <property name="icon">
+      <iconset theme="QIcon::ThemeIcon::DocumentSave"/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_User_ID">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>10</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">  QLineEdit {
+  border:3px solid red;
+  border-radius: 10px;
+  padding: 6px 6px;
+  background: rgb(255, 255, 255);
+  font: 700 12pt ;
+  color: rgb(0, 0, 0);;
+}</string>
+     </property>
+     <property name="placeholderText">
+      <string>Enter ID *</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_Delete_User">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>10</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">  
+QPushButton{
+                    color: rgb(255, 255, 255);
+                    border:1px solid red;
+                    border-radius: 8px;
+                    padding: 0 8px;
+                    background-color: rgb(255, 267, 245);
+                    font: 500 11pt ;
+                   
+
+}
+
+ </string>
+     </property>
+     <property name="text">
+      <string>Delete</string>
+     </property>
+     <property name="icon">
+      <iconset theme="QIcon::ThemeIcon::EditDelete"/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_6">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>80</y>
+       <width>81</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QPushButton{
+                    color: rgb(255, 255, 255);
+                    border:0px solid green;
+                    border-radius: 8px;
+                    padding: 0 8px;
+                     background-color: rgb(255, 255, 255); /* Soft blue background for readability */
+                    font: 600 11pt ;
+
+}
+
+
+    </string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset theme="QIcon::ThemeIcon::AddressBookNew"/>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>45</width>
+       <height>45</height>
+      </size>
      </property>
     </widget>
     <widget class="QLineEdit" name="lineEdit_User_name">
      <property name="geometry">
       <rect>
-       <x>70</x>
-       <y>250</y>
-       <width>241</width>
+       <x>20</x>
+       <y>190</y>
+       <width>221</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">  QLineEdit {
+  border:3px solid gray;
+  border-radius: 10px;
+  padding: 6px 6px;
+  background: rgb(255, 255, 255);
+  font: 700 12pt ;
+  color: rgb(0, 0, 0);;
+}</string>
+     </property>
+     <property name="placeholderText">
+      <string>Username *</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="lineEdit_User_Password">
      <property name="geometry">
       <rect>
-       <x>70</x>
-       <y>320</y>
-       <width>241</width>
+       <x>20</x>
+       <y>260</y>
+       <width>221</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">  QLineEdit {
+  border:3px solid gray;
+  border-radius: 10px;
+  padding: 6px 6px;
+  background: rgb(255, 255, 255);
+  font: 700 12pt ;
+  color: rgb(0, 0, 0);;
+}</string>
+     </property>
+     <property name="placeholderText">
+      <string>Password *</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_Insert_User">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>320</y>
+       <width>81</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">  
+QPushButton{
+                    color: rgb(255, 255, 255);
+                    border:3px solid green;
+                    border-radius: 8px;
+                    padding: 0 8px;
+                    background-color: rgb(255, 267, 245);
+                    font: 500 11pt ;
+                   
+
+}
+
+ </string>
+     </property>
+     <property name="text">
+      <string> Submit</string>
+     </property>
+     <property name="icon">
+      <iconset theme="QIcon::ThemeIcon::DocumentSaveAs"/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_Reset_User">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>320</y>
+       <width>91</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">  
+QPushButton{
+                    color: rgb(255, 255, 255);
+                    border:3px solid green;
+                    border-radius: 8px;
+                    padding: 0 8px;
+                    background-color: rgb(255, 267, 245);
+                    font: 500 11pt ;
+                   
+
+}
+
+ </string>
+     </property>
+     <property name="text">
+      <string>Reset</string>
+     </property>
+     <property name="icon">
+      <iconset theme="QIcon::ThemeIcon::DocumentRevert"/>
      </property>
     </widget>
    </widget>

@@ -361,10 +361,10 @@ C:/Project@cosmas/SmartRecord/adminlogin.h
  mdp:C:/Users/DUBE/QT/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h
  mdp:C:/Users/DUBE/QT/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h
  mdp:C:/Users/DUBE/QT/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
-C:/Project@cosmas/SmartRecord/useraccounts.h
+C:/Project@cosmas/SmartRecord/adminpanel.h
  mmc:Q_OBJECT
+ mdp:C:/Project@cosmas/SmartRecord/adminpanel.h
  mdp:C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartRecord_autogen/moc_predefs.h
- mdp:C:/Project@cosmas/SmartRecord/useraccounts.h
  mdp:C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/q20functional.h
  mdp:C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/q20iterator.h
  mdp:C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/q20memory.h
@@ -723,10 +723,10 @@ C:/Project@cosmas/SmartRecord/useraccounts.h
  mdp:C:/Users/DUBE/QT/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h
  mdp:C:/Users/DUBE/QT/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h
  mdp:C:/Users/DUBE/QT/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
-C:/Project@cosmas/SmartRecord/adminpanel.h
+C:/Project@cosmas/SmartRecord/useraccounts.h
  mmc:Q_OBJECT
- mdp:C:/Project@cosmas/SmartRecord/adminpanel.h
  mdp:C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartRecord_autogen/moc_predefs.h
+ mdp:C:/Project@cosmas/SmartRecord/useraccounts.h
  mdp:C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/q20functional.h
  mdp:C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/q20iterator.h
  mdp:C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/q20memory.h
