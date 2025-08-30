@@ -38,7 +38,9 @@ public:
     QLineEdit *lineEdit_User_Password_2;
     QPushButton *btn_Insert_User_2;
     QPushButton *btn_Reset_User_2;
-    QWidget *Students;
+    QPushButton *pushButton_2;
+    QPushButton *pushButton_4;
+    QWidget *HOS;
     QTableWidget *tableWidget;
     QPushButton *btn_View_User;
     QPushButton *btn_Update_User;
@@ -49,27 +51,32 @@ public:
     QLineEdit *lineEdit_User_Password;
     QPushButton *btn_Insert_User;
     QPushButton *btn_Reset_User;
+    QPushButton *pushButton;
+    QPushButton *pushButton_3;
 
     void setupUi(QDialog *AddUser)
     {
         if (AddUser->objectName().isEmpty())
             AddUser->setObjectName("AddUser");
-        AddUser->resize(1019, 710);
+        AddUser->resize(1154, 710);
         btn_adduser_back = new QPushButton(AddUser);
         btn_adduser_back->setObjectName("btn_adduser_back");
-        btn_adduser_back->setGeometry(QRect(930, 10, 61, 21));
+        btn_adduser_back->setGeometry(QRect(1050, 30, 91, 41));
+        QIcon icon(QIcon::fromTheme(QIcon::ThemeIcon::DocumentRevert));
+        btn_adduser_back->setIcon(icon);
         tabWidget = new QTabWidget(AddUser);
         tabWidget->setObjectName("tabWidget");
-        tabWidget->setGeometry(QRect(90, 150, 813, 461));
+        tabWidget->setGeometry(QRect(130, 140, 941, 461));
+        tabWidget->setStyleSheet(QString::fromUtf8(" background-color: #1e1e2f;"));
         Admin = new QWidget();
         Admin->setObjectName("Admin");
         btn_View_admin = new QPushButton(Admin);
         btn_View_admin->setObjectName("btn_View_admin");
-        btn_View_admin->setGeometry(QRect(250, 20, 111, 31));
-        btn_View_admin->setStyleSheet(QString::fromUtf8(" \n"
+        btn_View_admin->setGeometry(QRect(420, 340, 121, 41));
+        btn_View_admin->setStyleSheet(QString::fromUtf8("   \n"
 "QPushButton{\n"
 "                    color: rgb(255, 255, 255);\n"
-"                    border:1px solid green;\n"
+"                    border:2px solid green;\n"
 "                    border-radius: 8px;\n"
 "                    padding: 0 8px;\n"
 "                    background-color: rgb(255, 267, 245);\n"
@@ -79,15 +86,15 @@ public:
 "}\n"
 "\n"
 " "));
-        QIcon icon(QIcon::fromTheme(QIcon::ThemeIcon::EditSelectAll));
-        btn_View_admin->setIcon(icon);
+        QIcon icon1(QIcon::fromTheme(QIcon::ThemeIcon::EditSelectAll));
+        btn_View_admin->setIcon(icon1);
         btn_Update_admin = new QPushButton(Admin);
         btn_Update_admin->setObjectName("btn_Update_admin");
-        btn_Update_admin->setGeometry(QRect(430, 20, 91, 31));
-        btn_Update_admin->setStyleSheet(QString::fromUtf8("  \n"
+        btn_Update_admin->setGeometry(QRect(540, 340, 111, 41));
+        btn_Update_admin->setStyleSheet(QString::fromUtf8("   \n"
 "QPushButton{\n"
 "                    color: rgb(255, 255, 255);\n"
-"                    border:1px solid green;\n"
+"                    border:2px solid green;\n"
 "                    border-radius: 8px;\n"
 "                    padding: 0 8px;\n"
 "                    background-color: rgb(255, 267, 245);\n"
@@ -97,11 +104,11 @@ public:
 "}\n"
 "\n"
 " "));
-        QIcon icon1(QIcon::fromTheme(QIcon::ThemeIcon::DocumentSave));
-        btn_Update_admin->setIcon(icon1);
+        QIcon icon2(QIcon::fromTheme(QIcon::ThemeIcon::DocumentSave));
+        btn_Update_admin->setIcon(icon2);
         lineEdit_Admin_ID = new QLineEdit(Admin);
         lineEdit_Admin_ID->setObjectName("lineEdit_Admin_ID");
-        lineEdit_Admin_ID->setGeometry(QRect(550, 20, 121, 31));
+        lineEdit_Admin_ID->setGeometry(QRect(650, 340, 151, 41));
         lineEdit_Admin_ID->setStyleSheet(QString::fromUtf8("  QLineEdit {\n"
 "  border:3px solid red;\n"
 "  border-radius: 10px;\n"
@@ -112,7 +119,7 @@ public:
 "}"));
         btn_Delete_admin = new QPushButton(Admin);
         btn_Delete_admin->setObjectName("btn_Delete_admin");
-        btn_Delete_admin->setGeometry(QRect(680, 20, 81, 31));
+        btn_Delete_admin->setGeometry(QRect(810, 340, 101, 41));
         btn_Delete_admin->setStyleSheet(QString::fromUtf8(" \n"
 "QPushButton{\n"
 "                    color: rgb(255, 255, 255);\n"
@@ -127,8 +134,8 @@ public:
 "\n"
 " \n"
 " "));
-        QIcon icon2(QIcon::fromTheme(QString::fromUtf8("edit-delete")));
-        btn_Delete_admin->setIcon(icon2);
+        QIcon icon3(QIcon::fromTheme(QString::fromUtf8("edit-delete")));
+        btn_Delete_admin->setIcon(icon3);
         tableWidget_2 = new QTableWidget(Admin);
         if (tableWidget_2->columnCount() < 3)
             tableWidget_2->setColumnCount(3);
@@ -139,7 +146,7 @@ public:
         QTableWidgetItem *__qtablewidgetitem2 = new QTableWidgetItem();
         tableWidget_2->setHorizontalHeaderItem(2, __qtablewidgetitem2);
         tableWidget_2->setObjectName("tableWidget_2");
-        tableWidget_2->setGeometry(QRect(250, 70, 511, 351));
+        tableWidget_2->setGeometry(QRect(400, 80, 531, 231));
         tableWidget_2->setStyleSheet(QString::fromUtf8(" QTableWidget {\n"
 "    border: 2px solid rgb(0, 120, 215); /* A sleek blue border */\n"
 "    border-radius: 8px;\n"
@@ -152,7 +159,7 @@ public:
 ""));
         pushButton_7 = new QPushButton(Admin);
         pushButton_7->setObjectName("pushButton_7");
-        pushButton_7->setGeometry(QRect(70, 100, 81, 61));
+        pushButton_7->setGeometry(QRect(220, 100, 81, 61));
         pushButton_7->setStyleSheet(QString::fromUtf8("\n"
 "QPushButton{\n"
 "                    color: rgb(255, 255, 255);\n"
@@ -166,12 +173,12 @@ public:
 "\n"
 "\n"
 "    "));
-        QIcon icon3(QIcon::fromTheme(QIcon::ThemeIcon::AddressBookNew));
-        pushButton_7->setIcon(icon3);
+        QIcon icon4(QIcon::fromTheme(QIcon::ThemeIcon::AddressBookNew));
+        pushButton_7->setIcon(icon4);
         pushButton_7->setIconSize(QSize(45, 45));
         lineEdit_User_name_2 = new QLineEdit(Admin);
         lineEdit_User_name_2->setObjectName("lineEdit_User_name_2");
-        lineEdit_User_name_2->setGeometry(QRect(20, 200, 221, 41));
+        lineEdit_User_name_2->setGeometry(QRect(150, 200, 221, 41));
         QFont font;
         font.setPointSize(12);
         font.setBold(true);
@@ -187,7 +194,7 @@ public:
 "}"));
         lineEdit_User_Password_2 = new QLineEdit(Admin);
         lineEdit_User_Password_2->setObjectName("lineEdit_User_Password_2");
-        lineEdit_User_Password_2->setGeometry(QRect(20, 270, 221, 41));
+        lineEdit_User_Password_2->setGeometry(QRect(150, 260, 221, 41));
         lineEdit_User_Password_2->setFont(font);
         lineEdit_User_Password_2->setStyleSheet(QString::fromUtf8("  QLineEdit {\n"
 "  border:3px solid gray;\n"
@@ -199,7 +206,7 @@ public:
 "}"));
         btn_Insert_User_2 = new QPushButton(Admin);
         btn_Insert_User_2->setObjectName("btn_Insert_User_2");
-        btn_Insert_User_2->setGeometry(QRect(20, 340, 81, 41));
+        btn_Insert_User_2->setGeometry(QRect(150, 310, 91, 41));
         btn_Insert_User_2->setStyleSheet(QString::fromUtf8("  \n"
 "QPushButton{\n"
 "                    color: rgb(255, 255, 255);\n"
@@ -213,11 +220,11 @@ public:
 "}\n"
 "\n"
 " "));
-        QIcon icon4(QIcon::fromTheme(QIcon::ThemeIcon::DocumentSaveAs));
-        btn_Insert_User_2->setIcon(icon4);
+        QIcon icon5(QIcon::fromTheme(QIcon::ThemeIcon::DocumentSaveAs));
+        btn_Insert_User_2->setIcon(icon5);
         btn_Reset_User_2 = new QPushButton(Admin);
         btn_Reset_User_2->setObjectName("btn_Reset_User_2");
-        btn_Reset_User_2->setGeometry(QRect(150, 340, 91, 41));
+        btn_Reset_User_2->setGeometry(QRect(270, 310, 101, 41));
         btn_Reset_User_2->setStyleSheet(QString::fromUtf8("  \n"
 "QPushButton{\n"
 "                    color: rgb(255, 255, 255);\n"
@@ -231,12 +238,29 @@ public:
 "}\n"
 "\n"
 " "));
-        QIcon icon5(QIcon::fromTheme(QIcon::ThemeIcon::DocumentRevert));
-        btn_Reset_User_2->setIcon(icon5);
+        btn_Reset_User_2->setIcon(icon);
+        pushButton_2 = new QPushButton(Admin);
+        pushButton_2->setObjectName("pushButton_2");
+        pushButton_2->setGeometry(QRect(399, 320, 531, 101));
+        pushButton_4 = new QPushButton(Admin);
+        pushButton_4->setObjectName("pushButton_4");
+        pushButton_4->setGeometry(QRect(399, 30, 531, 41));
         tabWidget->addTab(Admin, QString());
-        Students = new QWidget();
-        Students->setObjectName("Students");
-        tableWidget = new QTableWidget(Students);
+        tableWidget_2->raise();
+        pushButton_7->raise();
+        lineEdit_User_name_2->raise();
+        lineEdit_User_Password_2->raise();
+        btn_Insert_User_2->raise();
+        btn_Reset_User_2->raise();
+        pushButton_2->raise();
+        btn_Delete_admin->raise();
+        lineEdit_Admin_ID->raise();
+        btn_Update_admin->raise();
+        btn_View_admin->raise();
+        pushButton_4->raise();
+        HOS = new QWidget();
+        HOS->setObjectName("HOS");
+        tableWidget = new QTableWidget(HOS);
         if (tableWidget->columnCount() < 3)
             tableWidget->setColumnCount(3);
         QTableWidgetItem *__qtablewidgetitem3 = new QTableWidgetItem();
@@ -246,7 +270,7 @@ public:
         QTableWidgetItem *__qtablewidgetitem5 = new QTableWidgetItem();
         tableWidget->setHorizontalHeaderItem(2, __qtablewidgetitem5);
         tableWidget->setObjectName("tableWidget");
-        tableWidget->setGeometry(QRect(260, 70, 541, 351));
+        tableWidget->setGeometry(QRect(400, 80, 531, 231));
         tableWidget->setStyleSheet(QString::fromUtf8(" QTableWidget {\n"
 "    border: 2px solid rgb(0, 120, 215); /* A sleek blue border */\n"
 "    border-radius: 8px;\n"
@@ -257,9 +281,9 @@ public:
 "    gridline-color: rgb(200, 200, 200); /* Subtle grid lines */\n"
 "}\n"
 ""));
-        btn_View_User = new QPushButton(Students);
+        btn_View_User = new QPushButton(HOS);
         btn_View_User->setObjectName("btn_View_User");
-        btn_View_User->setGeometry(QRect(350, 10, 111, 31));
+        btn_View_User->setGeometry(QRect(420, 340, 121, 41));
         btn_View_User->setStyleSheet(QString::fromUtf8("  \n"
 "QPushButton{\n"
 "                    color: rgb(255, 255, 255);\n"
@@ -273,10 +297,10 @@ public:
 "}\n"
 "\n"
 " "));
-        btn_View_User->setIcon(icon);
-        btn_Update_User = new QPushButton(Students);
+        btn_View_User->setIcon(icon1);
+        btn_Update_User = new QPushButton(HOS);
         btn_Update_User->setObjectName("btn_Update_User");
-        btn_Update_User->setGeometry(QRect(470, 10, 91, 31));
+        btn_Update_User->setGeometry(QRect(540, 340, 111, 41));
         btn_Update_User->setStyleSheet(QString::fromUtf8("  \n"
 "QPushButton{\n"
 "                    color: rgb(255, 255, 255);\n"
@@ -290,10 +314,10 @@ public:
 "}\n"
 "\n"
 " "));
-        btn_Update_User->setIcon(icon1);
-        lineEdit_User_ID = new QLineEdit(Students);
+        btn_Update_User->setIcon(icon2);
+        lineEdit_User_ID = new QLineEdit(HOS);
         lineEdit_User_ID->setObjectName("lineEdit_User_ID");
-        lineEdit_User_ID->setGeometry(QRect(580, 10, 121, 31));
+        lineEdit_User_ID->setGeometry(QRect(650, 340, 151, 41));
         lineEdit_User_ID->setStyleSheet(QString::fromUtf8("  QLineEdit {\n"
 "  border:3px solid red;\n"
 "  border-radius: 10px;\n"
@@ -302,9 +326,9 @@ public:
 "  font: 700 12pt ;\n"
 "  color: rgb(0, 0, 0);;\n"
 "}"));
-        btn_Delete_User = new QPushButton(Students);
+        btn_Delete_User = new QPushButton(HOS);
         btn_Delete_User->setObjectName("btn_Delete_User");
-        btn_Delete_User->setGeometry(QRect(710, 10, 81, 31));
+        btn_Delete_User->setGeometry(QRect(810, 340, 101, 41));
         btn_Delete_User->setStyleSheet(QString::fromUtf8("  \n"
 "QPushButton{\n"
 "                    color: rgb(255, 255, 255);\n"
@@ -320,9 +344,9 @@ public:
 " "));
         QIcon icon6(QIcon::fromTheme(QIcon::ThemeIcon::EditDelete));
         btn_Delete_User->setIcon(icon6);
-        pushButton_6 = new QPushButton(Students);
+        pushButton_6 = new QPushButton(HOS);
         pushButton_6->setObjectName("pushButton_6");
-        pushButton_6->setGeometry(QRect(80, 80, 81, 61));
+        pushButton_6->setGeometry(QRect(220, 100, 81, 61));
         pushButton_6->setStyleSheet(QString::fromUtf8("\n"
 "QPushButton{\n"
 "                    color: rgb(255, 255, 255);\n"
@@ -336,11 +360,11 @@ public:
 "\n"
 "\n"
 "    "));
-        pushButton_6->setIcon(icon3);
+        pushButton_6->setIcon(icon4);
         pushButton_6->setIconSize(QSize(45, 45));
-        lineEdit_User_name = new QLineEdit(Students);
+        lineEdit_User_name = new QLineEdit(HOS);
         lineEdit_User_name->setObjectName("lineEdit_User_name");
-        lineEdit_User_name->setGeometry(QRect(20, 190, 221, 41));
+        lineEdit_User_name->setGeometry(QRect(150, 200, 221, 41));
         lineEdit_User_name->setFont(font);
         lineEdit_User_name->setStyleSheet(QString::fromUtf8("  QLineEdit {\n"
 "  border:3px solid gray;\n"
@@ -350,9 +374,9 @@ public:
 "  font: 700 12pt ;\n"
 "  color: rgb(0, 0, 0);;\n"
 "}"));
-        lineEdit_User_Password = new QLineEdit(Students);
+        lineEdit_User_Password = new QLineEdit(HOS);
         lineEdit_User_Password->setObjectName("lineEdit_User_Password");
-        lineEdit_User_Password->setGeometry(QRect(20, 260, 221, 41));
+        lineEdit_User_Password->setGeometry(QRect(150, 260, 221, 41));
         lineEdit_User_Password->setFont(font);
         lineEdit_User_Password->setStyleSheet(QString::fromUtf8("  QLineEdit {\n"
 "  border:3px solid gray;\n"
@@ -362,13 +386,13 @@ public:
 "  font: 700 12pt ;\n"
 "  color: rgb(0, 0, 0);;\n"
 "}"));
-        btn_Insert_User = new QPushButton(Students);
+        btn_Insert_User = new QPushButton(HOS);
         btn_Insert_User->setObjectName("btn_Insert_User");
-        btn_Insert_User->setGeometry(QRect(20, 320, 81, 41));
-        btn_Insert_User->setStyleSheet(QString::fromUtf8("  \n"
+        btn_Insert_User->setGeometry(QRect(150, 310, 91, 41));
+        btn_Insert_User->setStyleSheet(QString::fromUtf8("   \n"
 "QPushButton{\n"
 "                    color: rgb(255, 255, 255);\n"
-"                    border:3px solid green;\n"
+"                    border:2px solid green;\n"
 "                    border-radius: 8px;\n"
 "                    padding: 0 8px;\n"
 "                    background-color: rgb(255, 267, 245);\n"
@@ -378,14 +402,14 @@ public:
 "}\n"
 "\n"
 " "));
-        btn_Insert_User->setIcon(icon4);
-        btn_Reset_User = new QPushButton(Students);
+        btn_Insert_User->setIcon(icon5);
+        btn_Reset_User = new QPushButton(HOS);
         btn_Reset_User->setObjectName("btn_Reset_User");
-        btn_Reset_User->setGeometry(QRect(160, 320, 91, 41));
-        btn_Reset_User->setStyleSheet(QString::fromUtf8("  \n"
+        btn_Reset_User->setGeometry(QRect(270, 310, 101, 41));
+        btn_Reset_User->setStyleSheet(QString::fromUtf8("   \n"
 "QPushButton{\n"
 "                    color: rgb(255, 255, 255);\n"
-"                    border:3px solid green;\n"
+"                    border:2px solid green;\n"
 "                    border-radius: 8px;\n"
 "                    padding: 0 8px;\n"
 "                    background-color: rgb(255, 267, 245);\n"
@@ -395,8 +419,26 @@ public:
 "}\n"
 "\n"
 " "));
-        btn_Reset_User->setIcon(icon5);
-        tabWidget->addTab(Students, QString());
+        btn_Reset_User->setIcon(icon);
+        pushButton = new QPushButton(HOS);
+        pushButton->setObjectName("pushButton");
+        pushButton->setGeometry(QRect(399, 320, 531, 101));
+        pushButton_3 = new QPushButton(HOS);
+        pushButton_3->setObjectName("pushButton_3");
+        pushButton_3->setGeometry(QRect(399, 30, 531, 41));
+        tabWidget->addTab(HOS, QString());
+        tableWidget->raise();
+        pushButton_6->raise();
+        lineEdit_User_name->raise();
+        lineEdit_User_Password->raise();
+        btn_Insert_User->raise();
+        btn_Reset_User->raise();
+        pushButton->raise();
+        btn_Delete_User->raise();
+        lineEdit_User_ID->raise();
+        btn_Update_User->raise();
+        btn_View_User->raise();
+        pushButton_3->raise();
 
         retranslateUi(AddUser);
 
@@ -425,7 +467,9 @@ public:
         lineEdit_User_Password_2->setPlaceholderText(QCoreApplication::translate("AddUser", "Password *", nullptr));
         btn_Insert_User_2->setText(QCoreApplication::translate("AddUser", " Submit", nullptr));
         btn_Reset_User_2->setText(QCoreApplication::translate("AddUser", "Reset", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(Admin), QCoreApplication::translate("AddUser", "Adminstrator", nullptr));
+        pushButton_2->setText(QString());
+        pushButton_4->setText(QCoreApplication::translate("AddUser", "ADMIN", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(Admin), QCoreApplication::translate("AddUser", "ADMINSTRATOR", nullptr));
         QTableWidgetItem *___qtablewidgetitem3 = tableWidget->horizontalHeaderItem(0);
         ___qtablewidgetitem3->setText(QCoreApplication::translate("AddUser", "User_ID", nullptr));
         QTableWidgetItem *___qtablewidgetitem4 = tableWidget->horizontalHeaderItem(1);
@@ -441,7 +485,9 @@ public:
         lineEdit_User_Password->setPlaceholderText(QCoreApplication::translate("AddUser", "Password *", nullptr));
         btn_Insert_User->setText(QCoreApplication::translate("AddUser", " Submit", nullptr));
         btn_Reset_User->setText(QCoreApplication::translate("AddUser", "Reset", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(Students), QCoreApplication::translate("AddUser", "Students", nullptr));
+        pushButton->setText(QString());
+        pushButton_3->setText(QCoreApplication::translate("AddUser", "HEAD OF SECTIONS", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(HOS), QCoreApplication::translate("AddUser", "HEAD OF SECTION", nullptr));
     } // retranslateUi
 
 };

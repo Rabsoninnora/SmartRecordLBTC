@@ -23,7 +23,7 @@ void AddUser::on_btn_View_User_clicked()
 {
     QSqlQuery QueryLoadData(MyDB::getInstance()->getDBInstance());
     QSqlDatabase::database().transaction();
-    QueryLoadData.prepare("SELECT * FROM StudentLogin");
+    QueryLoadData.prepare("SELECT * FROM HOS");
 
     int NumberOFRowsToDisplay=10;
 
@@ -73,7 +73,7 @@ void AddUser::on_btn_View_admin_clicked()
 {
     QSqlQuery QueryLoadData(MyDB::getInstance()->getDBInstance());
     QSqlDatabase::database().transaction();
-    QueryLoadData.prepare("SELECT * FROM Admin_login");
+    QueryLoadData.prepare("SELECT * FROM Admin");
 
     int NumberOFRowsToDisplay=10;
 

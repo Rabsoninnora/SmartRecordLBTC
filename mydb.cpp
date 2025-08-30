@@ -10,9 +10,9 @@ MyDB::MyDB()
 void MyDB::init()
 {
     db = QSqlDatabase::addDatabase("QSQLITE", "Data");
-    db.setDatabaseName("C:/Project@cosmas/SmartRecord/SmartSystemDB.db");
+    db.setDatabaseName("C:/Project@cosmas/SmartRecord/SmartRecord.db");
 
-    if(QFile::exists("C:/Project@cosmas/SmartRecord/SmartSystemDB.db"))
+    if(QFile::exists("C:/Project@cosmas/SmartRecord/SmartRecord.db"))
         qDebug() << "DB file";
     else
         qDebug() <<"Hi Rabson sorry I can't find the Database file";

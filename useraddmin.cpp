@@ -19,7 +19,7 @@ UserAddmin::UserAddmin(QWidget *parent)
 
     // This to Configure my  widgets
     passwordLineEdit->setEchoMode(QLineEdit::Password);
-    roleComboBox->addItems({"Admin", "Student"});
+    roleComboBox->addItems({"Admin", "HOS"});
 
     usernameLineEdit->setMinimumHeight(30);
     passwordLineEdit->setMinimumHeight(30);
@@ -77,9 +77,9 @@ void UserAddmin::handleSubmit()
     QSqlQuery GetUser(MyDB::getInstance()->getDBInstance());
 
     if (role=="Admin"){
-        GetUser .prepare("SELECT * FROM Admin_login WHERE username = :username AND password = :password");
-    }else if(role=="Student"){
-        GetUser .prepare("SELECT * FROM Userlogin WHERE username = :username AND password = :password");
+        GetUser .prepare("SELECT * FROM Admin WHERE username = :username AND password = :password");
+    }else if(role=="HOS"){
+        GetUser .prepare("SELECT * FROM HOS WHERE username = :username AND password = :password");
     } else{
         QMessageBox::warning(this, "Warning!", "Please select a valid account type.");
         return; // Exit if no valid role is selected
