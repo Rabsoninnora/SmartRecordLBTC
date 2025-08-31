@@ -59,6 +59,7 @@ public:
         if (AddUser->objectName().isEmpty())
             AddUser->setObjectName("AddUser");
         AddUser->resize(1154, 710);
+        AddUser->setStyleSheet(QString::fromUtf8("background-color: #3a3f5c;"));
         btn_adduser_back = new QPushButton(AddUser);
         btn_adduser_back->setObjectName("btn_adduser_back");
         btn_adduser_back->setGeometry(QRect(1050, 30, 91, 41));
@@ -96,7 +97,7 @@ public:
 "                    color: rgb(255, 255, 255);\n"
 "                    border:2px solid green;\n"
 "                    border-radius: 8px;\n"
-"                    padding: 0 8px;\n"
+"                    padding: 0 8px; \n"
 "                    background-color: rgb(255, 267, 245);\n"
 "                    font: 500 11pt ;\n"
 "                   \n"
@@ -125,7 +126,7 @@ public:
 "                    color: rgb(255, 255, 255);\n"
 "                    border:1px solid red;\n"
 "                    border-radius: 8px;\n"
-"                    padding: 0 8px;\n"
+"                    padding: 0 8px; \n"
 "                    background-color: rgb(255, 267, 245);\n"
 "                    font: 500 11pt ;\n"
 "                   \n"
@@ -166,7 +167,8 @@ public:
 "                    border:0px solid green;\n"
 "                    border-radius: 8px;\n"
 "                    padding: 0 8px;\n"
-"                     background-color: rgb(255, 255, 255); /* Soft blue background for readability */\n"
+"                    background-color: #3a3f5c;\n"
+"                      \n"
 "                    font: 600 11pt ;\n"
 "\n"
 "}\n"
@@ -230,7 +232,7 @@ public:
 "                    color: rgb(255, 255, 255);\n"
 "                    border:2px solid green;\n"
 "                    border-radius: 8px;\n"
-"                    padding: 0 8px;\n"
+"                    padding: 0 8px;  \n"
 "                    background-color: rgb(255, 267, 245);\n"
 "                    font: 500 11pt ;\n"
 "                   \n"
@@ -353,7 +355,9 @@ public:
 "                    border:0px solid green;\n"
 "                    border-radius: 8px;\n"
 "                    padding: 0 8px;\n"
-"                     background-color: rgb(255, 255, 255); /* Soft blue background for readability */\n"
+"                   \n"
+"                    background-color: #3a3f5c;\n"
+"                 \n"
 "                    font: 600 11pt ;\n"
 "\n"
 "}\n"
@@ -442,7 +446,7 @@ public:
 
         retranslateUi(AddUser);
 
-        tabWidget->setCurrentIndex(1);
+        tabWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(AddUser);

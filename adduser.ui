@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #3a3f5c;</string>
+  </property>
   <widget class="QPushButton" name="btn_adduser_back">
    <property name="geometry">
     <rect>
@@ -42,7 +45,7 @@
     <string notr="true"> background-color: #1e1e2f;</string>
    </property>
    <property name="currentIndex">
-    <number>1</number>
+    <number>0</number>
    </property>
    <widget class="QWidget" name="Admin">
     <attribute name="title">
@@ -94,7 +97,7 @@ QPushButton{
                     color: rgb(255, 255, 255);
                     border:2px solid green;
                     border-radius: 8px;
-                    padding: 0 8px;
+                    padding: 0 8px; 
                     background-color: rgb(255, 267, 245);
                     font: 500 11pt ;
                    
@@ -148,7 +151,7 @@ QPushButton{
                     color: rgb(255, 255, 255);
                     border:1px solid red;
                     border-radius: 8px;
-                    padding: 0 8px;
+                    padding: 0 8px; 
                     background-color: rgb(255, 267, 245);
                     font: 500 11pt ;
                    
@@ -218,7 +221,8 @@ QPushButton{
                     border:0px solid green;
                     border-radius: 8px;
                     padding: 0 8px;
-                     background-color: rgb(255, 255, 255); /* Soft blue background for readability */
+                    background-color: #3a3f5c;
+                      
                     font: 600 11pt ;
 
 }
@@ -345,7 +349,7 @@ QPushButton{
                     color: rgb(255, 255, 255);
                     border:2px solid green;
                     border-radius: 8px;
-                    padding: 0 8px;
+                    padding: 0 8px;  
                     background-color: rgb(255, 267, 245);
                     font: 500 11pt ;
                    
@@ -573,7 +577,9 @@ QPushButton{
                     border:0px solid green;
                     border-radius: 8px;
                     padding: 0 8px;
-                     background-color: rgb(255, 255, 255); /* Soft blue background for readability */
+                   
+                    background-color: #3a3f5c;
+                 
                     font: 600 11pt ;
 
 }
@@ -726,7 +732,7 @@ QPushButton{
       </rect>
      </property>
      <property name="text">
-      <string> </string>
+      <string/>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButton_3">
