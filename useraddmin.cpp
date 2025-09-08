@@ -1,5 +1,6 @@
 #include "useraddmin.h"
 #include <QMessageBox>
+#include "hosdashboard.h"
 #include "mydb.h"
 #include <QCryptographicHash>
 
@@ -11,6 +12,9 @@ UserAddmin::UserAddmin(QWidget *parent)
     resize(400, 250);  // This to Increase my dialog size
 
     setWindowFlags(windowFlags()| Qt::WindowStaysOnTopHint);
+/*
+ ptrHOSDashboard =new HOSDashboard();
+ */
 
     // this to Create  my input widgets
     usernameLineEdit = new QLineEdit(this);
@@ -90,22 +94,28 @@ void UserAddmin::handleSubmit()
     GetUser.bindValue(":username", username);
     GetUser.bindValue(":password", password);// use hashed password
 
-    if(GetUser.exec()){
+
+    if (GetUser.exec()) {
         int UserFindCount = 0;
         while (GetUser.next()) {
-            UserFindCount++; //Count valid users
+            UserFindCount++;
         }
-        if(UserFindCount==1){ //If user and password are correct
-            ptrDashboard = new Dashboard(this);
-            ptrDashboard->show();
+        if (UserFindCount == 1) {
+            if (role == "Admin") {
+                ptrDashboard = new Dashboard(this);
+                ptrDashboard->show();
+            } else if (role == "HOS") {
+               // ptrHOSDashboard->show();
+            }
             this->hide();
         } else {
-            QMessageBox::warning(this,"warning", "Invalid username or password");
+            QMessageBox::warning(this, "Warning!", "Invalid Username or Password.");
         }
-
-    } else{
-        QMessageBox::critical(this, "Database Error", "Failed to execute query:" + GetUser.lastError().text());
+    } else {
+        QMessageBox::critical(this, "Database Error", "Failed to execute query: " + GetUser.lastError().text());
     }
+
+
 }
 
 void UserAddmin::handleReset()

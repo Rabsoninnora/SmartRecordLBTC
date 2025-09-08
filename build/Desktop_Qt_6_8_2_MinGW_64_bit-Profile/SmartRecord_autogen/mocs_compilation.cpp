@@ -3,6 +3,7 @@
 #include "EWIEGA46WW/moc_adminlogin.cpp"
 #include "EWIEGA46WW/moc_adminpanel.cpp"
 #include "EWIEGA46WW/moc_dashboard.cpp"
+#include "EWIEGA46WW/moc_hosdashboard.cpp"
 #include "EWIEGA46WW/moc_mainwindow.cpp"
 #include "EWIEGA46WW/moc_smartrecordlbtc.cpp"
 #include "EWIEGA46WW/moc_studentregistration.cpp"

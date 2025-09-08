@@ -34,10 +34,10 @@ public:
     QPushButton *btn_Delete_admin;
     QTableWidget *tableWidget_2;
     QPushButton *pushButton_7;
-    QLineEdit *lineEdit_User_name_2;
-    QLineEdit *lineEdit_User_Password_2;
-    QPushButton *btn_Insert_User_2;
-    QPushButton *btn_Reset_User_2;
+    QLineEdit *lineEdit_username_admin;
+    QLineEdit *lineEdit_Admin_Password;
+    QPushButton *btn_Insert_admin;
+    QPushButton *btn_Reset_admin;
     QPushButton *pushButton_2;
     QPushButton *pushButton_4;
     QWidget *HOS;
@@ -178,15 +178,15 @@ public:
         QIcon icon4(QIcon::fromTheme(QIcon::ThemeIcon::AddressBookNew));
         pushButton_7->setIcon(icon4);
         pushButton_7->setIconSize(QSize(45, 45));
-        lineEdit_User_name_2 = new QLineEdit(Admin);
-        lineEdit_User_name_2->setObjectName("lineEdit_User_name_2");
-        lineEdit_User_name_2->setGeometry(QRect(150, 200, 221, 41));
+        lineEdit_username_admin = new QLineEdit(Admin);
+        lineEdit_username_admin->setObjectName("lineEdit_username_admin");
+        lineEdit_username_admin->setGeometry(QRect(150, 200, 221, 41));
         QFont font;
         font.setPointSize(12);
         font.setBold(true);
         font.setItalic(false);
-        lineEdit_User_name_2->setFont(font);
-        lineEdit_User_name_2->setStyleSheet(QString::fromUtf8("  QLineEdit {\n"
+        lineEdit_username_admin->setFont(font);
+        lineEdit_username_admin->setStyleSheet(QString::fromUtf8("  QLineEdit {\n"
 "  border:3px solid gray;\n"
 "  border-radius: 10px;\n"
 "  padding: 6px 6px;\n"
@@ -194,11 +194,11 @@ public:
 "  font: 700 12pt ;\n"
 "  color: rgb(0, 0, 0);;\n"
 "}"));
-        lineEdit_User_Password_2 = new QLineEdit(Admin);
-        lineEdit_User_Password_2->setObjectName("lineEdit_User_Password_2");
-        lineEdit_User_Password_2->setGeometry(QRect(150, 260, 221, 41));
-        lineEdit_User_Password_2->setFont(font);
-        lineEdit_User_Password_2->setStyleSheet(QString::fromUtf8("  QLineEdit {\n"
+        lineEdit_Admin_Password = new QLineEdit(Admin);
+        lineEdit_Admin_Password->setObjectName("lineEdit_Admin_Password");
+        lineEdit_Admin_Password->setGeometry(QRect(150, 260, 221, 41));
+        lineEdit_Admin_Password->setFont(font);
+        lineEdit_Admin_Password->setStyleSheet(QString::fromUtf8("  QLineEdit {\n"
 "  border:3px solid gray;\n"
 "  border-radius: 10px;\n"
 "  padding: 6px 6px;\n"
@@ -206,10 +206,10 @@ public:
 "  font: 700 12pt ;\n"
 "  color: rgb(0, 0, 0);;\n"
 "}"));
-        btn_Insert_User_2 = new QPushButton(Admin);
-        btn_Insert_User_2->setObjectName("btn_Insert_User_2");
-        btn_Insert_User_2->setGeometry(QRect(150, 310, 91, 41));
-        btn_Insert_User_2->setStyleSheet(QString::fromUtf8("  \n"
+        btn_Insert_admin = new QPushButton(Admin);
+        btn_Insert_admin->setObjectName("btn_Insert_admin");
+        btn_Insert_admin->setGeometry(QRect(150, 310, 91, 41));
+        btn_Insert_admin->setStyleSheet(QString::fromUtf8("  \n"
 "QPushButton{\n"
 "                    color: rgb(255, 255, 255);\n"
 "                    border:2px solid green;\n"
@@ -223,11 +223,11 @@ public:
 "\n"
 " "));
         QIcon icon5(QIcon::fromTheme(QIcon::ThemeIcon::DocumentSaveAs));
-        btn_Insert_User_2->setIcon(icon5);
-        btn_Reset_User_2 = new QPushButton(Admin);
-        btn_Reset_User_2->setObjectName("btn_Reset_User_2");
-        btn_Reset_User_2->setGeometry(QRect(270, 310, 101, 41));
-        btn_Reset_User_2->setStyleSheet(QString::fromUtf8("  \n"
+        btn_Insert_admin->setIcon(icon5);
+        btn_Reset_admin = new QPushButton(Admin);
+        btn_Reset_admin->setObjectName("btn_Reset_admin");
+        btn_Reset_admin->setGeometry(QRect(270, 310, 101, 41));
+        btn_Reset_admin->setStyleSheet(QString::fromUtf8("  \n"
 "QPushButton{\n"
 "                    color: rgb(255, 255, 255);\n"
 "                    border:2px solid green;\n"
@@ -240,7 +240,7 @@ public:
 "}\n"
 "\n"
 " "));
-        btn_Reset_User_2->setIcon(icon);
+        btn_Reset_admin->setIcon(icon);
         pushButton_2 = new QPushButton(Admin);
         pushButton_2->setObjectName("pushButton_2");
         pushButton_2->setGeometry(QRect(399, 320, 531, 101));
@@ -250,10 +250,10 @@ public:
         tabWidget->addTab(Admin, QString());
         tableWidget_2->raise();
         pushButton_7->raise();
-        lineEdit_User_name_2->raise();
-        lineEdit_User_Password_2->raise();
-        btn_Insert_User_2->raise();
-        btn_Reset_User_2->raise();
+        lineEdit_username_admin->raise();
+        lineEdit_Admin_Password->raise();
+        btn_Insert_admin->raise();
+        btn_Reset_admin->raise();
         pushButton_2->raise();
         btn_Delete_admin->raise();
         lineEdit_Admin_ID->raise();
@@ -446,7 +446,7 @@ public:
 
         retranslateUi(AddUser);
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(AddUser);
@@ -467,10 +467,10 @@ public:
         QTableWidgetItem *___qtablewidgetitem2 = tableWidget_2->horizontalHeaderItem(2);
         ___qtablewidgetitem2->setText(QCoreApplication::translate("AddUser", "Password", nullptr));
         pushButton_7->setText(QString());
-        lineEdit_User_name_2->setPlaceholderText(QCoreApplication::translate("AddUser", "Username *", nullptr));
-        lineEdit_User_Password_2->setPlaceholderText(QCoreApplication::translate("AddUser", "Password *", nullptr));
-        btn_Insert_User_2->setText(QCoreApplication::translate("AddUser", " Submit", nullptr));
-        btn_Reset_User_2->setText(QCoreApplication::translate("AddUser", "Reset", nullptr));
+        lineEdit_username_admin->setPlaceholderText(QCoreApplication::translate("AddUser", "Username *", nullptr));
+        lineEdit_Admin_Password->setPlaceholderText(QCoreApplication::translate("AddUser", "Password *", nullptr));
+        btn_Insert_admin->setText(QCoreApplication::translate("AddUser", " Submit", nullptr));
+        btn_Reset_admin->setText(QCoreApplication::translate("AddUser", "Reset", nullptr));
         pushButton_2->setText(QString());
         pushButton_4->setText(QCoreApplication::translate("AddUser", "ADMIN", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(Admin), QCoreApplication::translate("AddUser", "ADMINSTRATOR", nullptr));

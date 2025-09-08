@@ -45,7 +45,7 @@
     <string notr="true"> background-color: #1e1e2f;</string>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>1</number>
    </property>
    <widget class="QWidget" name="Admin">
     <attribute name="title">
@@ -243,7 +243,7 @@ QPushButton{
       </size>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_User_name_2">
+    <widget class="QLineEdit" name="lineEdit_username_admin">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -273,7 +273,7 @@ QPushButton{
       <string>Username *</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_User_Password_2">
+    <widget class="QLineEdit" name="lineEdit_Admin_Password">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -303,7 +303,7 @@ QPushButton{
       <string>Password *</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="btn_Insert_User_2">
+    <widget class="QPushButton" name="btn_Insert_admin">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -334,7 +334,7 @@ QPushButton{
       <iconset theme="QIcon::ThemeIcon::DocumentSaveAs"/>
      </property>
     </widget>
-    <widget class="QPushButton" name="btn_Reset_User_2">
+    <widget class="QPushButton" name="btn_Reset_admin">
      <property name="geometry">
       <rect>
        <x>270</x>
@@ -393,10 +393,10 @@ QPushButton{
     </widget>
     <zorder>tableWidget_2</zorder>
     <zorder>pushButton_7</zorder>
-    <zorder>lineEdit_User_name_2</zorder>
-    <zorder>lineEdit_User_Password_2</zorder>
-    <zorder>btn_Insert_User_2</zorder>
-    <zorder>btn_Reset_User_2</zorder>
+    <zorder>lineEdit_username_admin</zorder>
+    <zorder>lineEdit_Admin_Password</zorder>
+    <zorder>btn_Insert_admin</zorder>
+    <zorder>btn_Reset_admin</zorder>
     <zorder>pushButton_2</zorder>
     <zorder>btn_Delete_admin</zorder>
     <zorder>lineEdit_Admin_ID</zorder>
