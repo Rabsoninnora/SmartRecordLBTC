@@ -105,7 +105,8 @@ void UserAddmin::handleSubmit()
                 ptrDashboard = new Dashboard(this);
                 ptrDashboard->show();
             } else if (role == "HOS") {
-               // ptrHOSDashboard->show();
+                 ptrHOSDashboard =new HOSDashboard();
+                 ptrHOSDashboard->show();
             }
             this->hide();
         } else {

@@ -27,6 +27,8 @@ HOSDashboard::HOSDashboard(QWidget *parent)
     if (departmentList->count() > 0) {
         departmentList->setCurrentRow(0);
     }
+
+
 }
 
 HOSDashboard::~HOSDashboard()
