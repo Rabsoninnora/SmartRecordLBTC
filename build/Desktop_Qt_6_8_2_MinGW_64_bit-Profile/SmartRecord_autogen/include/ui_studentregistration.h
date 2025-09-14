@@ -23,7 +23,7 @@ public:
     {
         if (StudentRegistration->objectName().isEmpty())
             StudentRegistration->setObjectName("StudentRegistration");
-        StudentRegistration->resize(400, 300);
+        StudentRegistration->resize(1154, 715);
 
         retranslateUi(StudentRegistration);
 

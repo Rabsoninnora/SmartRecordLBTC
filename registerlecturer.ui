@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RegisterLecturer</class>
+ <widget class="QDialog" name="RegisterLecturer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1154</width>
+    <height>604</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #3a3f5c;</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1154</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>LBTC SMART RECORD SYSTEM</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_RegisterLecturer_back">
+   <property name="geometry">
+    <rect>
+     <x>1060</x>
+     <y>50</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::DocumentRevert"/>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>160</y>
+     <width>971</width>
+     <height>431</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> </string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Shape::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Shadow::Raised</enum>
+   </property>
+   <widget class="QLineEdit" name="lineEdit_Fname">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>30</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Enter Lecturer's First Name</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_Mname">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>30</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Enter Lecturer's Middle Name</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_Lname">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>30</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Enter Lecturer's Last Name</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_NRC">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>80</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Enter Lecturer's NRC#</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_Phone">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>80</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Enter Lecturer's Phone Number</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_Email">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>80</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Enter Lecturer's Email Address</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_Qualification">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>130</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Enter Lecturer's Qualifications</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_Physical_Address">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>130</y>
+      <width>471</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Enter Lecturer's physical address</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_browse_image">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>180</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+ QPushButton {
+  
+ font: 700 12pt ;
+ color: rgb(255, 255, 255);
+background-color: #3a3f5c;
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Browse image</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="image_field">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>181</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> 
+ QLabel {
+  border:2px solid gray;
+  border-radius: 10px;
+  padding: 8px 8px;
+  background: rgb(255, 255, 255);
+ 
+};</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_Lecturer_Department">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>170</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Assign Lecturer to a department</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>110</y>
+     <width>531</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> background-color: #1e1e2f;</string>
+   </property>
+   <property name="text">
+    <string>LECTURER REGISTRATION</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

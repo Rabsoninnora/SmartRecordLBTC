@@ -373,6 +373,12 @@
 			null
 		],
 		[
+			"C:/Project@cosmas/SmartRecord/registerlecturer.h",
+			"MU",
+			"EWIEGA46WW/moc_registerlecturer.cpp",
+			null
+		],
+		[
 			"C:/Project@cosmas/SmartRecord/smartrecordlbtc.h",
 			"MU",
 			"EWIEGA46WW/moc_smartrecordlbtc.cpp",
@@ -479,6 +485,7 @@
 		[ "C:/Project@cosmas/SmartRecord/main.cpp", "MU", null ],
 		[ "C:/Project@cosmas/SmartRecord/mainwindow.cpp", "MU", null ],
 		[ "C:/Project@cosmas/SmartRecord/mydb.cpp", "MU", null ],
+		[ "C:/Project@cosmas/SmartRecord/registerlecturer.cpp", "MU", null ],
 		[ "C:/Project@cosmas/SmartRecord/smartrecordlbtc.cpp", "MU", null ],
 		[ "C:/Project@cosmas/SmartRecord/studentregistration.cpp", "MU", null ],
 		[ "C:/Project@cosmas/SmartRecord/useraccounts.cpp", "MU", null ],

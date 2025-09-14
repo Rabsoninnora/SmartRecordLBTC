@@ -5,6 +5,7 @@
 #include "EWIEGA46WW/moc_dashboard.cpp"
 #include "EWIEGA46WW/moc_hosdashboard.cpp"
 #include "EWIEGA46WW/moc_mainwindow.cpp"
+#include "EWIEGA46WW/moc_registerlecturer.cpp"
 #include "EWIEGA46WW/moc_smartrecordlbtc.cpp"
 #include "EWIEGA46WW/moc_studentregistration.cpp"
 #include "EWIEGA46WW/moc_useraccounts.cpp"

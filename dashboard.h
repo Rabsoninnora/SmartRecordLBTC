@@ -17,6 +17,7 @@
 #include <QHeaderView>
 #include <QApplication>
 #include "adduser.h"
+#include "registerlecturer.h"
 
 namespace Ui {
 class Dashboard;
@@ -46,6 +47,7 @@ private:
     QListWidget *departmentList;
     QStackedWidget *mainContent;
     AddUser *ptrAddUser;
+    RegisterLecturer *ptrRegisterLecturer;
 
     void setupUI();
     void setupConnections();

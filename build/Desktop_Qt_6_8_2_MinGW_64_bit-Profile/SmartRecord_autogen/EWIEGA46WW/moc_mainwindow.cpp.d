@@ -4,6 +4,7 @@ C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartR
   C:/Project@cosmas/SmartRecord/adminlogin.h \
   C:/Project@cosmas/SmartRecord/dashboard.h \
   C:/Project@cosmas/SmartRecord/hosdashboard.h \
+  C:/Project@cosmas/SmartRecord/registerlecturer.h \
   C:/Project@cosmas/SmartRecord/useraddmin.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/q20functional.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/q20iterator.h \

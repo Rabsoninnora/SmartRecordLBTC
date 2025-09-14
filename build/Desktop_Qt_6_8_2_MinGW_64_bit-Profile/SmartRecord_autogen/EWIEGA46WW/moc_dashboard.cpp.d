@@ -1,6 +1,7 @@
 C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartRecord_autogen/EWIEGA46WW/moc_dashboard.cpp: C:/Project@cosmas/SmartRecord/dashboard.h \
   C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartRecord_autogen/moc_predefs.h \
   C:/Project@cosmas/SmartRecord/adduser.h \
+  C:/Project@cosmas/SmartRecord/registerlecturer.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/q20functional.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/q20iterator.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/q20memory.h \

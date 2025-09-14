@@ -12,9 +12,7 @@ UserAddmin::UserAddmin(QWidget *parent)
     resize(400, 250);  // This to Increase my dialog size
 
     setWindowFlags(windowFlags()| Qt::WindowStaysOnTopHint);
-/*
- ptrHOSDashboard =new HOSDashboard();
- */
+
 
     // this to Create  my input widgets
     usernameLineEdit = new QLineEdit(this);

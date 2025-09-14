@@ -11,6 +11,7 @@ Dashboard::Dashboard(QWidget *parent)
     departmentList = new QListWidget(this);
     mainContent = new QStackedWidget(this);
     ptrAddUser = new AddUser();
+    ptrRegisterLecturer = new RegisterLecturer();
 
     setupUI();
     setupConnections();
@@ -30,7 +31,12 @@ Dashboard::Dashboard(QWidget *parent)
     }
 }
 
-Dashboard::~Dashboard() { delete ui; }
+Dashboard::~Dashboard()
+{
+    delete ui;
+    delete ptrAddUser;
+    delete ptrRegisterLecturer;
+}
 
 void Dashboard::setupUI()
 {
@@ -71,8 +77,8 @@ void Dashboard::setupUI()
     QPushButton *coursesBtn = createNavButton("Courses", "btnCourses");
     QPushButton *reportsBtn = createNavButton("Reports", "btnReports");
     QPushButton *settingsBtn = createNavButton("Settings", "btnSettings");
-    QPushButton *viewStudentsBtn = createNavButton("View Students", "btnViewStudents");
-    QPushButton *registerStudentBtn = createNavButton("Register Student", "btnRegisterStudent");
+    QPushButton *viewStudentsBtn = createNavButton("Lecturer", "btnViewStudents");
+    QPushButton *registerStudentBtn = createNavButton("Register Lecturer", "btnRegisterStudent");
     QPushButton *manageDataBtn = createNavButton("Add User", "btnManageData");
     QPushButton *logoutBtn = createNavButton("Close App", "btnLogout");
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -134,9 +140,8 @@ void Dashboard::viewStudents() {
 }
 
 void Dashboard::registerStudent() {
-    /*
- Create a student registration form
-*/
+    ptrRegisterLecturer->show();
+    this->hide();
 }
 
 void Dashboard::manageData() {

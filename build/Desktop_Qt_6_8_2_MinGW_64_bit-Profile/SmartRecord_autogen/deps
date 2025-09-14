@@ -21,6 +21,8 @@ SmartRecord_autogen/timestamp: \
 	C:/Project@cosmas/SmartRecord/mainwindow.h \
 	C:/Project@cosmas/SmartRecord/mydb.cpp \
 	C:/Project@cosmas/SmartRecord/mydb.h \
+	C:/Project@cosmas/SmartRecord/registerlecturer.cpp \
+	C:/Project@cosmas/SmartRecord/registerlecturer.h \
 	C:/Project@cosmas/SmartRecord/smartrecordlbtc.cpp \
 	C:/Project@cosmas/SmartRecord/smartrecordlbtc.h \
 	C:/Project@cosmas/SmartRecord/studentregistration.cpp \
@@ -671,6 +673,7 @@ SmartRecord_autogen/timestamp: \
 	C:/Project@cosmas/SmartRecord/dashboard.ui \
 	C:/Project@cosmas/SmartRecord/hosdashboard.ui \
 	C:/Project@cosmas/SmartRecord/mainwindow.ui \
+	C:/Project@cosmas/SmartRecord/registerlecturer.ui \
 	C:/Project@cosmas/SmartRecord/smartrecordlbtc.ui \
 	C:/Project@cosmas/SmartRecord/studentregistration.ui \
 	C:/Project@cosmas/SmartRecord/useraccounts.ui \
