@@ -55,7 +55,7 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true"/>
+    <string notr="true"> background-color: #1e1e2f; </string>
    </property>
    <property name="frameShape">
     <enum>QFrame::Shape::StyledPanel</enum>
@@ -73,7 +73,7 @@
      </rect>
     </property>
     <property name="placeholderText">
-     <string>* Enter Lecturer's First Name</string>
+     <string>Lecturer's First Name</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_Mname">
@@ -86,7 +86,7 @@
      </rect>
     </property>
     <property name="placeholderText">
-     <string>Enter Lecturer's Middle Name</string>
+     <string>Middle Name</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_Lname">
@@ -99,7 +99,7 @@
      </rect>
     </property>
     <property name="placeholderText">
-     <string>* Enter Lecturer's Last Name</string>
+     <string>Last Name</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_NRC">
@@ -112,7 +112,7 @@
      </rect>
     </property>
     <property name="placeholderText">
-     <string>* Enter Lecturer's NRC#</string>
+     <string>Lecturer's NRC#</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_Phone">
@@ -125,7 +125,7 @@
      </rect>
     </property>
     <property name="placeholderText">
-     <string>* Enter Lecturer's Phone Number</string>
+     <string>Phone Number</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_Email">
@@ -138,7 +138,7 @@
      </rect>
     </property>
     <property name="placeholderText">
-     <string>* Enter Lecturer's Email Address</string>
+     <string>Email Address</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_Qualification">
@@ -151,7 +151,7 @@
      </rect>
     </property>
     <property name="placeholderText">
-     <string>* Enter Lecturer's Qualifications</string>
+     <string>Lecturer's Qualifications</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_Physical_Address">
@@ -164,7 +164,7 @@
      </rect>
     </property>
     <property name="placeholderText">
-     <string>* Enter Lecturer's physical address</string>
+     <string>Physical address</string>
     </property>
    </widget>
    <widget class="QLabel" name="image_field">
@@ -200,7 +200,7 @@
      </rect>
     </property>
     <property name="placeholderText">
-     <string>* Assign Lecturer to a department</string>
+     <string>Department</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_Lecturer_No_Courses">
@@ -213,7 +213,7 @@
      </rect>
     </property>
     <property name="placeholderText">
-     <string>* No. OF Courses</string>
+     <string>No. OF Courses</string>
     </property>
    </widget>
    <widget class="QPlainTextEdit" name="plainTextEdit_Subjects">
@@ -226,7 +226,7 @@
      </rect>
     </property>
     <property name="placeholderText">
-     <string>* Enter Subjects or Courses this Lecturer can teach</string>
+     <string>Subjects</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2">
