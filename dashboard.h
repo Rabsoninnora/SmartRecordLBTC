@@ -18,6 +18,7 @@
 #include <QApplication>
 #include "adduser.h"
 #include "registerlecturer.h"
+#include "viewlecturer.h"
 
 namespace Ui {
 class Dashboard;
@@ -48,6 +49,7 @@ private:
     QStackedWidget *mainContent;
     AddUser *ptrAddUser;
     RegisterLecturer *ptrRegisterLecturer;
+    ViewLecturer     *ptrViewLecturer;
 
     void setupUI();
     void setupConnections();

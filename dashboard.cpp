@@ -12,6 +12,7 @@ Dashboard::Dashboard(QWidget *parent)
     mainContent = new QStackedWidget(this);
     ptrAddUser = new AddUser();
     ptrRegisterLecturer = new RegisterLecturer();
+    ptrViewLecturer = new ViewLecturer();
 
     setupUI();
     setupConnections();
@@ -36,6 +37,7 @@ Dashboard::~Dashboard()
     delete ui;
     delete ptrAddUser;
     delete ptrRegisterLecturer;
+    delete ptrViewLecturer;
 }
 
 void Dashboard::setupUI()
@@ -135,13 +137,14 @@ void Dashboard::showSettings() { mainContent->setCurrentIndex(3); }
 
 void Dashboard::viewStudents() {
     /*
- Show all student show database
+ Show all Lecturer's show database
 */
+    ptrViewLecturer->show();
 }
 
 void Dashboard::registerStudent() {
     ptrRegisterLecturer->show();
-    this->hide();
+
 }
 
 void Dashboard::manageData() {

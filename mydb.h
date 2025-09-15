@@ -22,6 +22,9 @@
 #include <QtPrintSupport/QPrintEngine>
 #include <QDialog>
 
+
+
+
 class MyDB {
 private:
     MyDB();

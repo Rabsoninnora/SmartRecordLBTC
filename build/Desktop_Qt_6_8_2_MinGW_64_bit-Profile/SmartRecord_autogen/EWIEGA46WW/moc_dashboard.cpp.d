@@ -1,7 +1,16 @@
 C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartRecord_autogen/EWIEGA46WW/moc_dashboard.cpp: C:/Project@cosmas/SmartRecord/dashboard.h \
   C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartRecord_autogen/moc_predefs.h \
   C:/Project@cosmas/SmartRecord/adduser.h \
+  C:/Project@cosmas/SmartRecord/mydb.h \
   C:/Project@cosmas/SmartRecord/registerlecturer.h \
+  C:/Project@cosmas/SmartRecord/viewlecturer.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/QBuffer \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/QByteArray \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/QDebug \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/QFile \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/QFileInfo \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/QObject \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/q20algorithm.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/q20functional.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/q20iterator.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/q20memory.h \
@@ -18,10 +27,14 @@ C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartR
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qatomic_cxx11.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qbasicatomic.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qbindingstorage.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qbuffer.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qbytearray.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qbytearrayalgorithms.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qbytearraylist.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qbytearrayview.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qcalendar.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qcborcommon.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qcborvalue.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qchar.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qcompare.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qcompare_impl.h \
@@ -38,12 +51,19 @@ C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartR
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qcoreevent.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qdarwinhelpers.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qdatastream.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qdatetime.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qdeadlinetimer.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qdebug.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qdir.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qdirlisting.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qelapsedtimer.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qendian.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qeventloop.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qexceptionhandling.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qfactoryinterface.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qfile.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qfiledevice.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qfileinfo.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qflags.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qfloat16.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qforeach.h \
@@ -59,6 +79,8 @@ C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartR
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qitemselectionmodel.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qiterable.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qiterator.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qjsonobject.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qjsonvalue.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qlatin1stringview.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qline.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qlist.h \
@@ -69,6 +91,7 @@ C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartR
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qmargins.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qmath.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qmetacontainer.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qmetaobject.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qmetatype.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qminmax.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qnamespace.h \
@@ -80,7 +103,9 @@ C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartR
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qobjectdefs_impl.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qoverload.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qpair.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qplugin.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qpoint.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qpointer.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qprocessordetection.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qrect.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qrefcount.h \
@@ -118,6 +143,7 @@ C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartR
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qtdeprecationmarkers.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qtenvironmentvariables.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qtextstream.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qtimezone.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qtmetamacros.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qtnoop.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qtpreprocessorsupport.h \
@@ -130,6 +156,7 @@ C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartR
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qtypes.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qurl.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qutf8stringview.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/quuid.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qvariant.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qvarlengtharray.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/qversiontagging.h \
@@ -149,6 +176,10 @@ C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartR
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qimage.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qinputmethod.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qkeysequence.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qpagedpaintdevice.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qpagelayout.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qpageranges.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qpagesize.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qpaintdevice.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qpalette.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qpen.h \
@@ -170,9 +201,38 @@ C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartR
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qvalidator.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtGui/qwindowdefs_win.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtPrintSupport/QPrintEngine \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtPrintSupport/QPrinter \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtPrintSupport/qprintengine.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtPrintSupport/qprinter.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtPrintSupport/qtprintsupport-config.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtPrintSupport/qtprintsupportexports.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtPrintSupport/qtprintsupportglobal.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtSql/QSql \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtSql/QSqlDatabase \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtSql/QSqlDriver \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtSql/QSqlDriverPlugin \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtSql/QSqlError \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtSql/QSqlField \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtSql/QSqlIndex \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtSql/QSqlQuery \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtSql/QSqlQueryModel \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtSql/qsqldatabase.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtSql/qsqldriver.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtSql/qsqldriverplugin.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtSql/qsqlerror.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtSql/qsqlfield.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtSql/qsqlindex.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtSql/qsqlquery.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtSql/qsqlquerymodel.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtSql/qsqlrecord.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtSql/qtsql-config.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtSql/qtsqlexports.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtSql/qtsqlglobal.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/QApplication \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/QCheckBox \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/QDialog \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/QFileDialog \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/QFormLayout \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/QHBoxLayout \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/QHeaderView \
@@ -197,6 +257,7 @@ C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartR
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qcheckbox.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qdialog.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qfiledialog.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qformlayout.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qframe.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qgridlayout.h \
@@ -237,11 +298,14 @@ C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartR
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocator.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/atomic_base.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/atomic_lockfree_defines.h \
+  C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.h \
+  C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.tcc \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.tcc \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/char_traits.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/charconv.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/chrono.h \
+  C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/codecvt.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/concept_check.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cpp_type_traits.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_forced.h \
@@ -251,6 +315,10 @@ C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartR
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_defines.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_ptr.h \
+  C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_dir.h \
+  C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_fwd.h \
+  C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_ops.h \
+  C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_path.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functexcept.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functional_hash.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hash_bytes.h \
@@ -258,9 +326,15 @@ C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartR
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hashtable_policy.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/invoke.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h \
+  C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/list.tcc \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.tcc \
+  C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_conv.h \
+  C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h \
+  C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.tcc \
+  C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.h \
+  C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.tcc \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/localefwd.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memory_resource.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memoryfwd.h \
@@ -268,11 +342,13 @@ C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartR
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/nested_exception.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/new_allocator.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/node_handle.h \
+  C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream_insert.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/parse_numbers.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/postypes.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/predefined_ops.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ptr_traits.h \
+  C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/quoted_string.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/range_access.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/refwrap.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
@@ -280,6 +356,7 @@ C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartR
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/shared_ptr_atomic.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/shared_ptr_base.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/specfun.h \
+  C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/sstream.tcc \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_abs.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_function.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algo.h \
@@ -321,6 +398,7 @@ C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartR
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/climits \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/clocale \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cmath \
+  C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/codecvt \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/compare \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstddef \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdint \
@@ -329,6 +407,7 @@ C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartR
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstring \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwchar \
+  C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwctype \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/assertions.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/debug.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/exception \
@@ -339,22 +418,29 @@ C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartR
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/numeric_traits.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/string_conversions.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/type_traits.h \
+  C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/filesystem \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/functional \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/initializer_list \
+  C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip \
+  C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iosfwd \
+  C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iterator \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/list \
+  C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/locale \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/memory \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/new \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/numeric \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/optional \
+  C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/execution_defs.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_algorithm_defs.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_memory_defs.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_numeric_defs.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ratio \
+  C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/sstream \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdexcept \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdlib.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/streambuf \
@@ -385,10 +471,14 @@ C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartR
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
+  C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
+  C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/limits.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdarg.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdbool.h \
@@ -429,4 +519,5 @@ C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartR
   C:/Users/DUBE/QT/Tools/mingw1310_64/x86_64-w64-mingw32/include/sys/types.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
   C:/Users/DUBE/QT/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
-  C:/Users/DUBE/QT/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
+  C:/Users/DUBE/QT/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
+  C:/Users/DUBE/QT/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h

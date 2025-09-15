@@ -10,3 +10,4 @@
 #include "EWIEGA46WW/moc_studentregistration.cpp"
 #include "EWIEGA46WW/moc_useraccounts.cpp"
 #include "EWIEGA46WW/moc_useraddmin.cpp"
+#include "EWIEGA46WW/moc_viewlecturer.cpp"

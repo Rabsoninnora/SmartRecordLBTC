@@ -401,6 +401,12 @@
 			"MU",
 			"EWIEGA46WW/moc_useraddmin.cpp",
 			null
+		],
+		[
+			"C:/Project@cosmas/SmartRecord/viewlecturer.h",
+			"MU",
+			"EWIEGA46WW/moc_viewlecturer.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -489,7 +495,8 @@
 		[ "C:/Project@cosmas/SmartRecord/smartrecordlbtc.cpp", "MU", null ],
 		[ "C:/Project@cosmas/SmartRecord/studentregistration.cpp", "MU", null ],
 		[ "C:/Project@cosmas/SmartRecord/useraccounts.cpp", "MU", null ],
-		[ "C:/Project@cosmas/SmartRecord/useraddmin.cpp", "MU", null ]
+		[ "C:/Project@cosmas/SmartRecord/useraddmin.cpp", "MU", null ],
+		[ "C:/Project@cosmas/SmartRecord/viewlecturer.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],
