@@ -18,6 +18,7 @@ RegisterLecturer::RegisterLecturer(QWidget *parent)
     , ui(new Ui::RegisterLecturer)
 {
     ui->setupUi(this);
+      setWindowTitle("v1.0");
       setWindowFlags(windowFlags() | Qt::WindowStaysOnTopHint);
 }
 

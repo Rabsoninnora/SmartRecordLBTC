@@ -20,6 +20,8 @@ ViewLecturer::ViewLecturer(QWidget *parent)
     , ui(new Ui::ViewLecturer)
 {
     ui->setupUi(this);
+    setWindowFlags(windowFlags() | Qt::WindowStaysOnTopHint);
+    setWindowTitle("v1.0");
     ui->lineEdit_Search_Lecturer->setStyleSheet(R"(
     QLineEdit {
         padding-left: 30px; /* space for icon */

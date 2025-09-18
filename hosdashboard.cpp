@@ -10,6 +10,7 @@ HOSDashboard::HOSDashboard(QWidget *parent)
 
     departmentList = new QListWidget(this);
     mainContent = new QStackedWidget(this);
+    ptrStudentRegistration = new StudentRegistration();
 
     setupUI();
     setupConnections();
@@ -48,7 +49,7 @@ void HOSDashboard::setupUI()
     QPushButton *closeBtn = new QPushButton("Logout", this);
 
     connect(minimizeBtn, &QPushButton::clicked, this, &HOSDashboard::showMinimized);
-    connect(closeBtn, &QPushButton::clicked, this, &HOSDashboard::logout);
+    connect(closeBtn, &QPushButton::clicked, this, &HOSDashboard::close);
 
     topButtons->addWidget(minimizeBtn);
     topButtons->addWidget(closeBtn);
@@ -72,8 +73,11 @@ void HOSDashboard::setupUI()
     QPushButton *coursesBtn = createNavButton("Courses", "btnCourses");
     QPushButton *reportsBtn = createNavButton("Reports", "btnReports");
     QPushButton *settingsBtn = createNavButton("Settings", "btnSettings");
-    QPushButton *logoutBtn = createNavButton("Logout", "btnLogout");
-
+    QPushButton *viewStudentsBtn = createNavButton("View Students", "btnViewStudents");
+    QPushButton *registerStudentBtn = createNavButton("Register Student", "btnRegisterStudent");
+    QPushButton *manageDataBtn = createNavButton("Add User", "btnManageData");
+    QPushButton *logoutBtn = createNavButton("Close App", "btnLogout");
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     leftLayout->addWidget(titleLabel);
     leftLayout->addWidget(deptLabel);
     leftLayout->addWidget(departmentList);
@@ -82,6 +86,9 @@ void HOSDashboard::setupUI()
     leftLayout->addWidget(coursesBtn);
     leftLayout->addWidget(reportsBtn);
     leftLayout->addWidget(settingsBtn);
+    leftLayout->addWidget(viewStudentsBtn);
+    leftLayout->addWidget(registerStudentBtn);
+    leftLayout->addWidget(manageDataBtn);
     leftLayout->addWidget(logoutBtn);
     leftLayout->addStretch();
 
@@ -97,8 +104,9 @@ void HOSDashboard::setupUI()
     mainLayout->addWidget(leftPanel);
     mainLayout->addWidget(rightPanel, 1);
     outerLayout->addLayout(mainLayout);
-
     this->setLayout(outerLayout);
+
+
 }
 
 void HOSDashboard::setupConnections()
@@ -108,6 +116,9 @@ void HOSDashboard::setupConnections()
     connect(findChild<QPushButton*>("btnCourses"), &QPushButton::clicked, this, &HOSDashboard::showCourseManagement);
     connect(findChild<QPushButton*>("btnReports"), &QPushButton::clicked, this, &HOSDashboard::showReports);
     connect(findChild<QPushButton*>("btnSettings"), &QPushButton::clicked, this, &HOSDashboard::showSettings);
+    connect(findChild<QPushButton*>("btnViewStudents"), &QPushButton::clicked, this, &HOSDashboard::viewStudents);
+    connect(findChild<QPushButton*>("btnRegisterStudent"), &QPushButton::clicked, this, &HOSDashboard::registerStudent);
+    connect(findChild<QPushButton*>("btnManageData"), &QPushButton::clicked, this, &HOSDashboard::manageData);
     connect(findChild<QPushButton*>("btnLogout"), &QPushButton::clicked, this, &HOSDashboard::logout);
 }
 
@@ -144,6 +155,8 @@ void HOSDashboard::viewStudents()
 void HOSDashboard::registerStudent()
 {
     // TODO: Implement registerStudent functionality
+
+    ptrStudentRegistration->show();
 }
 
 void HOSDashboard::manageData()
@@ -153,7 +166,7 @@ void HOSDashboard::manageData()
 
 void HOSDashboard::logout()
 {
-    QApplication::quit();
+    this->close();
 }
 
 QPushButton* HOSDashboard::createNavButton(const QString &text, const QString &objectName)
@@ -167,7 +180,7 @@ QPushButton* HOSDashboard::createNavButton(const QString &text, const QString &o
 QString HOSDashboard::loadStylesheet()
 {
     return R"(
-        QWidget { background-color: #1e1e2f; font-family: 'Segoe UI'; font-size: 14px; color: #f0f0f0; }
+        QWidget { font-size: 14px; background-color: rgb(0, 81, 121); color: white; border:1px; border-radius: 5px; padding: 4px; }
         QListWidget { background-color: #2c2f48; border-radius: 5px; color: #ffffff; }
         QPushButton {
             background-color: #3a3f5c; color: #ffffff; border-radius: 5px;

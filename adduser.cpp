@@ -266,6 +266,7 @@ void AddUser::on_btn_Insert_admin_clicked()
     QSqlDatabase::database().transaction();
 
 
+
     // Hash the password before inserting
 
     QByteArray hashedPassword = QCryptographicHash::hash(ui->lineEdit_Admin_Password->text().toUtf8(), QCryptographicHash::Sha256).toHex();
