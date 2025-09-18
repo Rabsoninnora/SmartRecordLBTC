@@ -33,6 +33,8 @@ SmartRecord_autogen/timestamp: \
 	C:/Project@cosmas/SmartRecord/useraddmin.h \
 	C:/Project@cosmas/SmartRecord/viewlecturer.cpp \
 	C:/Project@cosmas/SmartRecord/viewlecturer.h \
+	C:/Project@cosmas/SmartRecord/viewstudents.cpp \
+	C:/Project@cosmas/SmartRecord/viewstudents.h \
 	C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/QBuffer \
 	C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/QByteArray \
 	C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtCore/QDebug \
@@ -769,4 +771,5 @@ SmartRecord_autogen/timestamp: \
 	C:/Project@cosmas/SmartRecord/studentregistration.ui \
 	C:/Project@cosmas/SmartRecord/useraccounts.ui \
 	C:/Project@cosmas/SmartRecord/viewlecturer.ui \
+	C:/Project@cosmas/SmartRecord/viewstudents.ui \
 	C:/Users/DUBE/QT/Tools/CMake_64/bin/cmake.exe

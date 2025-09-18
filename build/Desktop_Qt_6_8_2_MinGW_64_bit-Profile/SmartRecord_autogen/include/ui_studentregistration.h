@@ -242,7 +242,7 @@ public:
 " "));
         btn_Student_browse_image = new QPushButton(frame);
         btn_Student_browse_image->setObjectName("btn_Student_browse_image");
-        btn_Student_browse_image->setGeometry(QRect(30, 180, 131, 41));
+        btn_Student_browse_image->setGeometry(QRect(45, 218, 131, 41));
         btn_Student_browse_image->setStyleSheet(QString::fromUtf8("    \n"
 "QPushButton{\n"
 "                    color: rgb(255, 255, 255);\n"
@@ -260,7 +260,7 @@ public:
         btn_Student_browse_image->setIcon(icon1);
         image_field = new QLabel(frame);
         image_field->setObjectName("image_field");
-        image_field->setGeometry(QRect(10, 10, 181, 161));
+        image_field->setGeometry(QRect(10, 10, 211, 201));
         image_field->setStyleSheet(QString::fromUtf8(" \n"
 " QLabel {\n"
 "  border:2px solid green;\n"

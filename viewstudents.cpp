@@ -12,3 +12,27 @@ ViewStudents::~ViewStudents()
 {
     delete ui;
 }
+
+void ViewStudents::on_btn_Student_Update_clicked()
+{
+
+}
+
+
+void ViewStudents::on_btn_Update_Student_clicked()
+{
+
+}
+
+
+void ViewStudents::on_btn_Reset_Student_clicked()
+{
+
+}
+
+
+void ViewStudents::on_btn_search_clicked()
+{
+
+}
+

@@ -347,8 +347,8 @@ QLineEdit{
    <widget class="QPushButton" name="btn_Student_browse_image">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>180</y>
+      <x>45</x>
+      <y>218</y>
       <width>131</width>
       <height>41</height>
      </rect>
@@ -380,8 +380,8 @@ QPushButton{
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>181</width>
-      <height>161</height>
+      <width>211</width>
+      <height>201</height>
      </rect>
     </property>
     <property name="styleSheet">

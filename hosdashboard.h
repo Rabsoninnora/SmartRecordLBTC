@@ -17,6 +17,7 @@
 #include <QHeaderView>
 #include <QApplication>
 #include "studentregistration.h"
+#include "viewstudents.h"
 // Include AddUser  if you have it for HOSDashboard as well
 #include "adduser.h"
 
@@ -46,8 +47,10 @@ private slots:
 private:
     Ui::HOSDashboard *ui;
     StudentRegistration *ptrStudentRegistration;
+    ViewStudents        *ptrViewStudents;
     QListWidget *departmentList;
     QStackedWidget *mainContent;
+
     AddUser  *ptrAddUser ;
 
     void setupUI();

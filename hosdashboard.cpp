@@ -11,6 +11,7 @@ HOSDashboard::HOSDashboard(QWidget *parent)
     departmentList = new QListWidget(this);
     mainContent = new QStackedWidget(this);
     ptrStudentRegistration = new StudentRegistration();
+    ptrViewStudents = new ViewStudents();
 
     setupUI();
     setupConnections();
@@ -35,6 +36,8 @@ HOSDashboard::HOSDashboard(QWidget *parent)
 HOSDashboard::~HOSDashboard()
 {
     delete ui;
+    delete ptrStudentRegistration;
+    delete ptrViewStudents;
 }
 
 void HOSDashboard::setupUI()
@@ -150,6 +153,7 @@ void HOSDashboard::showSettings()
 void HOSDashboard::viewStudents()
 {
     // TODO: Implement viewStudents functionality
+    ptrViewStudents->show();
 }
 
 void HOSDashboard::registerStudent()
