@@ -1,6 +1,6 @@
 #ifndef VIEWSTUDENTS_H
 #define VIEWSTUDENTS_H
-
+#include "mydb.h"
 #include <QDialog>
 
 namespace Ui {
@@ -18,11 +18,12 @@ public:
 private slots:
     void on_btn_Student_Update_clicked();
 
-    void on_btn_Update_Student_clicked();
-
     void on_btn_Reset_Student_clicked();
 
     void on_btn_search_clicked();
+
+    void on_btn_Delete_Student_clicked();
+     void clearFields();
 
 private:
     Ui::ViewStudents *ui;

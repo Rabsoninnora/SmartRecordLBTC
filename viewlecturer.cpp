@@ -37,7 +37,7 @@ ViewLecturer::ViewLecturer(QWidget *parent)
         border: 1px solid #0078d7;
 
     }
-)");
+ )");
 }
 
 ViewLecturer::~ViewLecturer()
