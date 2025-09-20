@@ -39,7 +39,7 @@ public:
     QLineEdit *lineEdit_Student_Email;
     QLineEdit *lineEdit_Student_Phone;
     QPushButton *pushButton_2;
-    QPushButton *btn_Update_Student;
+    QPushButton *btn_Delete_Student;
     QPushButton *btn_Reset_Student;
     QLineEdit *lineEdit_Stud_NXTOF_KIN;
     QLabel *label;
@@ -308,10 +308,10 @@ public:
 "}\n"
 "\n"
 " "));
-        btn_Update_Student = new QPushButton(frame);
-        btn_Update_Student->setObjectName("btn_Update_Student");
-        btn_Update_Student->setGeometry(QRect(230, 350, 121, 41));
-        btn_Update_Student->setStyleSheet(QString::fromUtf8("   \n"
+        btn_Delete_Student = new QPushButton(frame);
+        btn_Delete_Student->setObjectName("btn_Delete_Student");
+        btn_Delete_Student->setGeometry(QRect(230, 350, 121, 41));
+        btn_Delete_Student->setStyleSheet(QString::fromUtf8("   \n"
 "QPushButton{\n"
 "                    color: rgb(255, 255, 255);\n"
 "                    border:2px solid red;\n"
@@ -325,7 +325,7 @@ public:
 "\n"
 " "));
         QIcon icon2(QIcon::fromTheme(QIcon::ThemeIcon::EditDelete));
-        btn_Update_Student->setIcon(icon2);
+        btn_Delete_Student->setIcon(icon2);
         btn_Reset_Student = new QPushButton(frame);
         btn_Reset_Student->setObjectName("btn_Reset_Student");
         btn_Reset_Student->setGeometry(QRect(380, 350, 131, 41));
@@ -447,7 +447,7 @@ public:
         lineEdit_Student_Email->raise();
         lineEdit_Student_Phone->raise();
         pushButton_2->raise();
-        btn_Update_Student->raise();
+        btn_Delete_Student->raise();
         btn_Reset_Student->raise();
         lineEdit_Stud_NXTOF_KIN->raise();
         label->raise();
@@ -512,7 +512,7 @@ public:
         lineEdit_Student_Email->setPlaceholderText(QCoreApplication::translate("ViewStudents", "Email Address", nullptr));
         lineEdit_Student_Phone->setPlaceholderText(QCoreApplication::translate("ViewStudents", "Phone", nullptr));
         pushButton_2->setText(QCoreApplication::translate("ViewStudents", "All Fields marked with * are required fields make sure to have them all filled", nullptr));
-        btn_Update_Student->setText(QCoreApplication::translate("ViewStudents", "Delete", nullptr));
+        btn_Delete_Student->setText(QCoreApplication::translate("ViewStudents", "Delete", nullptr));
         btn_Reset_Student->setText(QCoreApplication::translate("ViewStudents", "Clear", nullptr));
         lineEdit_Stud_NXTOF_KIN->setPlaceholderText(QCoreApplication::translate("ViewStudents", "Next oF Kin Contact Number", nullptr));
         label->setText(QCoreApplication::translate("ViewStudents", "First Name", nullptr));

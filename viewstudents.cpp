@@ -45,9 +45,8 @@ ViewStudents::~ViewStudents()
 
 void ViewStudents::on_btn_Student_Update_clicked()
 {
-/*
 
-    QString Stud_ID = ui->lineEdit_Search_Lecturer->text().trimmed();
+    QString Stud_ID = ui->lineEdit_Search_Student->text().trimmed();
     if (Stud_ID.isEmpty()) {
         QMessageBox::warning(this, "Input Error", "Enter NRC to update.");
         return;
@@ -56,29 +55,29 @@ void ViewStudents::on_btn_Student_Update_clicked()
 
     QSqlQuery query(MyDB::getInstance()->getDBInstance());
     QSqlDatabase::database().transaction();
-    query.prepare("UPDATE LecturerTable SET Fname=:Fname, Mname=:Mname, Lname=:Lname, Phone=:Phone, "
-                  "Qualification=:Qualification, Department=:Department, NoCourses=:NoCourses, Subjects=:Subjects, "
-                  "Email=:Email, Phyc_Add=:Phyc_Add WHERE NRC=:NRC");
+    query.prepare("UPDATE StudentsTable SET Fname=:Fname, Mname=:Mname, Lname=:Lname, Program=:Program, "
+                  "Stud_ID=:Stud_ID, Enro_year=:Enro_year, Duration=:Duration, Status=:Status, "
+                  "Phone=:Phone, Email=:Email WHERE Stud_ID=:Stud_ID");
 
     query.bindValue(":Fname", ui->lineEdit_Fname->text());
     query.bindValue(":Mname", ui->lineEdit_Mname->text());
     query.bindValue(":Lname", ui->lineEdit_Lname->text());
-    query.bindValue(":Phone", ui->lineEdit_Phone->text());
-    query.bindValue(":Qualification", ui->lineEdit_Qualification->text());
-    query.bindValue(":Department", ui->lineEdit_Lecturer_Department->text());
-    query.bindValue(":NoCourses", ui->lineEdit_Lecturer_No_Courses->text());
-    query.bindValue(":Subjects", ui->plainTextEdit_Subjects->toPlainText());
-    query.bindValue(":Email", ui->lineEdit_Email->text());
-    query.bindValue(":Phyc_Add", ui->lineEdit_Physical_Address->text());
-    query.bindValue(":NRC", nrc);
+    query.bindValue(":Program", ui->lineEdit_Student_Program->text());
+    query.bindValue(":Enro_year", ui->lineEdit_Enro_year->text());
+    query.bindValue(":Duration", ui->lineEdit_Course_Duration->text());
+    query.bindValue(":Status", ui->lineEdit_Student_Status->text());
+    query.bindValue(":Phone", ui->lineEdit_Student_Phone->text());
+    query.bindValue(":Email", ui->lineEdit_Student_Email->text());
+    query.bindValue(":NextOfKin_Phone", ui->lineEdit_Stud_NXTOF_KIN->text());
+    query.bindValue(":Stud_ID", Stud_ID);
 
     if (query.exec()) {
-        QMessageBox::information(this, "Success", "Lecturer updated.");
+        QMessageBox::information(this, "Success", "Student updated.");
     } else {
         QMessageBox::critical(this, "Error", "Update failed: " + query.lastError().text());
     }
 
-*/
+
 }
 
 void ViewStudents::on_btn_Reset_Student_clicked()

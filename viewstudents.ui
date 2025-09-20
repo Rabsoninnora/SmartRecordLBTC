@@ -456,7 +456,7 @@ QPushButton{
      <string>All Fields marked with * are required fields make sure to have them all filled</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="btn_Update_Student">
+   <widget class="QPushButton" name="btn_Delete_Student">
     <property name="geometry">
      <rect>
       <x>230</x>
@@ -787,7 +787,7 @@ QLineEdit{
    <zorder>lineEdit_Student_Email</zorder>
    <zorder>lineEdit_Student_Phone</zorder>
    <zorder>pushButton_2</zorder>
-   <zorder>btn_Update_Student</zorder>
+   <zorder>btn_Delete_Student</zorder>
    <zorder>btn_Reset_Student</zorder>
    <zorder>lineEdit_Stud_NXTOF_KIN</zorder>
    <zorder>label</zorder>

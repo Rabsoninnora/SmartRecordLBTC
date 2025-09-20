@@ -25,6 +25,8 @@ private slots:
     void on_btn_Delete_Student_clicked();
      void clearFields();
 
+    void on_btn_RegisterStudent_back_clicked();
+
 private:
     Ui::ViewStudents *ui;
 };
