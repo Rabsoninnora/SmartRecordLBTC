@@ -69,8 +69,7 @@ void UserAddmin::handleSubmit()
         return;
     }
 
-    QMessageBox::information(this, "Login Info",
-                             "Username: " + username + "\nRole: " + role);
+
 
     /////////////////////////////////////////////////////////////////////
     // Hash the password

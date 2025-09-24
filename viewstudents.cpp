@@ -20,6 +20,7 @@ ViewStudents::ViewStudents(QWidget *parent)
 {
     ui->setupUi(this);
 
+
     ui->lineEdit_Search_Student->setStyleSheet(R"(
     QLineEdit {
         padding-left: 30px; /* space for icon */

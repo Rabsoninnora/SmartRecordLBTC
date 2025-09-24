@@ -19,6 +19,7 @@
 #include "adduser.h"
 #include "registerlecturer.h"
 #include "viewlecturer.h"
+#include "courses.h"
 
 namespace Ui {
 class Dashboard;
@@ -50,6 +51,7 @@ private:
     AddUser *ptrAddUser;
     RegisterLecturer *ptrRegisterLecturer;
     ViewLecturer     *ptrViewLecturer;
+    Courses          *ptrCourses;
 
     void setupUI();
     void setupConnections();

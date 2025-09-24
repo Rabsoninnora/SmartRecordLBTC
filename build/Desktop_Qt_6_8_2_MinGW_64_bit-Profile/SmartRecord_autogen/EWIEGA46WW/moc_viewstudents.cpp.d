@@ -214,15 +214,20 @@ C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartR
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/QFileDialog \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/QMessageBox \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/QTableWidget \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/QVBoxLayout \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qabstractitemview.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qabstractscrollarea.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qabstractslider.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qabstractspinbox.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qboxlayout.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qdialog.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qfiledialog.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qframe.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qgridlayout.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qlayout.h \
+  C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qlayoutitem.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qmessagebox.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qrubberband.h \
   C:/Users/DUBE/QT/6.8.2/mingw_64/include/QtWidgets/qsizepolicy.h \

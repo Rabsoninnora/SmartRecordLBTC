@@ -1,6 +1,7 @@
 #ifndef VIEWSTUDENTS_H
 #define VIEWSTUDENTS_H
 #include "mydb.h"
+#include "QVBoxLayout"
 #include <QDialog>
 
 namespace Ui {

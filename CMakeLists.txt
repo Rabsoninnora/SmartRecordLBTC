@@ -37,6 +37,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         registerlecturer.h registerlecturer.cpp registerlecturer.ui
         viewlecturer.h viewlecturer.cpp viewlecturer.ui
         viewstudents.h viewstudents.cpp viewstudents.ui
+        courses.h courses.cpp courses.ui
 
     )
 # Define target properties for Android with Qt 6 as:

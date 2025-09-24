@@ -349,6 +349,12 @@
 			null
 		],
 		[
+			"C:/Project@cosmas/SmartRecord/courses.h",
+			"MU",
+			"EWIEGA46WW/moc_courses.cpp",
+			null
+		],
+		[
 			"C:/Project@cosmas/SmartRecord/dashboard.h",
 			"MU",
 			"EWIEGA46WW/moc_dashboard.cpp",
@@ -492,6 +498,7 @@
 		[ "C:/Project@cosmas/SmartRecord/adduser.cpp", "MU", null ],
 		[ "C:/Project@cosmas/SmartRecord/adminlogin.cpp", "MU", null ],
 		[ "C:/Project@cosmas/SmartRecord/adminpanel.cpp", "MU", null ],
+		[ "C:/Project@cosmas/SmartRecord/courses.cpp", "MU", null ],
 		[ "C:/Project@cosmas/SmartRecord/dashboard.cpp", "MU", null ],
 		[ "C:/Project@cosmas/SmartRecord/hosdashboard.cpp", "MU", null ],
 		[ "C:/Project@cosmas/SmartRecord/main.cpp", "MU", null ],

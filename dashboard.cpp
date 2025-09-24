@@ -13,6 +13,7 @@ Dashboard::Dashboard(QWidget *parent)
     ptrAddUser = new AddUser();
     ptrRegisterLecturer = new RegisterLecturer();
     ptrViewLecturer = new ViewLecturer();
+    ptrCourses = new Courses();
 
     setupUI();
     setupConnections();
@@ -38,6 +39,7 @@ Dashboard::~Dashboard()
     delete ptrAddUser;
     delete ptrRegisterLecturer;
     delete ptrViewLecturer;
+    delete ptrCourses;
 }
 
 void Dashboard::setupUI()
@@ -82,7 +84,7 @@ void Dashboard::setupUI()
     QPushButton *viewStudentsBtn = createNavButton("Lecturer", "btnViewStudents");
     QPushButton *registerStudentBtn = createNavButton("Register Lecturer", "btnRegisterStudent");
     QPushButton *manageDataBtn = createNavButton("Add User", "btnManageData");
-    QPushButton *logoutBtn = createNavButton("Close App", "btnLogout");
+    QPushButton *logoutBtn = createNavButton("Register Course", "btnLogout");
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     leftLayout->addWidget(titleLabel);
     leftLayout->addWidget(deptLabel);
@@ -155,7 +157,7 @@ Install admin previleges
 }
 
 void Dashboard::logout() {
-    QApplication::quit();
+    ptrCourses->show();
 }
 
 QPushButton* Dashboard::createNavButton(const QString &text, const QString &objectName) {
@@ -220,21 +222,35 @@ QWidget* Dashboard::createCourseManagementWidget()
     title->setAlignment(Qt::AlignCenter);
     title->setStyleSheet("font-weight: bold; font-size: 24px; margin-bottom: 20px;");
 
-    QTableWidget *courseTable = new QTableWidget(0, 4, widget);
-    courseTable->setHorizontalHeaderLabels({"Department", "Code", "Course Name", "Total Subject"});
+    QTableWidget *courseTable = new QTableWidget(widget);
+    courseTable->setColumnCount(4);
+    courseTable->setHorizontalHeaderLabels({"Department", "Code", "Course Name", "Total Subjects"});
     courseTable->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
     courseTable->setEditTriggers(QAbstractItemView::NoEditTriggers);
 
-    courseTable->insertRow(0);
-    courseTable->setItem(0, 0, new QTableWidgetItem("Business"));
-    courseTable->setItem(0, 1, new QTableWidgetItem("DCS"));
-    courseTable->setItem(0, 2, new QTableWidgetItem("Diploma in Computer Studies"));
-    courseTable->setItem(0, 3, new QTableWidgetItem("5"));
+    QSqlQuery query(MyDB::getInstance()->getDBInstance());
+    if (query.exec("SELECT Department, CODE, CourseName, TotalSubjects FROM CoursesTable")) {
+        int row = 0;
+        while (query.next()) {
+            courseTable->insertRow(row);
+            courseTable->setItem(row, 0, new QTableWidgetItem(query.value("Department").toString()));
+            courseTable->setItem(row, 1, new QTableWidgetItem(query.value("CODE").toString()));
+            courseTable->setItem(row, 2, new QTableWidgetItem(query.value("CourseName").toString()));
+            courseTable->setItem(row, 3, new QTableWidgetItem(query.value("TotalSubjects").toString()));
+            courseTable->setItem(row, 4, new QTableWidgetItem(query.value("CourseDuration").toString()));
+            courseTable->setItem(row, 5, new QTableWidgetItem(query.value("SubjectsList").toString()));
+            row++;
+        }
+    } else {
+        QMessageBox::critical(this, "Database Error", "Failed to load course data: " + query.lastError().text());
+    }
 
     layout->addWidget(title);
     layout->addWidget(courseTable);
     return widget;
 }
+
+
 
 QWidget* Dashboard::createReportWidget()
 {
