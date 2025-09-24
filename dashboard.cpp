@@ -223,13 +223,32 @@ QWidget* Dashboard::createCourseManagementWidget()
     title->setStyleSheet("font-weight: bold; font-size: 24px; margin-bottom: 20px;");
 
     QTableWidget *courseTable = new QTableWidget(widget);
-    courseTable->setColumnCount(4);
-    courseTable->setHorizontalHeaderLabels({"Department", "Code", "Course Name", "Total Subjects"});
-    courseTable->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
-    courseTable->setEditTriggers(QAbstractItemView::NoEditTriggers);
+    courseTable->setColumnCount(6);  // Updated to match insertions
+    courseTable->setHorizontalHeaderLabels({
+        "Department", "Code", "Course Name", "Total Subjects",
+        "Course Duration", "Subjects List"  // Added missing headers
+    });
+
+    // Enable manual resizing (dragging) for columns
+    courseTable->horizontalHeader()->setSectionResizeMode(QHeaderView::Interactive);
+
+    // Enable manual resizing (dragging) for rows
+    courseTable->verticalHeader()->setSectionResizeMode(QHeaderView::Interactive);
+
+    // Optional: Hide row numbers if not needed
+    // courseTable->verticalHeader()->setVisible(false);
+
+    // Improve data visibility
+    courseTable->setWordWrap(true);  // Wrap long text
+    courseTable->setAlternatingRowColors(true);  // Better readability
+    courseTable->setEditTriggers(QAbstractItemView::NoEditTriggers);  // Keep non-editable
+
+    // Initially resize columns to fit content (you can set per-column if needed)
+    courseTable->resizeColumnsToContents();
 
     QSqlQuery query(MyDB::getInstance()->getDBInstance());
-    if (query.exec("SELECT Department, CODE, CourseName, TotalSubjects FROM CoursesTable")) {
+
+    if (query.exec("SELECT Department, CODE, CourseName, TotalSubjects, CourseDuration, SubjectList FROM CoursesTable")) {
         int row = 0;
         while (query.next()) {
             courseTable->insertRow(row);
@@ -238,9 +257,12 @@ QWidget* Dashboard::createCourseManagementWidget()
             courseTable->setItem(row, 2, new QTableWidgetItem(query.value("CourseName").toString()));
             courseTable->setItem(row, 3, new QTableWidgetItem(query.value("TotalSubjects").toString()));
             courseTable->setItem(row, 4, new QTableWidgetItem(query.value("CourseDuration").toString()));
-            courseTable->setItem(row, 5, new QTableWidgetItem(query.value("SubjectsList").toString()));
+            courseTable->setItem(row, 5, new QTableWidgetItem(query.value("SubjectList").toString()));
             row++;
         }
+
+        // After populating, re-adjust column widths if needed
+        courseTable->resizeColumnsToContents();
     } else {
         QMessageBox::critical(this, "Database Error", "Failed to load course data: " + query.lastError().text());
     }
@@ -249,6 +271,7 @@ QWidget* Dashboard::createCourseManagementWidget()
     layout->addWidget(courseTable);
     return widget;
 }
+
 
 
 
