@@ -43,6 +43,8 @@ private slots:
     void registerStudent();
     void manageData();
     void logout();
+    void loadCourseData(QTableWidget* table);
+    void loadStudentData(QTableWidget* table1);
 
 private:
     Ui::Dashboard *ui;

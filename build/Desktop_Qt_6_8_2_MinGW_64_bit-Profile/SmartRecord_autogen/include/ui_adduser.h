@@ -430,6 +430,7 @@ public:
         pushButton_3 = new QPushButton(HOS);
         pushButton_3->setObjectName("pushButton_3");
         pushButton_3->setGeometry(QRect(399, 30, 531, 41));
+        pushButton_3->setStyleSheet(QString::fromUtf8("  background-color: rgb(230, 240, 255); /* Soft blue background for readability */"));
         tabWidget->addTab(HOS, QString());
         tableWidget->raise();
         pushButton_6->raise();
@@ -446,7 +447,7 @@ public:
 
         retranslateUi(AddUser);
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(AddUser);

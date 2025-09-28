@@ -19,9 +19,7 @@ Dashboard::Dashboard(QWidget *parent)
     setupConnections();
 
     QStringList departments = {
-        "Business", "Hospitality", "Engineering",
-        "Computer Science", "Arts & Humanities",
-        "Health Sciences", "Education"
+        "Business", "Hospitality", "Engineering"
     };
 
     for (const QString &dept : departments) {
@@ -77,14 +75,15 @@ void Dashboard::setupUI()
     deptLabel->setStyleSheet("font-size: 14px; background-color: rgb(0, 81, 121); color: white; border:1px; border-radius: 5px; padding: 4px;");
 
     // Navigation buttons
+    QPushButton *logoutBtn = createNavButton("Add Course", "btnLogout");
+    QPushButton *coursesBtn = createNavButton("View Courses", "btnCourses");
+    QPushButton *registerStudentBtn = createNavButton("Register Lecturer", "btnRegisterStudent");
+    QPushButton *viewStudentsBtn = createNavButton("View Lecturer", "btnViewStudents");
     QPushButton *studentsBtn = createNavButton("Students", "btnStudents");
-    QPushButton *coursesBtn = createNavButton("Courses", "btnCourses");
     QPushButton *reportsBtn = createNavButton("Reports", "btnReports");
     QPushButton *settingsBtn = createNavButton("Settings", "btnSettings");
-    QPushButton *viewStudentsBtn = createNavButton("Lecturer", "btnViewStudents");
-    QPushButton *registerStudentBtn = createNavButton("Register Lecturer", "btnRegisterStudent");
     QPushButton *manageDataBtn = createNavButton("Add User", "btnManageData");
-    QPushButton *logoutBtn = createNavButton("Register Course", "btnLogout");
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     leftLayout->addWidget(titleLabel);
     leftLayout->addWidget(deptLabel);
@@ -191,28 +190,115 @@ QWidget* Dashboard::createStudentManagementWidget()
     QWidget *widget = new QWidget(this);
     QVBoxLayout *layout = new QVBoxLayout(widget);
 
-    QLabel *title = new QLabel("Student Management", widget);
-    title->setAlignment(Qt::AlignCenter);
-    title->setStyleSheet("font-weight: bold; font-size: 24px; margin-bottom: 20px;");
+    QLabel *title1 = new QLabel("Lusaka Business & Technical College Students", widget);
+    title1->setAlignment(Qt::AlignCenter);
+    title1->setStyleSheet("font-weight: bold; font-size: 24px; margin-bottom: 20px;");
 
-    QTableWidget *studentTable = new QTableWidget(0, 5, widget);
-    studentTable->setHorizontalHeaderLabels({"ID", "Name", "Program", "Year", "GPA/Score"});
-    studentTable->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
-    studentTable->setEditTriggers(QAbstractItemView::NoEditTriggers);
+    // Add Refresh button
+    QPushButton *refreshBtn1 = new QPushButton("Refresh", widget);
+    refreshBtn1->setStyleSheet("QPushButton { background-color: #4CAF50; color: white; font-weight: bold; padding: 10px; border-radius: 5px; } "
+                              "QPushButton:hover { background-color: #45a049; } "
+                              "QPushButton:pressed { background-color: #3d8b40; }");
+    refreshBtn1->setFixedHeight(40);  // Optional: Set a fixed height for better appearance
 
-    studentTable->insertRow(0);
-    studentTable->setItem(0, 0, new QTableWidgetItem("1001"));
-    studentTable->setItem(0, 1, new QTableWidgetItem("Poniso"));
-    studentTable->setItem(0, 2, new QTableWidgetItem("Computer Science"));
-    studentTable->setItem(0, 3, new QTableWidgetItem("Senior"));
-    studentTable->setItem(0, 4, new QTableWidgetItem("3.8"));
+    QTableWidget *studentTable = new QTableWidget(widget);
+    studentTable->setColumnCount(6);  // Updated to match insertions
+    studentTable->setHorizontalHeaderLabels({
+        "First Name", "Middle Name", "Last Name", "Program",
+        "Student ID", "Year Enrolled","Duration","Status","Status","Phone","Email","Next OF KIN"  // Added missing headers
+    });
 
-    layout->addWidget(title);
+    // Enable manual resizing (dragging) for columns
+    studentTable->horizontalHeader()->setSectionResizeMode(QHeaderView::Interactive);
+
+    // Enable manual resizing (dragging) for rows
+    studentTable->verticalHeader()->setSectionResizeMode(QHeaderView::Interactive);
+
+    // Optional: Hide row numbers if not needed
+    // courseTable->verticalHeader()->setVisible(false);
+
+    // Improve data visibility
+    studentTable->setWordWrap(true);  // Wrap long text
+    studentTable->setAlternatingRowColors(true);  // Better readability
+    studentTable->setEditTriggers(QAbstractItemView::NoEditTriggers);  // Keep non-editable
+
+    // Initially resize columns to fit content (you can set per-column if needed)
+    studentTable->resizeColumnsToContents();
+
+    // Load initial data
+    loadStudentData(studentTable);
+
+    // Connect the refresh button to reload data
+    connect(refreshBtn1, &QPushButton::clicked, [this, studentTable]() {loadStudentData(studentTable);});
+
+    // Add widgets to layout: title, refresh button, then table
+    layout->addWidget(title1);
+    layout->addWidget(refreshBtn1, 0, Qt::AlignCenter);  // Center the button horizontally
     layout->addWidget(studentTable);
-    return widget;
 
+    // Optional: Add some spacing
+    layout->addStretch();  // Push table to top if needed, or remove for full height
+
+    return widget;
 }
 
+ void Dashboard::loadCourseData(QTableWidget* table)
+ {
+    // Clearing existing rows
+    table->setRowCount(0);
+
+    QSqlQuery query(MyDB::getInstance()->getDBInstance());
+    if (query.exec("SELECT Department, CODE, CourseName, TotalSubjects, CourseDuration, SubjectList FROM CoursesTable")) {
+        int row = 0;
+        while (query.next()) {
+            table->insertRow(row);
+            table->setItem(row, 0, new QTableWidgetItem(query.value("Department").toString()));
+            table->setItem(row, 1, new QTableWidgetItem(query.value("CODE").toString()));
+            table->setItem(row, 2, new QTableWidgetItem(query.value("CourseName").toString()));
+            table->setItem(row, 3, new QTableWidgetItem(query.value("TotalSubjects").toString()));
+            table->setItem(row, 4, new QTableWidgetItem(query.value("CourseDuration").toString()));
+            table->setItem(row, 5, new QTableWidgetItem(query.value("SubjectList").toString()));
+            row++;
+        }
+
+        // After populating, re-adjust column widths if needed
+        table->resizeColumnsToContents();
+    } else {
+        QMessageBox::critical(this, "Database Error", "Failed to load course data: " + query.lastError().text());
+    }
+}
+
+ void Dashboard::loadStudentData(QTableWidget* table1){
+     // Clearing existing rows
+     table1->setRowCount(0);
+
+     QSqlQuery query(MyDB::getInstance()->getDBInstance());
+     if (query.exec("SELECT Fname, Mname, Lname, Program, Stud_ID, Enro_year, Duration, Status, Phone, Email, NextOfkin_Phone FROM StudentsTable")) {
+         int row = 0;
+         while (query.next()) {
+             table1->insertRow(row);
+             table1->setItem(row, 0, new QTableWidgetItem(query.value("Fname").toString()));
+             table1->setItem(row, 1, new QTableWidgetItem(query.value("Mname").toString()));
+             table1->setItem(row, 2, new QTableWidgetItem(query.value("Lname").toString()));
+             table1->setItem(row, 3, new QTableWidgetItem(query.value("Program").toString()));
+             table1->setItem(row, 4, new QTableWidgetItem(query.value("Stud_ID").toString()));
+             table1->setItem(row, 5, new QTableWidgetItem(query.value("Enro_year").toString()));
+             table1->setItem(row, 6, new QTableWidgetItem(query.value("Duration").toString()));
+             table1->setItem(row, 7, new QTableWidgetItem(query.value("Status").toString()));
+             table1->setItem(row, 8, new QTableWidgetItem(query.value("Phone").toString()));
+             table1->setItem(row, 9, new QTableWidgetItem(query.value("Email").toString()));
+             table1->setItem(row, 10, new QTableWidgetItem(query.value("NextOfkin_Phone").toString()));
+             row++;
+         }
+
+         // After populating, re-adjust column widths if needed
+         table1->resizeColumnsToContents();
+     } else {
+         QMessageBox::critical(this, "Database Error", "Failed to load course data: " + query.lastError().text());
+     }
+ }
+
+// Updated createCourseManagementWidget() function:
 QWidget* Dashboard::createCourseManagementWidget()
 {
     QWidget *widget = new QWidget(this);
@@ -221,6 +307,13 @@ QWidget* Dashboard::createCourseManagementWidget()
     QLabel *title = new QLabel("Lusaka Business & Technical College Course List", widget);
     title->setAlignment(Qt::AlignCenter);
     title->setStyleSheet("font-weight: bold; font-size: 24px; margin-bottom: 20px;");
+
+    // Add Refresh button
+    QPushButton *refreshBtn = new QPushButton("Refresh", widget);
+    refreshBtn->setStyleSheet("QPushButton { background-color: #4CAF50; color: white; font-weight: bold; padding: 10px; border-radius: 5px; } "
+                              "QPushButton:hover { background-color: #45a049; } "
+                              "QPushButton:pressed { background-color: #3d8b40; }");
+    refreshBtn->setFixedHeight(40);  // Optional: Set a fixed height for better appearance
 
     QTableWidget *courseTable = new QTableWidget(widget);
     courseTable->setColumnCount(6);  // Updated to match insertions
@@ -246,29 +339,20 @@ QWidget* Dashboard::createCourseManagementWidget()
     // Initially resize columns to fit content (you can set per-column if needed)
     courseTable->resizeColumnsToContents();
 
-    QSqlQuery query(MyDB::getInstance()->getDBInstance());
+    // Load initial data
+    loadCourseData(courseTable);
 
-    if (query.exec("SELECT Department, CODE, CourseName, TotalSubjects, CourseDuration, SubjectList FROM CoursesTable")) {
-        int row = 0;
-        while (query.next()) {
-            courseTable->insertRow(row);
-            courseTable->setItem(row, 0, new QTableWidgetItem(query.value("Department").toString()));
-            courseTable->setItem(row, 1, new QTableWidgetItem(query.value("CODE").toString()));
-            courseTable->setItem(row, 2, new QTableWidgetItem(query.value("CourseName").toString()));
-            courseTable->setItem(row, 3, new QTableWidgetItem(query.value("TotalSubjects").toString()));
-            courseTable->setItem(row, 4, new QTableWidgetItem(query.value("CourseDuration").toString()));
-            courseTable->setItem(row, 5, new QTableWidgetItem(query.value("SubjectList").toString()));
-            row++;
-        }
+    // Connect the refresh button to reload data
+    connect(refreshBtn, &QPushButton::clicked, [this, courseTable]() {loadCourseData(courseTable);});
 
-        // After populating, re-adjust column widths if needed
-        courseTable->resizeColumnsToContents();
-    } else {
-        QMessageBox::critical(this, "Database Error", "Failed to load course data: " + query.lastError().text());
-    }
-
+    // Add widgets to layout: title, refresh button, then table
     layout->addWidget(title);
+    layout->addWidget(refreshBtn, 0, Qt::AlignCenter);  // Center the button horizontally
     layout->addWidget(courseTable);
+
+    // Optional: Add some spacing
+    layout->addStretch();  // Push table to top if needed, or remove for full height
+
     return widget;
 }
 

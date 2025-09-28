@@ -45,7 +45,7 @@
     <string notr="true"> background-color: #1e1e2f;</string>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>1</number>
    </property>
    <widget class="QWidget" name="Admin">
     <attribute name="title">
@@ -743,6 +743,9 @@ QPushButton{
        <width>531</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">  background-color: rgb(230, 240, 255); /* Soft blue background for readability */</string>
      </property>
      <property name="text">
       <string>HEAD OF SECTIONS</string>

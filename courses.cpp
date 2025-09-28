@@ -77,3 +77,9 @@ void Courses::on_btn_Reset_Course_clicked()
 }
 
 
+
+void Courses::on_btn_Course_back_clicked()
+{
+    this->close();
+}
+

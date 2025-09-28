@@ -79,7 +79,7 @@ void HOSDashboard::setupUI()
     QPushButton *viewStudentsBtn = createNavButton("View Students", "btnViewStudents");
     QPushButton *registerStudentBtn = createNavButton("Register Student", "btnRegisterStudent");
     QPushButton *manageDataBtn = createNavButton("Add User", "btnManageData");
-    QPushButton *logoutBtn = createNavButton("Close App", "btnLogout");
+   // QPushButton *logoutBtn = createNavButton("Close App", "btnLogout");
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     leftLayout->addWidget(titleLabel);
     leftLayout->addWidget(deptLabel);
@@ -92,7 +92,7 @@ void HOSDashboard::setupUI()
     leftLayout->addWidget(viewStudentsBtn);
     leftLayout->addWidget(registerStudentBtn);
     leftLayout->addWidget(manageDataBtn);
-    leftLayout->addWidget(logoutBtn);
+    //leftLayout->addWidget(logoutBtn);
     leftLayout->addStretch();
 
     QWidget *rightPanel = new QWidget(this);
@@ -118,7 +118,7 @@ void HOSDashboard::setupConnections()
     connect(findChild<QPushButton*>("btnStudents"), &QPushButton::clicked, this, &HOSDashboard::showStudentManagement);
     connect(findChild<QPushButton*>("btnCourses"), &QPushButton::clicked, this, &HOSDashboard::showCourseManagement);
     connect(findChild<QPushButton*>("btnReports"), &QPushButton::clicked, this, &HOSDashboard::showReports);
-    connect(findChild<QPushButton*>("btnSettings"), &QPushButton::clicked, this, &HOSDashboard::showSettings);
+    //connect(findChild<QPushButton*>("btnSettings"), &QPushButton::clicked, this, &HOSDashboard::showSettings);
     connect(findChild<QPushButton*>("btnViewStudents"), &QPushButton::clicked, this, &HOSDashboard::viewStudents);
     connect(findChild<QPushButton*>("btnRegisterStudent"), &QPushButton::clicked, this, &HOSDashboard::registerStudent);
     connect(findChild<QPushButton*>("btnManageData"), &QPushButton::clicked, this, &HOSDashboard::manageData);
@@ -147,7 +147,7 @@ void HOSDashboard::showReports()
 
 void HOSDashboard::showSettings()
 {
-    mainContent->setCurrentIndex(3);
+    //mainContent->setCurrentIndex(3);
 }
 
 void HOSDashboard::viewStudents()

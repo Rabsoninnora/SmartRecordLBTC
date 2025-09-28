@@ -20,6 +20,8 @@ private slots:
 
     void on_btn_Reset_Course_clicked();
 
+    void on_btn_Course_back_clicked();
+
 private:
     Ui::Courses *ui;
 };

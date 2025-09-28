@@ -115,13 +115,14 @@ void AddUser::on_btn_Delete_User_clicked()
     on_btn_View_User_clicked();
 }
 
-
+////////////////////////////////////////////////////
 void AddUser::on_btn_Insert_User_clicked()
 {
     QSqlQuery InsertRecord(MyDB::getInstance()->getDBInstance());
     QSqlDatabase::database().transaction();
     // Hash the password before inserting
     QByteArray hashedPassword = QCryptographicHash::hash(ui->lineEdit_User_Password->text().toUtf8(), QCryptographicHash::Sha256).toHex();
+
     InsertRecord.prepare("INSERT INTO HOS (username,password) VALUES(:username,:password)");
     InsertRecord.bindValue(":username", ui->lineEdit_User_name->text());
     InsertRecord.bindValue(":password", hashedPassword); // Use the hashed password
@@ -141,6 +142,7 @@ void AddUser::on_btn_Insert_User_clicked()
     on_btn_View_User_clicked();
 
 }
+///////////////////////////////////////////////////////
 
 
 void AddUser::on_btn_Reset_User_clicked()

@@ -48,7 +48,12 @@ static constexpr auto qt_meta_stringdata_ZN9DashboardE = QtMocHelpers::stringDat
     "viewStudents",
     "registerStudent",
     "manageData",
-    "logout"
+    "logout",
+    "loadCourseData",
+    "QTableWidget*",
+    "table",
+    "loadStudentData",
+    "table1"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -60,7 +65,7 @@ Q_CONSTINIT static const uint qt_meta_data_ZN9DashboardE[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       9,   14, // methods
+      11,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -68,15 +73,17 @@ Q_CONSTINIT static const uint qt_meta_data_ZN9DashboardE[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   68,    2, 0x08,    1 /* Private */,
-       3,    0,   69,    2, 0x08,    2 /* Private */,
-       4,    0,   70,    2, 0x08,    3 /* Private */,
-       5,    0,   71,    2, 0x08,    4 /* Private */,
-       6,    0,   72,    2, 0x08,    5 /* Private */,
-       7,    0,   73,    2, 0x08,    6 /* Private */,
-       8,    0,   74,    2, 0x08,    7 /* Private */,
-       9,    0,   75,    2, 0x08,    8 /* Private */,
-      10,    0,   76,    2, 0x08,    9 /* Private */,
+       1,    0,   80,    2, 0x08,    1 /* Private */,
+       3,    0,   81,    2, 0x08,    2 /* Private */,
+       4,    0,   82,    2, 0x08,    3 /* Private */,
+       5,    0,   83,    2, 0x08,    4 /* Private */,
+       6,    0,   84,    2, 0x08,    5 /* Private */,
+       7,    0,   85,    2, 0x08,    6 /* Private */,
+       8,    0,   86,    2, 0x08,    7 /* Private */,
+       9,    0,   87,    2, 0x08,    8 /* Private */,
+      10,    0,   88,    2, 0x08,    9 /* Private */,
+      11,    1,   89,    2, 0x08,   10 /* Private */,
+      14,    1,   92,    2, 0x08,   12 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -88,6 +95,8 @@ Q_CONSTINIT static const uint qt_meta_data_ZN9DashboardE[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
+    QMetaType::Void, 0x80000000 | 12,   13,
+    QMetaType::Void, 0x80000000 | 12,   15,
 
        0        // eod
 };
@@ -118,7 +127,13 @@ Q_CONSTINIT const QMetaObject Dashboard::staticMetaObject = { {
         // method 'manageData'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'logout'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'loadCourseData'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<QTableWidget *, std::false_type>,
+        // method 'loadStudentData'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<QTableWidget *, std::false_type>
     >,
     nullptr
 } };
@@ -137,10 +152,30 @@ void Dashboard::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
         case 6: _t->registerStudent(); break;
         case 7: _t->manageData(); break;
         case 8: _t->logout(); break;
+        case 9: _t->loadCourseData((*reinterpret_cast< std::add_pointer_t<QTableWidget*>>(_a[1]))); break;
+        case 10: _t->loadStudentData((*reinterpret_cast< std::add_pointer_t<QTableWidget*>>(_a[1]))); break;
         default: ;
         }
     }
-    (void)_a;
+    if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        switch (_id) {
+        default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
+        case 9:
+            switch (*reinterpret_cast<int*>(_a[1])) {
+            default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
+            case 0:
+                *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType::fromType< QTableWidget* >(); break;
+            }
+            break;
+        case 10:
+            switch (*reinterpret_cast<int*>(_a[1])) {
+            default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
+            case 0:
+                *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType::fromType< QTableWidget* >(); break;
+            }
+            break;
+        }
+    }
 }
 
 const QMetaObject *Dashboard::metaObject() const
@@ -162,14 +197,14 @@ int Dashboard::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 9)
+        if (_id < 11)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 9;
+        _id -= 11;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 9)
-            *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 9;
+        if (_id < 11)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 11;
     }
     return _id;
 }
