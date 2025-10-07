@@ -54,6 +54,8 @@ public:
     QLabel *label_9;
     QLabel *label_10;
     QLabel *label_11;
+    QLineEdit *Sponsorship_Type;
+    QLabel *label_12;
 
     void setupUi(QDialog *StudentRegistration)
     {
@@ -405,6 +407,26 @@ public:
         label_11 = new QLabel(frame);
         label_11->setObjectName("label_11");
         label_11->setGeometry(QRect(739, 160, 100, 31));
+        Sponsorship_Type = new QLineEdit(frame);
+        Sponsorship_Type->setObjectName("Sponsorship_Type");
+        Sponsorship_Type->setGeometry(QRect(730, 260, 231, 31));
+        Sponsorship_Type->setStyleSheet(QString::fromUtf8("   \n"
+"QLineEdit{\n"
+"                    color: rgb(255, 255, 255);\n"
+"                    border:1px solid green;\n"
+"                    border-radius: 0px;\n"
+"                    padding: 0 8px;\n"
+"                    background-color: #3a3f5c;\n"
+"                    \n"
+"	                font: 700 9pt \"Segoe UI\";\n"
+"                   \n"
+"\n"
+"}\n"
+"\n"
+" "));
+        label_12 = new QLabel(frame);
+        label_12->setObjectName("label_12");
+        label_12->setGeometry(QRect(740, 230, 121, 31));
 
         retranslateUi(StudentRegistration);
 
@@ -446,6 +468,8 @@ public:
         label_9->setText(QCoreApplication::translate("StudentRegistration", "Status", nullptr));
         label_10->setText(QCoreApplication::translate("StudentRegistration", "Next OF KIN Contact Number#", nullptr));
         label_11->setText(QCoreApplication::translate("StudentRegistration", "Phone", nullptr));
+        Sponsorship_Type->setPlaceholderText(QCoreApplication::translate("StudentRegistration", "Sponsorship Type", nullptr));
+        label_12->setText(QCoreApplication::translate("StudentRegistration", "Sponsorship Type", nullptr));
     } // retranslateUi
 
 };
