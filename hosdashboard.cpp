@@ -17,9 +17,7 @@ HOSDashboard::HOSDashboard(QWidget *parent)
     setupConnections();
 
     QStringList departments = {
-        "Business", "Hospitality", "Engineering",
-        "Computer Science", "Arts & Humanities",
-        "Health Sciences", "Education"
+         "Business", "Hospitality", "Engineering","Cosmotology"
     };
 
     for (const QString &dept : departments) {
@@ -75,10 +73,10 @@ void HOSDashboard::setupUI()
     QPushButton *studentsBtn = createNavButton("Students", "btnStudents");
     QPushButton *coursesBtn = createNavButton("Courses", "btnCourses");
     QPushButton *reportsBtn = createNavButton("Reports", "btnReports");
-    QPushButton *settingsBtn = createNavButton("Settings", "btnSettings");
+    //QPushButton *settingsBtn = createNavButton("Settings", "btnSettings");
     QPushButton *viewStudentsBtn = createNavButton("View Students", "btnViewStudents");
     QPushButton *registerStudentBtn = createNavButton("Register Student", "btnRegisterStudent");
-    QPushButton *manageDataBtn = createNavButton("Add User", "btnManageData");
+   // QPushButton *manageDataBtn = createNavButton("Add User", "btnManageData");
    // QPushButton *logoutBtn = createNavButton("Close App", "btnLogout");
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     leftLayout->addWidget(titleLabel);
@@ -88,10 +86,10 @@ void HOSDashboard::setupUI()
     leftLayout->addWidget(studentsBtn);
     leftLayout->addWidget(coursesBtn);
     leftLayout->addWidget(reportsBtn);
-    leftLayout->addWidget(settingsBtn);
+
     leftLayout->addWidget(viewStudentsBtn);
     leftLayout->addWidget(registerStudentBtn);
-    leftLayout->addWidget(manageDataBtn);
+    //leftLayout->addWidget(manageDataBtn);
     //leftLayout->addWidget(logoutBtn);
     leftLayout->addStretch();
 
@@ -118,11 +116,10 @@ void HOSDashboard::setupConnections()
     connect(findChild<QPushButton*>("btnStudents"), &QPushButton::clicked, this, &HOSDashboard::showStudentManagement);
     connect(findChild<QPushButton*>("btnCourses"), &QPushButton::clicked, this, &HOSDashboard::showCourseManagement);
     connect(findChild<QPushButton*>("btnReports"), &QPushButton::clicked, this, &HOSDashboard::showReports);
-    //connect(findChild<QPushButton*>("btnSettings"), &QPushButton::clicked, this, &HOSDashboard::showSettings);
+
     connect(findChild<QPushButton*>("btnViewStudents"), &QPushButton::clicked, this, &HOSDashboard::viewStudents);
     connect(findChild<QPushButton*>("btnRegisterStudent"), &QPushButton::clicked, this, &HOSDashboard::registerStudent);
-    connect(findChild<QPushButton*>("btnManageData"), &QPushButton::clicked, this, &HOSDashboard::manageData);
-    connect(findChild<QPushButton*>("btnLogout"), &QPushButton::clicked, this, &HOSDashboard::logout);
+
 }
 
 void HOSDashboard::switchDepartment()
@@ -145,10 +142,7 @@ void HOSDashboard::showReports()
     mainContent->setCurrentIndex(2);
 }
 
-void HOSDashboard::showSettings()
-{
-    //mainContent->setCurrentIndex(3);
-}
+
 
 void HOSDashboard::viewStudents()
 {
@@ -163,10 +157,6 @@ void HOSDashboard::registerStudent()
     ptrStudentRegistration->show();
 }
 
-void HOSDashboard::manageData()
-{
-    // TODO: Implement manageData functionality
-}
 
 void HOSDashboard::logout()
 {

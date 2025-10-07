@@ -19,7 +19,7 @@ Dashboard::Dashboard(QWidget *parent)
     setupConnections();
 
     QStringList departments = {
-        "Business", "Hospitality", "Engineering"
+        "Business", "Hospitality", "Engineering","Cosmotology"
     };
 
     for (const QString &dept : departments) {
@@ -80,7 +80,7 @@ void Dashboard::setupUI()
     QPushButton *registerStudentBtn = createNavButton("Register Lecturer", "btnRegisterStudent");
     QPushButton *viewStudentsBtn = createNavButton("View Lecturer", "btnViewStudents");
     QPushButton *studentsBtn = createNavButton("Students", "btnStudents");
-    QPushButton *reportsBtn = createNavButton("Reports", "btnReports");
+
     QPushButton *settingsBtn = createNavButton("Settings", "btnSettings");
     QPushButton *manageDataBtn = createNavButton("Add User", "btnManageData");
 
@@ -91,8 +91,8 @@ void Dashboard::setupUI()
     leftLayout->addSpacing(10);
     leftLayout->addWidget(studentsBtn);
     leftLayout->addWidget(coursesBtn);
-    leftLayout->addWidget(reportsBtn);
-    leftLayout->addWidget(settingsBtn);
+
+
     leftLayout->addWidget(viewStudentsBtn);
     leftLayout->addWidget(registerStudentBtn);
     leftLayout->addWidget(manageDataBtn);
@@ -106,7 +106,7 @@ void Dashboard::setupUI()
     mainContent->addWidget(createStudentManagementWidget());
     mainContent->addWidget(createCourseManagementWidget());
     mainContent->addWidget(createReportWidget());
-    mainContent->addWidget(createSettingsWidget());
+
 
     mainLayout->addWidget(leftPanel);
     mainLayout->addWidget(rightPanel, 1);
@@ -122,7 +122,7 @@ void Dashboard::setupConnections()
     connect(findChild<QPushButton*>("btnStudents"), &QPushButton::clicked, this, &Dashboard::showStudentManagement);
     connect(findChild<QPushButton*>("btnCourses"), &QPushButton::clicked, this, &Dashboard::showCourseManagement);
     connect(findChild<QPushButton*>("btnReports"), &QPushButton::clicked, this, &Dashboard::showReports);
-    connect(findChild<QPushButton*>("btnSettings"), &QPushButton::clicked, this, &Dashboard::showSettings);
+
     connect(findChild<QPushButton*>("btnViewStudents"), &QPushButton::clicked, this, &Dashboard::viewStudents);
     connect(findChild<QPushButton*>("btnRegisterStudent"), &QPushButton::clicked, this, &Dashboard::registerStudent);
     connect(findChild<QPushButton*>("btnManageData"), &QPushButton::clicked, this, &Dashboard::manageData);
@@ -134,7 +134,7 @@ void Dashboard::switchDepartment() {}
 void Dashboard::showStudentManagement() { mainContent->setCurrentIndex(0); }
 void Dashboard::showCourseManagement() { mainContent->setCurrentIndex(1); }
 void Dashboard::showReports() { mainContent->setCurrentIndex(2); }
-void Dashboard::showSettings() { mainContent->setCurrentIndex(3); }
+
 
 void Dashboard::viewStudents() {
     /*
@@ -380,37 +380,3 @@ QWidget* Dashboard::createReportWidget()
     return widget;
 }
 
-QWidget* Dashboard::createSettingsWidget()
-{
-    QWidget *widget = new QWidget(this);
-    QVBoxLayout *layout = new QVBoxLayout(widget);
-
-    QLabel *title = new QLabel("System Settings", widget);
-    title->setAlignment(Qt::AlignCenter);
-    title->setStyleSheet("font-weight: bold; font-size: 24px; margin-bottom: 20px;");
-
-    QFormLayout *formLayout = new QFormLayout();
-
-    QLineEdit *adminEmail = new QLineEdit(widget);
-    adminEmail->setPlaceholderText("admin@lbtc.edu");
-    formLayout->addRow("Admin Email:", adminEmail);
-
-    QSpinBox *dataRetention = new QSpinBox(widget);
-    dataRetention->setRange(1, 10);
-    dataRetention->setValue(5);
-    formLayout->addRow("Data Retention (years):", dataRetention);
-
-    QCheckBox *backupEnabled = new QCheckBox("Enable Automatic Backups", widget);
-    backupEnabled->setChecked(true);
-    formLayout->addRow("", backupEnabled);
-
-    QPushButton *saveBtn = new QPushButton("Save Settings", widget);
-    saveBtn->setMinimumHeight(35);
-
-    layout->addWidget(title);
-    layout->addLayout(formLayout);
-    layout->addWidget(saveBtn);
-    layout->addStretch();
-
-    return widget;
-}

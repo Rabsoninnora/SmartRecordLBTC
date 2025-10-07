@@ -38,7 +38,7 @@ private slots:
     void showStudentManagement();
     void showCourseManagement();
     void showReports();
-    void showSettings();
+
     void viewStudents();
     void registerStudent();
     void manageData();
@@ -60,7 +60,7 @@ private:
     QWidget* createStudentManagementWidget();
     QWidget* createCourseManagementWidget();
     QWidget* createReportWidget();
-    QWidget* createSettingsWidget();
+
     QString loadStylesheet();
     QPushButton* createNavButton(const QString &text, const QString &objectName);
 };
