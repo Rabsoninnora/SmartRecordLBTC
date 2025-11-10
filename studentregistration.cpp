@@ -84,6 +84,7 @@ void StudentRegistration::on_btn_submit_lecturer_clicked()
     query.bindValue(":Image_Name", ImageName);
     query.bindValue(":Image_Data", imageData);
 
+
     if (query.exec()) {
         QSqlDatabase::database().commit();
         QMessageBox::information(this, "Success", "Student registered successfully!");

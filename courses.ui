@@ -26,7 +26,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>LBTC SMART RECORD SYSTEM</string>
+    <string>STUDENT  RECORDS MANAGEMENT  SYSTEM</string>
    </property>
   </widget>
   <widget class="QPushButton" name="btn_Course_back">

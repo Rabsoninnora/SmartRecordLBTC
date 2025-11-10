@@ -62,9 +62,9 @@ sideNavLayout->addStretch(); //Push Buttons To The Top
 ///////////////////////////////////////////////////////////////////////
 
 //Create a header
-QLabel *headingLabel = new QLabel("Welcome to LBTC Smart Record System");
+QLabel *headingLabel = new QLabel("LBTC STUDENT RECORD  MANAGEMENT SYSTEM");
 headingLabel->setAlignment(Qt::AlignCenter);
-headingLabel->setStyleSheet("font-size: 28px; font-weight: bold; padding: 10px; color: white;");
+headingLabel->setStyleSheet("font-size: 15px; font-weight: ; padding: 10px; color: white;");
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
 QLabel *BodyLabel = new QLabel(" ", this);

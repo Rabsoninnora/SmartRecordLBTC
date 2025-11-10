@@ -272,7 +272,7 @@ public:
     void retranslateUi(QDialog *Courses)
     {
         Courses->setWindowTitle(QCoreApplication::translate("Courses", "Dialog", nullptr));
-        pushButton->setText(QCoreApplication::translate("Courses", "LBTC SMART RECORD SYSTEM", nullptr));
+        pushButton->setText(QCoreApplication::translate("Courses", "STUDENT  RECORDS MANAGEMENT  SYSTEM", nullptr));
         btn_Course_back->setText(QCoreApplication::translate("Courses", "Back", nullptr));
         lineEdit_Department->setPlaceholderText(QCoreApplication::translate("Courses", "Department", nullptr));
         lineEdit_code->setPlaceholderText(QCoreApplication::translate("Courses", "CODE", nullptr));

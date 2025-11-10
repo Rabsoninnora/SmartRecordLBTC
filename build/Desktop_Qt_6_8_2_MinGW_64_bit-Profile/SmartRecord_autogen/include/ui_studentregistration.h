@@ -436,7 +436,7 @@ public:
     void retranslateUi(QDialog *StudentRegistration)
     {
         StudentRegistration->setWindowTitle(QCoreApplication::translate("StudentRegistration", "Dialog", nullptr));
-        pushButton->setText(QCoreApplication::translate("StudentRegistration", "LBTC SMART RECORD SYSTEM", nullptr));
+        pushButton->setText(QCoreApplication::translate("StudentRegistration", " STUDENT RECORDS  MANAGEMENT SYSTEM", nullptr));
         btn_RegisterStudent_back->setText(QCoreApplication::translate("StudentRegistration", "Back", nullptr));
         StudentRegistration_2->setText(QCoreApplication::translate("StudentRegistration", "STUDENT REGISTRATION FORM", nullptr));
         lineEdit_Fname->setPlaceholderText(QCoreApplication::translate("StudentRegistration", "First Name", nullptr));

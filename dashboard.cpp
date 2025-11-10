@@ -11,8 +11,8 @@ Dashboard::Dashboard(QWidget *parent)
     departmentList = new QListWidget(this);
     mainContent = new QStackedWidget(this);
     ptrAddUser = new AddUser();
-    ptrRegisterLecturer = new RegisterLecturer();
-    ptrViewLecturer = new ViewLecturer();
+    //ptrRegisterLecturer = new RegisterLecturer();
+   // ptrViewLecturer = new ViewLecturer();
     ptrCourses = new Courses();
 
     setupUI();
@@ -35,8 +35,8 @@ Dashboard::~Dashboard()
 {
     delete ui;
     delete ptrAddUser;
-    delete ptrRegisterLecturer;
-    delete ptrViewLecturer;
+    //delete ptrRegisterLecturer;
+   // delete ptrViewLecturer;
     delete ptrCourses;
 }
 
@@ -77,8 +77,8 @@ void Dashboard::setupUI()
     // Navigation buttons
     QPushButton *logoutBtn = createNavButton("Add Course", "btnLogout");
     QPushButton *coursesBtn = createNavButton("View Courses", "btnCourses");
-    QPushButton *registerStudentBtn = createNavButton("Register Lecturer", "btnRegisterStudent");
-    QPushButton *viewStudentsBtn = createNavButton("View Lecturer", "btnViewStudents");
+    //QPushButton *registerStudentBtn = createNavButton("Register Lecturer", "btnRegisterStudent");
+    //QPushButton *viewStudentsBtn = createNavButton("View Lecturer", "btnViewStudents");
     QPushButton *studentsBtn = createNavButton("Students", "btnStudents");
 
     QPushButton *settingsBtn = createNavButton("Settings", "btnSettings");
@@ -93,8 +93,8 @@ void Dashboard::setupUI()
     leftLayout->addWidget(coursesBtn);
 
 
-    leftLayout->addWidget(viewStudentsBtn);
-    leftLayout->addWidget(registerStudentBtn);
+    //leftLayout->addWidget(viewStudentsBtn);
+    //leftLayout->addWidget(registerStudentBtn);
     leftLayout->addWidget(manageDataBtn);
     leftLayout->addWidget(logoutBtn);
     leftLayout->addStretch();
@@ -123,8 +123,8 @@ void Dashboard::setupConnections()
     connect(findChild<QPushButton*>("btnCourses"), &QPushButton::clicked, this, &Dashboard::showCourseManagement);
     connect(findChild<QPushButton*>("btnReports"), &QPushButton::clicked, this, &Dashboard::showReports);
 
-    connect(findChild<QPushButton*>("btnViewStudents"), &QPushButton::clicked, this, &Dashboard::viewStudents);
-    connect(findChild<QPushButton*>("btnRegisterStudent"), &QPushButton::clicked, this, &Dashboard::registerStudent);
+   // connect(findChild<QPushButton*>("btnViewStudents"), &QPushButton::clicked, this, &Dashboard::viewStudents);
+   // connect(findChild<QPushButton*>("btnRegisterStudent"), &QPushButton::clicked, this, &Dashboard::registerStudent);
     connect(findChild<QPushButton*>("btnManageData"), &QPushButton::clicked, this, &Dashboard::manageData);
     connect(findChild<QPushButton*>("btnLogout"), &QPushButton::clicked, this, &Dashboard::logout);
 }
@@ -140,11 +140,11 @@ void Dashboard::viewStudents() {
     /*
  Show all Lecturer's show database
 */
-    ptrViewLecturer->show();
+    //ptrViewLecturer->show();
 }
 
 void Dashboard::registerStudent() {
-    ptrRegisterLecturer->show();
+  //  ptrRegisterLecturer->show();
 
 }
 

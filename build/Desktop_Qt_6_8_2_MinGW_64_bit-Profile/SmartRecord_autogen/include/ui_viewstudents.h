@@ -495,7 +495,7 @@ public:
     void retranslateUi(QDialog *ViewStudents)
     {
         ViewStudents->setWindowTitle(QCoreApplication::translate("ViewStudents", "Dialog", nullptr));
-        pushButton->setText(QCoreApplication::translate("ViewStudents", "LBTC SMART RECORD SYSTEM", nullptr));
+        pushButton->setText(QCoreApplication::translate("ViewStudents", "STUDENT RECORDS  MANAGEMENT SYSTEM", nullptr));
         btn_RegisterStudent_back->setText(QCoreApplication::translate("ViewStudents", "Back", nullptr));
         lineEdit_Fname->setPlaceholderText(QCoreApplication::translate("ViewStudents", "First Name", nullptr));
         lineEdit_Mname->setPlaceholderText(QCoreApplication::translate("ViewStudents", "Middle Name", nullptr));

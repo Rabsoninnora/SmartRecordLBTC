@@ -174,7 +174,7 @@ QPushButton* HOSDashboard::createNavButton(const QString &text, const QString &o
 QString HOSDashboard::loadStylesheet()
 {
     return R"(
-        QWidget { font-size: 14px; background-color: rgb(0, 81, 121); color: white; border:1px; border-radius: 5px; padding: 4px; }
+        QWidget { background-color: #1e1e2f; font-family: 'Segoe UI'; font-size: 14px; color: #f0f0f0; }
         QListWidget { background-color: #2c2f48; border-radius: 5px; color: #ffffff; }
         QPushButton {
             background-color: #3a3f5c; color: #ffffff; border-radius: 5px;
@@ -196,7 +196,7 @@ QWidget* HOSDashboard::createStudentManagementWidget()
     QWidget *widget = new QWidget(this);
     QVBoxLayout *layout = new QVBoxLayout(widget);
 
-    QLabel *title = new QLabel("Student Management", widget);
+    QLabel *title = new QLabel("Students Records", widget);
     title->setAlignment(Qt::AlignCenter);
     title->setStyleSheet("font-weight: bold; font-size: 24px; margin-bottom: 20px;");
 
@@ -223,7 +223,7 @@ QWidget* HOSDashboard::createCourseManagementWidget()
     QWidget *widget = new QWidget(this);
     QVBoxLayout *layout = new QVBoxLayout(widget);
 
-    QLabel *title = new QLabel("Course Management", widget);
+    QLabel *title = new QLabel("Course Records", widget);
     title->setAlignment(Qt::AlignCenter);
     title->setStyleSheet("font-weight: bold; font-size: 24px; margin-bottom: 20px;");
 
