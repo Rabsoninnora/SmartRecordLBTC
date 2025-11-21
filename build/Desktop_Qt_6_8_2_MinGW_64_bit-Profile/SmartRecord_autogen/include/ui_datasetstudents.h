@@ -32,6 +32,7 @@ public:
     QPushButton *btn_Reset;
     QLineEdit *lineEdit_Search_Student;
     QTableWidget *tableWidget;
+    QPushButton *btn_View_All;
 
     void setupUi(QDialog *DataSetStudents)
     {
@@ -106,7 +107,7 @@ public:
         btn_Search->setIcon(icon1);
         btn_Reset = new QPushButton(frame);
         btn_Reset->setObjectName("btn_Reset");
-        btn_Reset->setGeometry(QRect(760, 10, 91, 40));
+        btn_Reset->setGeometry(QRect(870, 10, 91, 40));
         btn_Reset->setStyleSheet(QString::fromUtf8("   \n"
 "QPushButton{\n"
 "                    color: rgb(255, 255, 255);\n"
@@ -167,6 +168,24 @@ public:
         tableWidget->setHorizontalHeaderItem(11, __qtablewidgetitem11);
         tableWidget->setObjectName("tableWidget");
         tableWidget->setGeometry(QRect(10, 60, 1141, 321));
+        btn_View_All = new QPushButton(frame);
+        btn_View_All->setObjectName("btn_View_All");
+        btn_View_All->setGeometry(QRect(760, 10, 91, 40));
+        btn_View_All->setStyleSheet(QString::fromUtf8("   \n"
+"QPushButton{\n"
+"                    color: rgb(255, 255, 255);\n"
+"                    border:2px solid green;\n"
+"                    border-radius: 8px;\n"
+"                    padding: 0 8px;\n"
+"                    background-color: rgb(255, 267, 245);\n"
+"                    font: 500 11pt ;\n"
+"                   \n"
+"\n"
+"}\n"
+"\n"
+" "));
+        QIcon icon3(QIcon::fromTheme(QIcon::ThemeIcon::FolderOpen));
+        btn_View_All->setIcon(icon3);
 
         retranslateUi(DataSetStudents);
 
@@ -206,6 +225,7 @@ public:
         ___qtablewidgetitem10->setText(QCoreApplication::translate("DataSetStudents", "Next_OF_Kin_Phone#", nullptr));
         QTableWidgetItem *___qtablewidgetitem11 = tableWidget->horizontalHeaderItem(11);
         ___qtablewidgetitem11->setText(QCoreApplication::translate("DataSetStudents", "Image_Name", nullptr));
+        btn_View_All->setText(QCoreApplication::translate("DataSetStudents", "View All", nullptr));
     } // retranslateUi
 
 };

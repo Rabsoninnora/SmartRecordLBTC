@@ -20,6 +20,10 @@ private slots:
 
     void on_btn_Reset_clicked();
 
+    void on_btn_View_All_clicked();
+
+    void on_btn_DataSetStudents_Back_clicked();
+
 private:
     Ui::DataSetStudents *ui;
 };

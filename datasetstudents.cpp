@@ -13,6 +13,8 @@ DataSetStudents::DataSetStudents(QWidget *parent)
     , ui(new Ui::DataSetStudents)
 {
     ui->setupUi(this);
+    setWindowTitle("v1.0");
+    setWindowFlags(windowFlags() | Qt::WindowStaysOnTopHint);
 
     // Hide table initially
     ui->tableWidget->setVisible(false);
@@ -80,4 +82,42 @@ void DataSetStudents::on_btn_Reset_clicked()
     ui->tableWidget->clearContents();
     ui->tableWidget->setRowCount(0);
     ui->tableWidget->setVisible(false);
+}
+
+void DataSetStudents::on_btn_View_All_clicked()
+{
+    QSqlDatabase db = MyDB::getInstance()->getDBInstance();
+    QSqlQuery query(db);
+
+    QString sql = "SELECT Fname, Mname, Lname, Program, Stud_ID, Enro_year, Duration, Status, Phone, Email, NextOfKin_Phone "
+                  "FROM StudentsTable";
+
+    if (!query.exec(sql)) {
+        QMessageBox::critical(this, "Error", "Failed to load all students: " + query.lastError().text());
+        return;
+    }
+
+    // Clear existing rows
+    ui->tableWidget->setRowCount(0);
+
+    int row = 0;
+    while (query.next()) {
+        ui->tableWidget->insertRow(row);
+        for (int col = 0; col < query.record().count(); ++col) {
+            ui->tableWidget->setItem(row, col, new QTableWidgetItem(query.value(col).toString()));
+        }
+        row++;
+    }
+
+    if (row > 0) {
+        ui->tableWidget->setVisible(true);
+    } else {
+        QMessageBox::information(this, "No Results", "No students found in the database.");
+        ui->tableWidget->setVisible(false);
+    }
+}
+
+void DataSetStudents::on_btn_DataSetStudents_Back_clicked()
+{
+    this->close();
 }

@@ -144,7 +144,7 @@ QPushButton{
    <widget class="QPushButton" name="btn_Reset">
     <property name="geometry">
      <rect>
-      <x>760</x>
+      <x>870</x>
       <y>10</y>
       <width>91</width>
       <height>40</height>
@@ -269,6 +269,37 @@ QLineEdit{
       <string>Image_Name</string>
      </property>
     </column>
+   </widget>
+   <widget class="QPushButton" name="btn_View_All">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>10</y>
+      <width>91</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">   
+QPushButton{
+                    color: rgb(255, 255, 255);
+                    border:2px solid green;
+                    border-radius: 8px;
+                    padding: 0 8px;
+                    background-color: rgb(255, 267, 245);
+                    font: 500 11pt ;
+                   
+
+}
+
+ </string>
+    </property>
+    <property name="text">
+     <string>View All</string>
+    </property>
+    <property name="icon">
+     <iconset theme="QIcon::ThemeIcon::FolderOpen"/>
+    </property>
    </widget>
   </widget>
  </widget>
