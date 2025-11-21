@@ -17,12 +17,12 @@ public:
 
 private slots:
     void on_btn_Search_clicked();
-
     void on_btn_Reset_clicked();
-
     void on_btn_View_All_clicked();
-
     void on_btn_DataSetStudents_Back_clicked();
+
+    // New slot for double‑click
+    void onStudentDoubleClicked(int row, int column);
 
 private:
     Ui::DataSetStudents *ui;

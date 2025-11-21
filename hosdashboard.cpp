@@ -1,5 +1,14 @@
 #include "hosdashboard.h"
 #include "ui_hosdashboard.h"
+#include <QVBoxLayout>
+#include <QHBoxLayout>
+#include <QMessageBox>
+#include <QPushButton>
+#include <QLabel>
+#include <QFrame>
+#include <QPixmap>
+#include <QPalette>
+#include <QDate>
 
 HOSDashboard::HOSDashboard(QWidget *parent)
     : QDialog(parent), ui(new Ui::HOSDashboard), ptrAddUser (nullptr)
@@ -196,25 +205,26 @@ QWidget* HOSDashboard::createStudentManagementWidget()
     QWidget *widget = new QWidget(this);
     QVBoxLayout *layout = new QVBoxLayout(widget);
 
-    QLabel *title = new QLabel("Students Records", widget);
-    title->setAlignment(Qt::AlignCenter);
-    title->setStyleSheet("font-weight: bold; font-size: 24px; margin-bottom: 20px;");
+    QLabel *title1 = new QLabel("LBTC Student Management System", widget);
+    title1->setAlignment(Qt::AlignCenter);
+    title1->setStyleSheet("font-weight: bold; font-size: 15px; margin-bottom: 20px;");
+    layout->addWidget(title1);
 
-    QTableWidget *studentTable = new QTableWidget(0, 5, widget);
-    studentTable->setHorizontalHeaderLabels({"ID", "Name", "Program", "Year", "GPA/Score"});
-    studentTable->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
-    studentTable->setEditTriggers(QAbstractItemView::NoEditTriggers);
+    // Center background image (use a Qt resource path for portability)
+    QLabel *backgroundImage = new QLabel(widget);
+    backgroundImage->setAlignment(Qt::AlignCenter);
 
-    // Example data row
-    studentTable->insertRow(0);
-    studentTable->setItem(0, 0, new QTableWidgetItem("1001"));
-    studentTable->setItem(0, 1, new QTableWidgetItem("Poniso"));
-    studentTable->setItem(0, 2, new QTableWidgetItem("Computer Science"));
-    studentTable->setItem(0, 3, new QTableWidgetItem("Senior"));
-    studentTable->setItem(0, 4, new QTableWidgetItem("3.8"));
+    // Prefer resource path: add the image to your .qrc as :/images/coverlbtc.jpg
+    QPixmap pix("C:/Project@cosmas/SmartRecord/coverlbtc.jpg");
+    if (pix.isNull()) {
+        // Fallback to absolute path if resource not available
+        pix.load("C:/Project@cosmas/SmartRecord/coverlbtc.jpg");
+    }
+    backgroundImage->setPixmap(pix.scaled(840, 640, Qt::KeepAspectRatio, Qt::SmoothTransformation));
+    layout->addWidget(backgroundImage, 1, Qt::AlignCenter);
 
-    layout->addWidget(title);
-    layout->addWidget(studentTable);
+    layout->addStretch();
+
     return widget;
 }
 

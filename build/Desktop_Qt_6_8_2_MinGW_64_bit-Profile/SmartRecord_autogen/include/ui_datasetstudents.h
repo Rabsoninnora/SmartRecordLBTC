@@ -38,7 +38,7 @@ public:
     {
         if (DataSetStudents->objectName().isEmpty())
             DataSetStudents->setObjectName("DataSetStudents");
-        DataSetStudents->resize(1154, 540);
+        DataSetStudents->resize(1154, 585);
         DataSetStudents->setStyleSheet(QString::fromUtf8("background-color: #3a3f5c;"));
         pushButton = new QPushButton(DataSetStudents);
         pushButton->setObjectName("pushButton");
@@ -65,7 +65,7 @@ public:
         btn_DataSetStudents_Back->setStyleSheet(QString::fromUtf8("    \n"
 "QPushButton{\n"
 "                    color: rgb(255, 255, 255);\n"
-"                    border:2px solid green;\n"
+"                    border:2px solid white;\n"
 "                    border-radius: 8px;\n"
 "                    padding: 0 8px;\n"
 "                    background-color: rgb(255, 267, 245);\n"
@@ -79,7 +79,7 @@ public:
         btn_DataSetStudents_Back->setIcon(icon);
         frame = new QFrame(DataSetStudents);
         frame->setObjectName("frame");
-        frame->setGeometry(QRect(0, 120, 1151, 401));
+        frame->setGeometry(QRect(0, 120, 1151, 461));
         frame->setStyleSheet(QString::fromUtf8("\n"
 "QFrame{\n"
 " \n"
@@ -93,7 +93,7 @@ public:
         btn_Search->setStyleSheet(QString::fromUtf8("   \n"
 "QPushButton{\n"
 "                    color: rgb(255, 255, 255);\n"
-"                    border:2px solid green;\n"
+"                    border:2px solid white;\n"
 "                    border-radius: 8px;\n"
 "                    padding: 0 8px;\n"
 "                    background-color: rgb(255, 267, 245);\n"
@@ -111,7 +111,7 @@ public:
         btn_Reset->setStyleSheet(QString::fromUtf8("   \n"
 "QPushButton{\n"
 "                    color: rgb(255, 255, 255);\n"
-"                    border:2px solid green;\n"
+"                    border:2px solid white;\n"
 "                    border-radius: 8px;\n"
 "                    padding: 0 8px;\n"
 "                    background-color: rgb(255, 267, 245);\n"
@@ -167,14 +167,27 @@ public:
         QTableWidgetItem *__qtablewidgetitem11 = new QTableWidgetItem();
         tableWidget->setHorizontalHeaderItem(11, __qtablewidgetitem11);
         tableWidget->setObjectName("tableWidget");
-        tableWidget->setGeometry(QRect(10, 60, 1141, 321));
+        tableWidget->setGeometry(QRect(10, 60, 1141, 391));
+        tableWidget->setStyleSheet(QString::fromUtf8("   \n"
+"QTableWidget{\n"
+"                    color: rgb(255, 255, 255);\n"
+"                    border:2px solid white;\n"
+"                    border-radius: 8px;\n"
+"                    padding: 0 8px;\n"
+"                    background-color: rgb(255, 267, 245);\n"
+"                    font: 500 11pt ;\n"
+"                   \n"
+"\n"
+"}\n"
+"\n"
+" "));
         btn_View_All = new QPushButton(frame);
         btn_View_All->setObjectName("btn_View_All");
         btn_View_All->setGeometry(QRect(760, 10, 91, 40));
         btn_View_All->setStyleSheet(QString::fromUtf8("   \n"
 "QPushButton{\n"
 "                    color: rgb(255, 255, 255);\n"
-"                    border:2px solid green;\n"
+"                    border:2px solid white;\n"
 "                    border-radius: 8px;\n"
 "                    padding: 0 8px;\n"
 "                    background-color: rgb(255, 267, 245);\n"

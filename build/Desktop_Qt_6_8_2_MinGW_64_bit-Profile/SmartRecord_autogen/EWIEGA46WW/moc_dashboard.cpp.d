@@ -2,6 +2,7 @@ C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartR
   C:/Project@cosmas/SmartRecord/build/Desktop_Qt_6_8_2_MinGW_64_bit-Profile/SmartRecord_autogen/moc_predefs.h \
   C:/Project@cosmas/SmartRecord/adduser.h \
   C:/Project@cosmas/SmartRecord/courses.h \
+  C:/Project@cosmas/SmartRecord/datasetcourses.h \
   C:/Project@cosmas/SmartRecord/datasetstudents.h \
   C:/Project@cosmas/SmartRecord/mydb.h \
   C:/Project@cosmas/SmartRecord/registerlecturer.h \

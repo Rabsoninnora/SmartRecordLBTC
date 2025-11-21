@@ -21,6 +21,7 @@
 #include "viewlecturer.h"
 #include "courses.h"
 #include "datasetstudents.h"
+#include "datasetcourses.h"
 
 namespace Ui {
 class Dashboard;
@@ -37,8 +38,6 @@ public:
 private slots:
     void switchDepartment();
     void showStudentManagement();
-
-
     void viewStudents();
     void viewCourses();
     void manageData();
@@ -48,17 +47,17 @@ private:
     Ui::Dashboard *ui;
     QListWidget *departmentList;
     QStackedWidget *mainContent;
+
     AddUser *ptrAddUser;
     RegisterLecturer *ptrRegisterLecturer;
-    ViewLecturer     *ptrViewLecturer;
-    Courses          *ptrCourses;
-
-    DataSetStudents  *ptrDataSetStudents;
+    ViewLecturer *ptrViewLecturer;
+    Courses *ptrCourses;
+    DataSetStudents *ptrDataSetStudents;
+    DataSetCourses *ptrDataSetCourses;
 
     void setupUI();
     void setupConnections();
     QWidget* createStudentManagementWidget();
-
 
     QString loadStylesheet();
     QPushButton* createNavButton(const QString &text, const QString &objectName);

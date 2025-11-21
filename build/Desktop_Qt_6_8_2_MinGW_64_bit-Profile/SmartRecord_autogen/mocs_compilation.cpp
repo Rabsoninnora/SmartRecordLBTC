@@ -4,6 +4,7 @@
 #include "EWIEGA46WW/moc_adminpanel.cpp"
 #include "EWIEGA46WW/moc_courses.cpp"
 #include "EWIEGA46WW/moc_dashboard.cpp"
+#include "EWIEGA46WW/moc_datasetcourses.cpp"
 #include "EWIEGA46WW/moc_datasetstudents.cpp"
 #include "EWIEGA46WW/moc_hosdashboard.cpp"
 #include "EWIEGA46WW/moc_mainwindow.cpp"
