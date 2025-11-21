@@ -361,6 +361,12 @@
 			null
 		],
 		[
+			"C:/Project@cosmas/SmartRecord/datasetstudents.h",
+			"MU",
+			"EWIEGA46WW/moc_datasetstudents.cpp",
+			null
+		],
+		[
 			"C:/Project@cosmas/SmartRecord/hosdashboard.h",
 			"MU",
 			"EWIEGA46WW/moc_hosdashboard.cpp",
@@ -500,6 +506,7 @@
 		[ "C:/Project@cosmas/SmartRecord/adminpanel.cpp", "MU", null ],
 		[ "C:/Project@cosmas/SmartRecord/courses.cpp", "MU", null ],
 		[ "C:/Project@cosmas/SmartRecord/dashboard.cpp", "MU", null ],
+		[ "C:/Project@cosmas/SmartRecord/datasetstudents.cpp", "MU", null ],
 		[ "C:/Project@cosmas/SmartRecord/hosdashboard.cpp", "MU", null ],
 		[ "C:/Project@cosmas/SmartRecord/main.cpp", "MU", null ],
 		[ "C:/Project@cosmas/SmartRecord/mainwindow.cpp", "MU", null ],

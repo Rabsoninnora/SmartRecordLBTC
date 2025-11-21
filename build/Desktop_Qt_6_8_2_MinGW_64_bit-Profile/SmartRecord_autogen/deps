@@ -16,6 +16,8 @@ SmartRecord_autogen/timestamp: \
 	C:/Project@cosmas/SmartRecord/courses.h \
 	C:/Project@cosmas/SmartRecord/dashboard.cpp \
 	C:/Project@cosmas/SmartRecord/dashboard.h \
+	C:/Project@cosmas/SmartRecord/datasetstudents.cpp \
+	C:/Project@cosmas/SmartRecord/datasetstudents.h \
 	C:/Project@cosmas/SmartRecord/hosdashboard.cpp \
 	C:/Project@cosmas/SmartRecord/hosdashboard.h \
 	C:/Project@cosmas/SmartRecord/main.cpp \
@@ -767,6 +769,7 @@ SmartRecord_autogen/timestamp: \
 	C:/Project@cosmas/SmartRecord/adminpanel.ui \
 	C:/Project@cosmas/SmartRecord/courses.ui \
 	C:/Project@cosmas/SmartRecord/dashboard.ui \
+	C:/Project@cosmas/SmartRecord/datasetstudents.ui \
 	C:/Project@cosmas/SmartRecord/hosdashboard.ui \
 	C:/Project@cosmas/SmartRecord/mainwindow.ui \
 	C:/Project@cosmas/SmartRecord/registerlecturer.ui \
