@@ -57,7 +57,7 @@ void Dashboard::setupUI()
     topButtons->addStretch();
 
     QPushButton *minimizeBtn = new QPushButton("_", this);
-    QPushButton *closeBtn = new QPushButton("logout",this);
+    QPushButton *closeBtn = new QPushButton("logout", this);
     connect(minimizeBtn, &QPushButton::clicked, this, &Dashboard::showMinimized);
     connect(closeBtn, &QPushButton::clicked, this, &Dashboard::close);
 
@@ -82,36 +82,36 @@ void Dashboard::setupUI()
     QPushButton *logoutBtn = createNavButton("Add Course", "btnLogout");
     QPushButton *coursesBtn = createNavButton("View Courses", "btnCourses");
     QPushButton *studentsBtn = createNavButton("Students", "btnStudents");
-
-
     QPushButton *manageDataBtn = createNavButton("Add User", "btnManageData");
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     leftLayout->addWidget(titleLabel);
     leftLayout->addWidget(deptLabel);
     leftLayout->addWidget(departmentList);
     leftLayout->addSpacing(10);
     leftLayout->addWidget(studentsBtn);
     leftLayout->addWidget(coursesBtn);
-
-
     leftLayout->addWidget(manageDataBtn);
     leftLayout->addWidget(logoutBtn);
     leftLayout->addStretch();
 
     QWidget *rightPanel = new QWidget(this);
     QVBoxLayout *rightLayout = new QVBoxLayout(rightPanel);
+
+    // Add main content (center background image will be inside)
     rightLayout->addWidget(mainContent);
 
-    mainContent->addWidget(createStudentManagementWidget());
+    // Footer
+    QLabel *footer = new QLabel("© 2025 LBTC Student Management System. All rights reserved.", this);
+    footer->setAlignment(Qt::AlignCenter);
+    footer->setStyleSheet("font-size: 12px; color: gray; margin-top: 10px;");
+    rightLayout->addWidget(footer);
 
+    mainContent->addWidget(createStudentManagementWidget());
 
     mainLayout->addWidget(leftPanel);
     mainLayout->addWidget(rightPanel, 1);
     outerLayout->addLayout(mainLayout);
     this->setLayout(outerLayout);
-
-
 }
 
 void Dashboard::setupConnections()
@@ -184,16 +184,16 @@ QWidget* Dashboard::createStudentManagementWidget()
     QLabel *title1 = new QLabel("LBTC STUDENT MANAGEMENT SYSTEM", widget);
     title1->setAlignment(Qt::AlignCenter);
     title1->setStyleSheet("font-weight: bold; font-size: 15px; margin-bottom: 20px;");
-
-
-    // Add widgets to layout: title, refresh button, then table
     layout->addWidget(title1);
 
+    // Center background image
+    QLabel *backgroundImage = new QLabel(widget);
+    backgroundImage->setAlignment(Qt::AlignCenter);
+    QPixmap pix("C:/Project@cosmas/SmartRecord/student.jpg");
+    backgroundImage->setPixmap(pix.scaled(840, 640, Qt::KeepAspectRatio, Qt::SmoothTransformation));
+    layout->addWidget(backgroundImage, 1, Qt::AlignCenter);
 
-
-    // Optional: Add some spacing
-    layout->addStretch();  // Push table to top if needed, or remove for full height
+    layout->addStretch();
 
     return widget;
 }
-
