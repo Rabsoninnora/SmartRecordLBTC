@@ -41,7 +41,7 @@ private slots:
     void viewStudents();
     void viewCourses();
     void manageData();
-    void logout();
+    void AddCourses();
 
 private:
     Ui::Dashboard *ui;

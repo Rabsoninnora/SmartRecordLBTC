@@ -12,6 +12,7 @@
 #include <QtCore/QVariant>
 #include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QComboBox>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QFrame>
 #include <QtWidgets/QLabel>
@@ -27,7 +28,6 @@ public:
     QPushButton *pushButton;
     QPushButton *btn_Course_back;
     QFrame *frame;
-    QLineEdit *lineEdit_Department;
     QLineEdit *lineEdit_code;
     QLineEdit *lineEdit_Course_Name;
     QLineEdit *lineEdit_Total_Subjects;
@@ -42,6 +42,7 @@ public:
     QLabel *label_7;
     QPlainTextEdit *plainTextEdit_SubjectList;
     QLabel *label_8;
+    QComboBox *comboBox_Departments;
 
     void setupUi(QDialog *Courses)
     {
@@ -58,7 +59,7 @@ public:
         btn_Course_back->setStyleSheet(QString::fromUtf8("    \n"
 "QPushButton{\n"
 "                    color: rgb(255, 255, 255);\n"
-"                    border:2px solid green;\n"
+"                    border:1px solid white;\n"
 "                    border-radius: 8px;\n"
 "                    padding: 0 8px;\n"
 "                    background-color: rgb(255, 267, 245);\n"
@@ -76,30 +77,13 @@ public:
         frame->setStyleSheet(QString::fromUtf8(""));
         frame->setFrameShape(QFrame::Shape::StyledPanel);
         frame->setFrameShadow(QFrame::Shadow::Raised);
-        lineEdit_Department = new QLineEdit(frame);
-        lineEdit_Department->setObjectName("lineEdit_Department");
-        lineEdit_Department->setGeometry(QRect(250, 40, 231, 31));
-        lineEdit_Department->setStyleSheet(QString::fromUtf8("   \n"
-"QLineEdit{\n"
-"                    color: rgb(255, 255, 255);\n"
-"                    border:1px solid green;\n"
-"                    border-radius: 0px;\n"
-"                    padding: 0 8px;\n"
-"                    background-color: #3a3f5c;\n"
-"                    \n"
-"	                font: 700 9pt \"Segoe UI\";\n"
-"                   \n"
-"\n"
-"}\n"
-"\n"
-" "));
         lineEdit_code = new QLineEdit(frame);
         lineEdit_code->setObjectName("lineEdit_code");
         lineEdit_code->setGeometry(QRect(490, 40, 231, 31));
         lineEdit_code->setStyleSheet(QString::fromUtf8("   \n"
 "QLineEdit{\n"
 "                    color: rgb(255, 255, 255);\n"
-"                    border:1px solid green;\n"
+"                    border:1px solid white;\n"
 "                    border-radius: 0px;\n"
 "                    padding: 0 8px;\n"
 "                    background-color: #3a3f5c;\n"
@@ -116,7 +100,7 @@ public:
         lineEdit_Course_Name->setStyleSheet(QString::fromUtf8("   \n"
 "QLineEdit{\n"
 "                    color: rgb(255, 255, 255);\n"
-"                    border:1px solid green;\n"
+"                    border:1px solid white;\n"
 "                    border-radius: 0px;\n"
 "                    padding: 0 8px;\n"
 "                    background-color: #3a3f5c;\n"
@@ -133,7 +117,7 @@ public:
         lineEdit_Total_Subjects->setStyleSheet(QString::fromUtf8("   \n"
 "QLineEdit{\n"
 "                    color: rgb(255, 255, 255);\n"
-"                    border:1px solid green;\n"
+"                    border:1px solid white;\n"
 "                    border-radius: 0px;\n"
 "                    padding: 0 8px;\n"
 "                    background-color: #3a3f5c;\n"
@@ -150,7 +134,7 @@ public:
         lineEdit_Course_Duration->setStyleSheet(QString::fromUtf8("   \n"
 "QLineEdit{\n"
 "                    color: rgb(255, 255, 255);\n"
-"                    border:1px solid green;\n"
+"                    border:1px solid white;\n"
 "                    border-radius: 0px;\n"
 "                    padding: 0 8px;\n"
 "                    background-color: #3a3f5c;\n"
@@ -167,7 +151,7 @@ public:
         btn_Course_Submit->setStyleSheet(QString::fromUtf8("    \n"
 "QPushButton{\n"
 "                    color: rgb(255, 255, 255);\n"
-"                    border:2px solid green;\n"
+"                    border:1px solid white;\n"
 "                    border-radius: 8px;\n"
 "                    padding: 0 8px;\n"
 "                    background-color: rgb(255, 267, 245);\n"
@@ -185,7 +169,7 @@ public:
         pushButton_2->setStyleSheet(QString::fromUtf8("    \n"
 "QPushButton{\n"
 "                    color: rgb(255, 255, 255);\n"
-"                    border:1px solid green;\n"
+"                    border:1px solid white;\n"
 "                    border-radius: 6px;\n"
 "                    padding: 0 8px;\n"
 "                    background-color: rgb(255, 267, 245);\n"
@@ -201,7 +185,7 @@ public:
         btn_Reset_Course->setStyleSheet(QString::fromUtf8("   \n"
 "QPushButton{\n"
 "                    color: rgb(255, 255, 255);\n"
-"                    border:2px solid green;\n"
+"                    border:1px solid white;\n"
 "                    border-radius: 8px;\n"
 "                    padding: 0 8px;\n"
 "                    background-color: rgb(255, 267, 245);\n"
@@ -215,7 +199,7 @@ public:
         btn_Reset_Course->setIcon(icon2);
         label = new QLabel(frame);
         label->setObjectName("label");
-        label->setGeometry(QRect(255, 10, 101, 31));
+        label->setGeometry(QRect(250, 10, 101, 21));
         label_2 = new QLabel(frame);
         label_2->setObjectName("label_2");
         label_2->setGeometry(QRect(497, 10, 101, 31));
@@ -234,7 +218,7 @@ public:
         plainTextEdit_SubjectList->setStyleSheet(QString::fromUtf8("   \n"
 "QPlainTextEdit{\n"
 "                    color: rgb(255, 255, 255);\n"
-"                    border:1px solid green;\n"
+"                    border:1px solid white;\n"
 "                    border-radius: 0px;\n"
 "                    padding: 0 8px;\n"
 "                    background-color: #3a3f5c;\n"
@@ -248,8 +232,15 @@ public:
         label_8 = new QLabel(frame);
         label_8->setObjectName("label_8");
         label_8->setGeometry(QRect(410, 150, 100, 31));
+        comboBox_Departments = new QComboBox(frame);
+        comboBox_Departments->addItem(QString());
+        comboBox_Departments->addItem(QString());
+        comboBox_Departments->addItem(QString());
+        comboBox_Departments->addItem(QString());
+        comboBox_Departments->setObjectName("comboBox_Departments");
+        comboBox_Departments->setGeometry(QRect(250, 30, 231, 41));
+        comboBox_Departments->setEditable(true);
         btn_Course_Submit->raise();
-        lineEdit_Department->raise();
         lineEdit_code->raise();
         lineEdit_Course_Name->raise();
         lineEdit_Total_Subjects->raise();
@@ -263,6 +254,7 @@ public:
         label_7->raise();
         plainTextEdit_SubjectList->raise();
         label_8->raise();
+        comboBox_Departments->raise();
 
         retranslateUi(Courses);
 
@@ -274,21 +266,25 @@ public:
         Courses->setWindowTitle(QCoreApplication::translate("Courses", "Dialog", nullptr));
         pushButton->setText(QCoreApplication::translate("Courses", "STUDENT  RECORDS MANAGEMENT  SYSTEM", nullptr));
         btn_Course_back->setText(QCoreApplication::translate("Courses", "Back", nullptr));
-        lineEdit_Department->setPlaceholderText(QCoreApplication::translate("Courses", "Department", nullptr));
-        lineEdit_code->setPlaceholderText(QCoreApplication::translate("Courses", "CODE", nullptr));
-        lineEdit_Course_Name->setPlaceholderText(QCoreApplication::translate("Courses", "Program", nullptr));
+        lineEdit_code->setPlaceholderText(QString());
+        lineEdit_Course_Name->setPlaceholderText(QString());
         lineEdit_Total_Subjects->setText(QString());
-        lineEdit_Total_Subjects->setPlaceholderText(QCoreApplication::translate("Courses", "Total Subjects", nullptr));
-        lineEdit_Course_Duration->setPlaceholderText(QCoreApplication::translate("Courses", "Course Duration", nullptr));
+        lineEdit_Total_Subjects->setPlaceholderText(QString());
+        lineEdit_Course_Duration->setPlaceholderText(QString());
         btn_Course_Submit->setText(QCoreApplication::translate("Courses", "Submit", nullptr));
         pushButton_2->setText(QString());
         btn_Reset_Course->setText(QCoreApplication::translate("Courses", "Clear", nullptr));
-        label->setText(QCoreApplication::translate("Courses", "Department", nullptr));
+        label->setText(QCoreApplication::translate("Courses", "Select Department", nullptr));
         label_2->setText(QCoreApplication::translate("Courses", "CODE", nullptr));
         label_5->setText(QCoreApplication::translate("Courses", "Total Subjects", nullptr));
         label_6->setText(QCoreApplication::translate("Courses", "Course Name", nullptr));
         label_7->setText(QCoreApplication::translate("Courses", "Course Duration", nullptr));
         label_8->setText(QCoreApplication::translate("Courses", "Enter Subject", nullptr));
+        comboBox_Departments->setItemText(0, QCoreApplication::translate("Courses", "Business", nullptr));
+        comboBox_Departments->setItemText(1, QCoreApplication::translate("Courses", "Hospitality", nullptr));
+        comboBox_Departments->setItemText(2, QCoreApplication::translate("Courses", "Engineering", nullptr));
+        comboBox_Departments->setItemText(3, QCoreApplication::translate("Courses", "Cosmotology", nullptr));
+
     } // retranslateUi
 
 };

@@ -88,7 +88,7 @@ void Dashboard::setupUI()
     deptLabel->setStyleSheet("font-size: 14px; background-color: rgb(0, 81, 121); color: white; border-radius: 5px; padding: 4px;");
 
     // Navigation buttons
-    QPushButton *logoutBtn = createNavButton("Add Course", "btnLogout");
+    QPushButton *BtnAddCourses = createNavButton("Add Course", "AddCoursesBtn");
     QPushButton *coursesBtn = createNavButton("View Courses", "btnCourses");
     QPushButton *studentsBtn = createNavButton("Students", "btnStudents");
     QPushButton *manageDataBtn = createNavButton("Add HOS", "btnManageData");
@@ -100,7 +100,7 @@ void Dashboard::setupUI()
     leftLayout->addWidget(studentsBtn);
     leftLayout->addWidget(coursesBtn);
     leftLayout->addWidget(manageDataBtn);
-    leftLayout->addWidget(logoutBtn);
+    leftLayout->addWidget(BtnAddCourses);
     leftLayout->addStretch();
 
     // Right panel
@@ -114,7 +114,7 @@ void Dashboard::setupUI()
     int year = QDate::currentDate().year();
     QLabel *footer = new QLabel(QString("© %1 LBTC Student Management System. All rights reserved.").arg(year), this);
     footer->setAlignment(Qt::AlignCenter);
-    footer->setStyleSheet("font-size: 12px; color: gray; margin-top: 10px;");
+    footer->setStyleSheet("font-size: 14px; color: white; margin-top: 10px;");
     rightLayout->addWidget(footer);
 
     // Add initial page (with centered background image)
@@ -133,7 +133,7 @@ void Dashboard::setupConnections()
     connect(findChild<QPushButton*>("btnStudents"), &QPushButton::clicked, this, &Dashboard::viewStudents);
     connect(findChild<QPushButton*>("btnCourses"), &QPushButton::clicked, this, &Dashboard::viewCourses);
     connect(findChild<QPushButton*>("btnManageData"), &QPushButton::clicked, this, &Dashboard::manageData);
-    connect(findChild<QPushButton*>("btnLogout"), &QPushButton::clicked, this, &Dashboard::logout);
+    connect(findChild<QPushButton*>("AddCoursesBtn"), &QPushButton::clicked, this, &Dashboard::AddCourses);
 }
 
 void Dashboard::switchDepartment()
@@ -161,9 +161,9 @@ void Dashboard::manageData()
     ptrAddUser->show();
 }
 
-void Dashboard::logout()
+void Dashboard::AddCourses()
 {
-    this->close();
+    ptrCourses->show();
 }
 
 QPushButton* Dashboard::createNavButton(const QString &text, const QString &objectName)

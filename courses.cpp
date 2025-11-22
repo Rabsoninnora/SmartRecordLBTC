@@ -26,12 +26,12 @@ Courses::~Courses()
 
 void Courses::on_btn_Course_Submit_clicked()
 {
-    QString Department=ui->lineEdit_Department->text();
-    QString CODE=ui->lineEdit_code->text();
-    QString CourseName=ui->lineEdit_Course_Name->text();
-    QString TotalSubjects=ui->lineEdit_Total_Subjects->text();
-    QString CourseDuration=ui->lineEdit_Course_Duration->text();
-    QString SubjectList= ui->plainTextEdit_SubjectList->toPlainText();
+    QString Department=ui->comboBox_Departments->currentText().trimmed();
+    QString CODE=ui->lineEdit_code->text().trimmed();
+    QString CourseName=ui->lineEdit_Course_Name->text().trimmed();
+    QString TotalSubjects=ui->lineEdit_Total_Subjects->text().trimmed();
+    QString CourseDuration=ui->lineEdit_Course_Duration->text().trimmed();
+    QString SubjectList= ui->plainTextEdit_SubjectList->toPlainText().trimmed();
 
     QSqlQuery query(MyDB::getInstance()->getDBInstance());
     QSqlDatabase::database().transaction();

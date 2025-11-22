@@ -45,7 +45,7 @@ static constexpr auto qt_meta_stringdata_ZN9DashboardE = QtMocHelpers::stringDat
     "viewStudents",
     "viewCourses",
     "manageData",
-    "logout"
+    "AddCourses"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -102,7 +102,7 @@ Q_CONSTINIT const QMetaObject Dashboard::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'manageData'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'logout'
+        // method 'AddCourses'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -118,7 +118,7 @@ void Dashboard::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
         case 2: _t->viewStudents(); break;
         case 3: _t->viewCourses(); break;
         case 4: _t->manageData(); break;
-        case 5: _t->logout(); break;
+        case 5: _t->AddCourses(); break;
         default: ;
         }
     }

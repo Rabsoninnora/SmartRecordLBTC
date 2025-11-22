@@ -42,7 +42,7 @@
     <string notr="true">    
 QPushButton{
                     color: rgb(255, 255, 255);
-                    border:2px solid green;
+                    border:1px solid white;
                     border-radius: 8px;
                     padding: 0 8px;
                     background-color: rgb(255, 267, 245);
@@ -78,35 +78,6 @@ QPushButton{
    <property name="frameShadow">
     <enum>QFrame::Shadow::Raised</enum>
    </property>
-   <widget class="QLineEdit" name="lineEdit_Department">
-    <property name="geometry">
-     <rect>
-      <x>250</x>
-      <y>40</y>
-      <width>231</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">   
-QLineEdit{
-                    color: rgb(255, 255, 255);
-                    border:1px solid green;
-                    border-radius: 0px;
-                    padding: 0 8px;
-                    background-color: #3a3f5c;
-                    
-	                font: 700 9pt &quot;Segoe UI&quot;;
-                   
-
-}
-
- </string>
-    </property>
-    <property name="placeholderText">
-     <string>Department</string>
-    </property>
-   </widget>
    <widget class="QLineEdit" name="lineEdit_code">
     <property name="geometry">
      <rect>
@@ -120,7 +91,7 @@ QLineEdit{
      <string notr="true">   
 QLineEdit{
                     color: rgb(255, 255, 255);
-                    border:1px solid green;
+                    border:1px solid white;
                     border-radius: 0px;
                     padding: 0 8px;
                     background-color: #3a3f5c;
@@ -133,7 +104,7 @@ QLineEdit{
  </string>
     </property>
     <property name="placeholderText">
-     <string>CODE</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_Course_Name">
@@ -149,7 +120,7 @@ QLineEdit{
      <string notr="true">   
 QLineEdit{
                     color: rgb(255, 255, 255);
-                    border:1px solid green;
+                    border:1px solid white;
                     border-radius: 0px;
                     padding: 0 8px;
                     background-color: #3a3f5c;
@@ -162,7 +133,7 @@ QLineEdit{
  </string>
     </property>
     <property name="placeholderText">
-     <string>Program</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_Total_Subjects">
@@ -178,7 +149,7 @@ QLineEdit{
      <string notr="true">   
 QLineEdit{
                     color: rgb(255, 255, 255);
-                    border:1px solid green;
+                    border:1px solid white;
                     border-radius: 0px;
                     padding: 0 8px;
                     background-color: #3a3f5c;
@@ -194,7 +165,7 @@ QLineEdit{
      <string/>
     </property>
     <property name="placeholderText">
-     <string>Total Subjects</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_Course_Duration">
@@ -210,7 +181,7 @@ QLineEdit{
      <string notr="true">   
 QLineEdit{
                     color: rgb(255, 255, 255);
-                    border:1px solid green;
+                    border:1px solid white;
                     border-radius: 0px;
                     padding: 0 8px;
                     background-color: #3a3f5c;
@@ -223,7 +194,7 @@ QLineEdit{
  </string>
     </property>
     <property name="placeholderText">
-     <string>Course Duration</string>
+     <string/>
     </property>
    </widget>
    <widget class="QPushButton" name="btn_Course_Submit">
@@ -239,7 +210,7 @@ QLineEdit{
      <string notr="true">    
 QPushButton{
                     color: rgb(255, 255, 255);
-                    border:2px solid green;
+                    border:1px solid white;
                     border-radius: 8px;
                     padding: 0 8px;
                     background-color: rgb(255, 267, 245);
@@ -270,7 +241,7 @@ QPushButton{
      <string notr="true">    
 QPushButton{
                     color: rgb(255, 255, 255);
-                    border:1px solid green;
+                    border:1px solid white;
                     border-radius: 6px;
                     padding: 0 8px;
                     background-color: rgb(255, 267, 245);
@@ -298,7 +269,7 @@ QPushButton{
      <string notr="true">   
 QPushButton{
                     color: rgb(255, 255, 255);
-                    border:2px solid green;
+                    border:1px solid white;
                     border-radius: 8px;
                     padding: 0 8px;
                     background-color: rgb(255, 267, 245);
@@ -319,14 +290,14 @@ QPushButton{
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>255</x>
+      <x>250</x>
       <y>10</y>
       <width>101</width>
-      <height>31</height>
+      <height>21</height>
      </rect>
     </property>
     <property name="text">
-     <string>Department</string>
+     <string>Select Department</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
@@ -394,7 +365,7 @@ QPushButton{
      <string notr="true">   
 QPlainTextEdit{
                     color: rgb(255, 255, 255);
-                    border:1px solid green;
+                    border:1px solid white;
                     border-radius: 0px;
                     padding: 0 8px;
                     background-color: #3a3f5c;
@@ -420,8 +391,40 @@ QPlainTextEdit{
      <string>Enter Subject</string>
     </property>
    </widget>
+   <widget class="QComboBox" name="comboBox_Departments">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>30</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <item>
+     <property name="text">
+      <string>Business</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Hospitality</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Engineering</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Cosmotology</string>
+     </property>
+    </item>
+   </widget>
    <zorder>btn_Course_Submit</zorder>
-   <zorder>lineEdit_Department</zorder>
    <zorder>lineEdit_code</zorder>
    <zorder>lineEdit_Course_Name</zorder>
    <zorder>lineEdit_Total_Subjects</zorder>
@@ -435,6 +438,7 @@ QPlainTextEdit{
    <zorder>label_7</zorder>
    <zorder>plainTextEdit_SubjectList</zorder>
    <zorder>label_8</zorder>
+   <zorder>comboBox_Departments</zorder>
   </widget>
  </widget>
  <resources/>
